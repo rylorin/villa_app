@@ -1,0 +1,91 @@
+{% extends 'RylLandingBundle::reign_base_layout.html.twig' %}
+
+  {% block reign_page_content %}  
+
+    {% block page_content_top %}
+      {{ parent() }}
+    {% endblock %}
+
+    {% block page_content %}
+  <section id=blog-standard class="section blog-standard">
+    <div class=container>
+      <div class=col-md-8>
+      {{ parent() }}
+      </div>
+      {% block side_bar %}
+      <div class="col-md-4 col-md-offset-0">
+        <div class="sidebar hidden-sm hidden-xs">
+          <div class=widget>
+            <form>
+              <input type=text placeholder=Search... class=form-control>
+            </form>
+          </div>
+          <div class="widget popular-posts">
+            <div class=widget-title>
+              <h4>Popular posts</h4>
+            </div>
+            <div class=widget-content>
+              <ul>
+                <li class=clearfix>
+                  <a href=# class="pull-left thumb">
+                    <img src="{{ asset('assets/images/blog/thumb/01.jpg') }}">
+                  </a> <a href=# class=title>Blog Post One</a>
+                  <div class=date>23 November 2015</div>
+                </li>
+                <li class=clearfix>
+                  <a href=# class="pull-left thumb">
+                    <img src="{{ asset('assets/images/blog/thumb/02.jpg') }}">
+                  </a> <a href=# class=title>Blog Post Two</a>
+                  <div class=date>23 November 2015</div>
+                </li>
+                <li class=clearfix>
+                  <a href=# class="pull-left thumb">
+                    <img src="{{ asset('assets/images/blog/thumb/03.jpg') }}">
+                  </a> <a href=# class=title>Blog Post Three</a>
+                  <div class=date>23 November 2015</div>
+                </li>
+                <li class=clearfix>
+                  <a href=# class="pull-left thumb">
+                    <img src="{{ asset('assets/images/blog/thumb/04.jpg') }}">
+                  </a> <a href=# class=title>Blog Post Four</a>
+                  <div class=date>23 November 2015</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget popular-tags">
+            <div class=widget-title>
+              <h4>Popular tags</h4>
+            </div>
+            <div class=widget-content><a href=# class="btn btn-dark">Clean</a> <a href=# class="btn btn-dark">Responsive</a> <a href=# class="btn btn-dark">demo</a> <a href=# class="btn btn-dark">creative</a> <a href=# class="btn btn-dark">corporate</a> <a href=# class="btn btn-dark">elegant</a></div>
+          </div>
+          <div class="widget categories">
+            <div class=widget-title>
+              <h4>Categories</h4>
+            </div>
+            <div class=widget-content>
+              <ul>
+                <li><a href=#>Web Design</a></li>
+                <li><a href=#>Web Development</a></li>
+                <li><a href=#>Photography</a></li>
+                <li><a href=#>Typography</a></li>
+                <li><a href=#>Writing</a></li>
+                <li><a href=#>Games</a></li>
+                <li><a href=#>Cricket</a></li>
+                <li><a href=#>Soccer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endblock %}
+    </div>
+  </section>
+
+    {% endblock %}
+
+    {% block page_content_bottom %}
+      {{ parent() }}
+    {% endblock %}
+    
+  {% endblock %}

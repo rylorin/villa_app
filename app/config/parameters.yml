@@ -1,0 +1,27 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_sqlite
+    database_host: 127.0.0.1
+    database_name: sonata_sandbox
+    database_user: sonata
+    database_password: sonata
+    mailer_transport: smtp
+    mailer_host: smtp.free.fr
+    mailer_user: ryl@free.fr
+    mailer_password: lu87xy53
+    locale: en
+    secret: ffbdd9ad235cb741e96d97847b7ef085d5bd44e4
+    sonata_admin.title: 'Sonata admin'
+    sonata_news.blog_title: 'My Awesome Blog'
+    sonata_news.blog_link: 'http://awesome-blog.ltd'
+    sonata_news.blog_description: 'My Awesome blog description'
+    sonata_news.salt: ThisTokenIsNotSoSecretChangeIt
+    sonata_news.comment.emails:
+        - mail@example.org
+    sonata_news.comment.email_from: no-reply@example.org
+    sonata_user.google_authenticator.server: demo.sonata-project.org
+    sonata_page.varnish.command: 'if [ ! -r "/etc/varnish/secret" ]; then echo "VALID ERROR :/"; else varnishadm -S /etc/varnish/secret -T 127.0.0.1:6082 {{ COMMAND }} "{{ EXPRESSION }}"; fi;'
+    sonata_admin.logo_title: /bundles/sonataadmin/logo_title.png
+    #sonata_media.cdn.host: 'http://demo.sonata-project.org/uploads/media'
+    sonata_media.cdn.host: 'http://localhost:8000/uploads/media'
+    

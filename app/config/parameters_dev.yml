@@ -1,0 +1,4 @@
+parameters:
+    sonata_admin.logo_title: /bundles/sonataadmin/logo_title.png
+    sonata_media.cdn.host: /uploads/media
+    

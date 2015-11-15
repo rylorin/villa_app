@@ -1,0 +1,13 @@
+Unused
+#services:
+#    ryl_projects.admin.sponsor:
+#        class: Ryl\CharityBundle\Admin\SponsorAdmin
+#        arguments: [~, Ryl\CharityBundle\Entity\Sponsor, RylCharityBundle:SponsorAdmin]
+#        tags:
+#            - {name: sonata.admin, manager_type: orm, group: admin, label: Sponsor}
+
+#    ryl_projects.admin.project:
+#        class: Ryl\CharityBundle\Admin\ProjectAdmin
+#        arguments: [~, Ryl\CharityBundle\Entity\Project, RylCharityBundle:ProjectAdmin]
+#        tags:
+#            - {name: sonata.admin, manager_type: orm, group: admin, label: Project}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="sponsor" path="/">
+        <default key="_controller">RylCharityBundle:Sponsor:index</default>
+    </route>
+
+    <route id="sponsor_show" path="/{id}/show">
+        <default key="_controller">RylCharityBundle:Sponsor:show</default>
+    </route>
+
+    <route id="sponsor_new" path="/new">
+        <default key="_controller">RylCharityBundle:Sponsor:new</default>
+    </route>
+
+    <route id="sponsor_create" path="/create">
+        <default key="_controller">RylCharityBundle:Sponsor:create</default>
+        <requirement key="_method">post</requirement>
+    </route>
+
+    <route id="sponsor_edit" path="/{id}/edit">
+        <default key="_controller">RylCharityBundle:Sponsor:edit</default>
+    </route>
+
+    <route id="sponsor_update" path="/{id}/update">
+        <default key="_controller">RylCharityBundle:Sponsor:update</default>
+        <requirement key="_method">post|put</requirement>
+    </route>
+
+    <route id="sponsor_delete" path="/{id}/delete">
+        <default key="_controller">RylCharityBundle:Sponsor:delete</default>
+        <requirement key="_method">post|delete</requirement>
+    </route>
+
+</routes>

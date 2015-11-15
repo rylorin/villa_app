@@ -1,0 +1,6 @@
+services:
+    ryl_retirement.admin.city:
+        class: Ryl\RetirementBundle\Admin\CityAdmin
+        arguments: [~, Ryl\RetirementBundle\Entity\City, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: City}

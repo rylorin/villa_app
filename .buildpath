@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="app"/>
+	<buildpathentry kind="src" path="bin"/>
+	<buildpathentry kind="src" path="features/api/bootstrap"/>
+	<buildpathentry kind="src" path="features/bootstrap"/>
+	<buildpathentry kind="src" path="src/Application/FOS/UserBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/BasketBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/ClassificationBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/CommentBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/CustomerBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/DeliveryBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/InvoiceBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/MediaBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/NewsBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/NotificationBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/OrderBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/PageBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/PaymentBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/ProductBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/SeoBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/TimelineBundle"/>
+	<buildpathentry kind="src" path="src/Application/Sonata/UserBundle"/>
+	<buildpathentry kind="src" path="src/Sonata/Bundle/DemoBundle"/>
+	<buildpathentry kind="src" path="src/Sonata/Bundle/QABundle"/>
+	<buildpathentry kind="src" path="vendor"/>
+	<buildpathentry kind="src" path="web"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>

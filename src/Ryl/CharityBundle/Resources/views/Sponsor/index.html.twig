@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <div class="row">
+        <div class="col-lg-12">
+            {% sonata_template_box 'This is the index template. Feel free to override it.' %}
+        </div>
+    </div>
+    <h1>Sponsors</h1>
+    <div class="records_list">
+        {% for entity in entities %}
+        <div class="col-sm-4" itemscope="" itemtype="http://schema.org/Product">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+        			{% media entity.image, 'small' %}
+        		</div>
+        		<div class="panel-body">
+        			<h5 itemprop="name" class="panel-title truncate">
+        			<a href="{{ path('sponsor_show', { 'id': entity.id }) }}">{{ entity.name }}</a>
+        			</h5>
+        		</div>
+        		<div class="panel-footer">
+        			<span class="text-left">
+        			{{ entity.shortDescription }}
+                    </span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
