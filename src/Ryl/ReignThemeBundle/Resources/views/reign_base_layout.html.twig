@@ -1,0 +1,140 @@
+{% extends 'SonataPageBundle::layout.html.twig' %}
+
+{% block sonata_page_html_tag %}
+<!DOCTYPE html>
+<html {{ sonata_seo_html_attributes() }}>
+{% endblock %}
+{% block sonata_page_head %}
+	<head {{ sonata_seo_head_attributes() }}>
+	
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	{{ sonata_seo_title() }}
+	{{ sonata_seo_metadatas() }}
+	<meta content="IE=edge" http-equiv=X-UA-Compatible>
+	<meta content="width=device-width, initial-scale=1" name=viewport>
+	
+	<link href="{{ asset('assets/images/favicons/favicon.ico') }}" rel="shortcut icon">
+	<link href="{{ asset('assets/images/favicons/apple-icon-57x57.png') }}"	rel=apple-touch-icon sizes=57x57>
+	<link href="{{ asset('assets/images/favicons/apple-icon-60x60.png') }}"	rel=apple-touch-icon sizes=60x60>
+	<link href="{{ asset('assets/images/favicons/apple-icon-72x72.png') }}"	rel=apple-touch-icon sizes=72x72>
+	<link href="{{ asset('assets/images/favicons/apple-icon-76x76.png') }}"	rel=apple-touch-icon sizes=76x76>
+	<link href="{{ asset('assets/images/favicons/apple-icon-114x114.png') }}" rel=apple-touch-icon sizes=114x114>
+	<link href="{{ asset('assets/images/favicons/apple-icon-120x120.png') }}" rel=apple-touch-icon sizes=120x120>
+	<link href="{{ asset('assets/images/favicons/apple-icon-144x144.png') }}"	rel=apple-touch-icon sizes=144x144>
+	<link href="{{ asset('assets/images/favicons/apple-icon-152x152.png') }}"	rel=apple-touch-icon sizes=152x152>
+	<link href="{{ asset('assets/images/favicons/apple-icon-180x180.png') }}"	rel=apple-touch-icon sizes=180x180>
+	<link href="{{ asset('assets/images/favicons/android-icon-192x192.png') }}" rel=icon	sizes=192x192 type=image/png>
+	<link href="{{ asset('assets/images/favicons/favicon-32x32.png') }}" rel=icon sizes=32x32	type=image/png>
+	<link href="{{ asset('assets/images/favicons/favicon-96x96.png') }}" rel=icon sizes=96x96	type=image/png>
+	<link href="{{ asset('assets/images/favicons/favicon-16x16.png') }}" rel=icon sizes=16x16	type=image/png>
+	<link href="{{ asset('assets/images/favicons/manifest.json') }}" rel=manifest>
+	<meta content=#000000 name=msapplication-TileColor>
+	<meta content="{{ asset('assets/images/favicons/ms-icon-144x144.png') }}"	name=msapplication-TileImage>
+	<meta content=#000000 name=theme-color>
+	
+	<link href="{{ asset('assets/lib/bootstrap/dist/css/bootstrap.css') }}" rel=stylesheet>
+	<link href="{{ asset('assets/lib/fontawesome/css/font-awesome.min.css') }}"	rel=stylesheet>
+	<link href="{{ asset('assets/lib/ionicons/css/ionicons.css') }}" rel=stylesheet>
+	<link href="{{ asset('assets/lib/owlcarousel/owl-carousel/owl.carousel.css') }}"	rel=stylesheet>
+	<link href="{{ asset('assets/lib/owlcarousel/owl-carousel/owl.theme.css') }}"	rel=stylesheet>
+	<link href="{{ asset('assets/lib/FlexSlider/flexslider.css') }}" rel=stylesheet>
+	<link href="{{ asset('assets/lib/magnific-popup/dist/magnific-popup.css') }}"	rel=stylesheet>
+	<link href="http://fonts.googleapis.com/css?family=Raleway:100,300,400"	rel=stylesheet>
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400"	rel=stylesheet>
+	<link href="{{ asset('assets/css/ie_fix.css') }}" rel=stylesheet>
+{% block sonata_page_stylesheets %}
+	{% for stylesheet in sonata_page.assets.stylesheets	%}
+	<link href="{{ asset(stylesheet) }}" media="all" rel="stylesheet">
+	{% endfor %}
+{% endblock %}
+	<link href="{{ asset('assets/css/main.css') }}" rel=stylesheet>
+	
+	<script src="{{ asset('assets/lib/components-modernizr/modernizr.js') }}"></script>
+	<script src="{{ asset('assets/lib/jquery/dist/jquery.js') }}"></script>
+	<script src="{{ asset('assets/lib/bootstrap/dist/js/bootstrap.js') }}"></script>
+	{% block sonata_page_javascripts %}
+		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		
+		{% for js in sonata_page.assets.javascripts %}
+		<script src="{{ asset(js) }}"></script>
+		{% endfor %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+{% block sonata_page_body_tag %}
+  	<body data-offset=100 data-spy=scroll data-target=#main-nav-collapse>
+  	<div class=page-loader>
+    	<div class=loader>Loading...</div>
+  	</div>
+{% endblock %}
+
+{% block sonata_page_top_bar %}
+	<!-- Sonata framework menu bar -->
+	{{ parent() }}
+{% endblock %}
+
+{% block sonata_page_container %}
+
+  {% block page_header %}
+  	<!-- Application menu bar -->
+    {{ sonata_page_render_container('header', 'global') }}
+  {% endblock %}
+
+  {% block reign_page_content %}  
+
+    {% block page_content_top %}
+      <!-- Theme top big picture -->
+      {% set page_content_top = sonata_page_render_container('content_top', page) %}
+      {% if page_content_top|length > 174 %}
+        {{ page_content_top|raw }}
+      {% else %}
+        {{ sonata_page_render_container('content_top', 'global') }}
+      {% endif %}
+    {% endblock %}
+
+    {% block page_content %}
+      <!-- Real application page content -->
+      {{ parent() }}
+    {% endblock %}
+
+  {% endblock %}
+
+  {% block page_footer %}
+  	<!-- Application page footer -->
+    {{ sonata_page_render_container('page_footer_high', 'global') }}
+    {{ sonata_page_render_container('page_footer_low', 'global') }}
+  {% endblock %}
+  
+{% endblock %}
+
+{% block sonata_page_asset_footer %}
+    {% if page is defined %}
+	    <script>
+	    {{ page.javascript | raw }}
+	    </script>
+	    <style>
+	    {{ page.stylesheet | raw }}
+	    </style>
+    {% endif %}
+    {#
+      These includes can be done only at this point as all blocks are loaded,
+      Limitation : this does not work if a global page is loaded from an ESI tag inside a container block
+    #}
+    {{ sonata_block_include_stylesheets('screen', app.request.basePath) }}
+    {{ sonata_block_include_javascripts('screen', app.request.basePath) }}
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type=text/javascript></script>
+    <script src="{{ asset('assets/lib/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/isotope/dist/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/owlcarousel/owl-carousel/owl.carousel.js') }}"></script>
+    <script src="{{ asset('assets/lib/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/waypoints/lib/shortcuts/inview.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/FlexSlider/jquery.flexslider.js') }}"></script>
+    <script src="{{ asset('assets/lib/simple-text-rotator/jquery.simple-text-rotator.js') }}"></script>
+    <script src="{{ asset('assets/lib/jquery.mb.YTPlayer/dist/jquery.mb.YTPlayer.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/magnific-popup/dist/jquery.magnific-popup.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+
+    <!--[if lt IE 10]> <script> $('input, textarea').placeholder(); </script> <![endif]-->
+{% endblock %}
