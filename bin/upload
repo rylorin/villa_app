@@ -1,0 +1,9 @@
+#!/bin/sh -x
+./app/console server:stop
+ssh ronan@ryl.androw.eu ./app/console server:stop
+rsync -rv --update --exclude '.git' vendor ronan@ryl.androw.eu:vendor
+rsync -rv --exclude-from=.gitignore --update . ronan@ryl.androw.eu:
+rsync -v --update app/sonata_sandbox.db ronan@ryl.androw.eu:app
+ssh -n -f ronan@ryl.androw.eu ./app/console --env=prod server:start
+./app/console server:start
+exit 0
