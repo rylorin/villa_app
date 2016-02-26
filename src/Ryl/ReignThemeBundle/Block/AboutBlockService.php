@@ -7,9 +7,8 @@ use Sonata\CoreBundle\Validator\ErrorElement;
 use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\BlockBundle\Model\BlockInterface;
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
-use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Sonata\MediaBundle\Block\MediaBlockService;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Sonata\CoreBundle\Model\ManagerInterface;
@@ -28,8 +27,8 @@ class AboutBlockService extends MediaBlockService
      *
      * @param string               $name        A block name
      * @param EngineInterface      $templating  Twig engine service
-     * @param FormFactoryInterface $formFactory Symfony FormFactory service
-     * @param string               $formType    Newsletter form type
+     * @param ContainerInterface 
+     * @param ManagerInterface               
      */
     public function __construct($name, EngineInterface $templating, ContainerInterface $container, ManagerInterface $mediaManager)
     {
@@ -44,8 +43,8 @@ class AboutBlockService extends MediaBlockService
     	parent::execute($blockContext);
     	
         return $this->renderPrivateResponse($blockContext->getTemplate(), array(
-            'block'   	=> $blockContext->getBlock(),
-//            'context' => $blockContext,
+            'context' => $blockContext,
+        	'block'   	=> $blockContext->getBlock(),
         	'settings'	=> $blockContext->getSettings(),
             'media'     => $blockContext->getSetting('mediaId'),
         ));
@@ -89,7 +88,7 @@ class AboutBlockService extends MediaBlockService
     /**
      * {@inheritdoc}
      */
-    public function setDefaultSettings(OptionsResolverInterface $resolver)
+    public function configureSettings(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
         	'title'	   			=> false,

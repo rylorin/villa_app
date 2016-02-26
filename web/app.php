@@ -12,7 +12,9 @@
 require_once __DIR__ . '/../app/bootstrap.php.cache';
 require_once __DIR__ . '/../app/AppKernel.php';
 
-$request = Sonata\PageBundle\Request\RequestFactory::createFromGlobals('host_with_path');
+use Sonata\PageBundle\Request\SiteRequest as Request;
+
+$request = Request::createFromGlobals();
 
 $kernel = new AppKernel('prod', false);
 

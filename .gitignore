@@ -4,9 +4,13 @@
 /app/*.cache
 /web/bundles
 /web/uploads
-/web/sitemap*.xml
 /vendor
 /build
 /composer.lock
 /web/vendor
-/web/assetic/*[0-9]*
+/web/assetic/*
+.DS_Store
+sonata-project-sandbox-*.tar
+.git
+*.db
+.settings/

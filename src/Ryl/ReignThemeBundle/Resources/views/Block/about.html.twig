@@ -9,7 +9,7 @@
           <div class=col-sm-4>
             <div class="about-content left">
               <h4>{{ settings.subtitleleft }}</h4>
-              <p>{{ settings.textleft }}</p>
+              <p>{{ settings.textleft|raw }}</p>
             </div>
           </div>
           <div class=col-sm-4>
@@ -24,7 +24,7 @@
           <div class=col-sm-4>
             <div class="about-content right">
               <h4>{{ settings.subtitleright }}</h4>
-              <p>{{ settings.textright }}</p>
+              <p>{{ settings.textright|raw }}</p>
             </div>
           </div>
         </div>

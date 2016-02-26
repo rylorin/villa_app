@@ -11,6 +11,10 @@ sonata_product:
             manager: sonata.ecommerce_demo.product.travel.manager
             variations:
                 fields: [travellers, travelDays, sku, slug, name, price, stock, vatRate, priceIncludingVat, enabled]
+                
+        ryl.ecommerce.product.donation:
+            provider: ryl.ecommerce.product.donation.type
+            manager: ryl.ecommerce.product.donation.manager
 
     seo:
         product:

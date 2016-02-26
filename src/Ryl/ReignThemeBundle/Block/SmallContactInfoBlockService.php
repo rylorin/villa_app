@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
- * Class SmallAboutBlockService
+ * Class SmallContactInfoBlockService
  *
  * Renders a block
  *
@@ -25,8 +25,9 @@ class SmallContactInfoBlockService extends BaseBlockService
     public function execute(BlockContextInterface $blockContext, Response $response = null)
     {
         return $this->renderResponse($blockContext->getTemplate(), array(
-            'block'     => $blockContext->getBlock(),
-            'settings'  => $blockContext->getSettings(),
+            'block_context'  => $blockContext,
+            'block'          => $blockContext->getBlock(),
+            'settings'  	 => $blockContext->getSettings(),
         ), $response);
     }
 	
@@ -38,10 +39,10 @@ class SmallContactInfoBlockService extends BaseBlockService
         $formMapper->add('settings', 'sonata_type_immutable_array', array(
 	        'keys' => array(
 	            array('title', 'text', array('required' => true)),
-                array('address', 'text', array('required' => false)),
-                array('phone', 'text', array('required' => false)),
-                array('mail', 'text', array('required' => false)),
-                array('map', 'text', array('required' => false)),
+                array('home', 'text', array('required' => false)),
+                array('call', 'text', array('required' => false)),
+                array('email', 'text', array('required' => false)),
+                array('location', 'text', array('required' => false)),
 	        )
 	    ));
     }
@@ -66,7 +67,11 @@ class SmallContactInfoBlockService extends BaseBlockService
     {
         $resolver->setDefaults(array(
         	'title'	   			=> 'Contact Info',
-            'template' 			=> 'RylReignThemeBundle:Block:about-sm.html.twig',
+        	'home'				=> false,
+        	'call'				=> false,
+        	'email'				=> false,
+        	'location'			=> false,
+            'template' 			=> 'RylReignThemeBundle:Block:contact-sm.html.twig',
         ));
     }
     

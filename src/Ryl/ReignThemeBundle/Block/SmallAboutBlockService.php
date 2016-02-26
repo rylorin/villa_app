@@ -12,7 +12,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
- * Class SmallAboutBlockService
+ * Class CopyrightBlockService
  *
  * Renders a block
  *
@@ -26,8 +26,9 @@ class SmallAboutBlockService extends BaseBlockService
     public function execute(BlockContextInterface $blockContext, Response $response = null)
     {
         return $this->renderResponse($blockContext->getTemplate(), array(
-            'block'     => $blockContext->getBlock(),
-            'settings'  => $blockContext->getSettings(),
+            'block_context'  => $blockContext,
+            'block'          => $blockContext->getBlock(),
+            'settings'  	 => $blockContext->getSettings(),
         ), $response);
     }
 	
@@ -53,7 +54,7 @@ class SmallAboutBlockService extends BaseBlockService
 	        ->with('settings.title')
 	            ->assertNotNull(array())
 	            ->assertNotBlank()
-	            ->assertMaxLength(array('limit' => 50))
+	            ->assertMaxLength(array('limit' => 20))
 	        ->end();
     }
 
@@ -63,9 +64,9 @@ class SmallAboutBlockService extends BaseBlockService
     public function configureSettings(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-        	'title'	   			=> 'About us',
+        	'title'	   			=> 'About the Reign',
         	'content'  			=> 'Insert your custom content here',
-            'template' 			=> 'RylReignThemeBundle:Block:about-sm.html.twig',
+            'template' 			=> 'RylReignThemeBundle:Block:about_bottom.html.twig',
         ));
     }
     

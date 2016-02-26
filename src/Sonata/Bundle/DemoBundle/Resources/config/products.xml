@@ -28,5 +28,15 @@
             <argument type="service" id="serializer" />
         </service>
 
+        <!-- Donation -->
+        <service id="ryl.ecommerce.product.donation.manager" class="Sonata\ProductBundle\Entity\ProductManager">
+            <argument>Application\Sonata\ProductBundle\Entity\Donation</argument>
+            <argument type="service" id="doctrine" />
+        </service>
+
+        <service id="ryl.ecommerce.product.donation.type" class="Application\Sonata\ProductBundle\Provider\DonationProductProvider">
+            <argument type="service" id="serializer" />
+        </service>
+
     </services>
 </container>

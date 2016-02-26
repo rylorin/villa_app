@@ -1894,7 +1894,8 @@ blockquote p {
   margin: 0 6px
 }
 .blog-standard .blog-post .read-more {
-  margin-top: 25px
+  margin-top: 15px;
+  margin-bottom: 30px
 }
 .blog-standard .blog-post .read-more a {
   text-transform: uppercase;
@@ -2634,6 +2635,9 @@ blockquote p {
 }
 .footer-widgets .content-wrap.widget-contact ul li i {
   margin-right: 6px
+}
+.footer-widgets .content-wrap.widget-contact ul li a {
+  color: inherit
 }
 .footer-widgets .content-wrap.widget-recent-posts {
   padding-left: 25px

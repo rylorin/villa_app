@@ -96,6 +96,8 @@ doctrine:
                 user:     %database_user%
                 host:     %database_host%
                 password: %database_password%
+                # RYL
+                path:     %kernel.root_dir%/db/%database_name%.db
                 charset:  UTF8
 
         types:
@@ -110,7 +112,11 @@ doctrine:
             default:
                 auto_mapping: true
                 mappings: ~
-
+# RYL
+#        dql:
+#            string_functions:
+#                multi_concat: Spy\TimelineBundle\Driver\Doctrine\AST\Functions\MultiConcatFunction
+                
 # Swiftmailer Configuration
 swiftmailer:
     transport: %mailer_transport%
@@ -151,3 +157,5 @@ sensio_framework_extra:
     view:    { annotations: false }
     router:  { annotations: true }
     request: { converters:  true }
+
+ryl_charity: ~

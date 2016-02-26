@@ -7,7 +7,7 @@
     
         <service id="ryl.reign.block.about" class="Ryl\ReignThemeBundle\Block\AboutBlockService" public="true">
             <tag name="sonata.block" />
-            <argument>Reign About-us block (Homepage)</argument>
+            <argument>Reign About-us block (homepage)</argument>
             <argument type="service" id="templating" />
             <argument type="service" id="service_container" />
             <argument type="service" id="sonata.media.manager.media" />
@@ -15,8 +15,58 @@
 
         <service id="ryl.reign.block.about.sm" class="Ryl\ReignThemeBundle\Block\SmallAboutBlockService" public="true">
             <tag name="sonata.block" />
-            <argument>Reign About-us block (Footer)</argument>
+            <argument>Reign About-us block (bottom)</argument>
             <argument type="service" id="templating" />
+        </service>
+
+        <service id="ryl.reign.block.contactinfo.sm" class="Ryl\ReignThemeBundle\Block\SmallContactInfoBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Contact-Info block (bottom)</argument>
+            <argument type="service" id="templating" />
+        </service>
+
+        <service id="ryl.reign.block.recentposts.sm" class="Ryl\ReignThemeBundle\Block\SmallRecentPostsBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Recent Posts block (bottom)</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="sonata.news.manager.post" />
+            <argument type="service" id="service_container" />
+            <argument type="service" id="sonata.classification.manager.collection" />
+        </service>
+
+        <service id="ryl.reign.block.copyright" class="Ryl\ReignThemeBundle\Block\CopyrightBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Copyright block (footer)</argument>
+            <argument type="service" id="templating" />
+        </service>
+
+        <service id="ryl.reign.block.social.sm" class="Ryl\ReignThemeBundle\Block\SmallSocialBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Social-Info block (footer)</argument>
+            <argument type="service" id="templating" />
+        </service>
+
+        <service id="ryl.reign.block.comments.bottom" class="Ryl\ReignThemeBundle\Block\BottomRecentCommentsBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Recent comments block (bottom)</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="sonata.news.manager.comment" />
+            <argument type="service" id="sonata.admin.pool" on-invalid="ignore" />
+        </service>
+
+        <service id="ryl.reign.block.popularposts.side" class="Ryl\ReignThemeBundle\Block\SidePopularPostsBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Popular Posts (side)</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="sonata.news.manager.post" />
+            <argument type="service" id="sonata.admin.pool" on-invalid="ignore" />
+        </service>
+
+        <service id="ryl.reign.block.populartags.side" class="Ryl\ReignThemeBundle\Block\SidePopularTagsBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Popular Tags (side)</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="sonata.classification.manager.tag" />
         </service>
 
     </services>

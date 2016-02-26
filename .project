@@ -33,21 +33,30 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1411807802482</id>
+			<id>1456054732452</id>
 			<name></name>
-			<type>10</type>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-logs</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1456054732455</id>
+			<name></name>
+			<type>26</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
 				<arguments>1.0-name-matches-true-false-cache</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1411807802548</id>
+			<id>1456054732458</id>
 			<name></name>
-			<type>10</type>
+			<type>6</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-false-logs</arguments>
+				<arguments>1.0-name-matches-false-false-*.tar</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>

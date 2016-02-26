@@ -36,14 +36,14 @@ class Builder extends ContainerAware
     {
         $isFooter = array_key_exists('is_footer', $options) ? $options['is_footer'] : false;
 
-        $shopCategories = $this->container->get('sonata.classification.manager.category')->findBy(array('enabled' => true, 'parent' => null));
-
         $menuOptions = array_merge($options, array(
             'childrenAttributes' => array('class' => 'nav nav-pills'),
         ));
 
         $menu = $factory->createItem('main', $menuOptions);
 
+        /*
+        $shopCategories = $this->container->get('sonata.classification.manager.category')->findBy(array('enabled' => true, 'parent' => null));
         $shopMenuParams = array('route' => 'sonata_catalog_index');
 
         if (count($shopCategories) > 0 && !$isFooter) {
@@ -51,7 +51,7 @@ class Builder extends ContainerAware
                 'attributes' => array('class' => 'dropdown'),
                 'childrenAttributes' => array('class' => 'dropdown-menu'),
                 'linkAttributes' => array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown', 'data-target' => '#'),
-                'label' => 'Products <b class="caret caret-menu"></b>',
+                'label' => 'Projets <b class="caret caret-menu"></b>',
                 'extras' => array(
                     'safe_label' => true,
                 )
@@ -66,9 +66,6 @@ class Builder extends ContainerAware
         }
 
         $shop = $menu->addChild('Shop', $shopMenuParams);
-
-        $menu->addChild('News', array('route' => 'sonata_news_home'));
-
         foreach ($shopCategories as $category) {
             $shop->addChild($category->getName(), array(
                 'route' => 'sonata_catalog_category',
@@ -78,6 +75,12 @@ class Builder extends ContainerAware
                 )
             );
         }
+		*/
+        
+        $menu->addChild('Campains', array('route' => 'project'));
+        $menu->addChild('Sponsors', array('route' => 'sponsor'));
+        
+        $menu->addChild('News', array('route' => 'sonata_news_home'));
 
         $dropdownExtrasOptions = $isFooter ? array(
             'uri' => "#",
@@ -93,14 +96,15 @@ class Builder extends ContainerAware
                 'safe_label' => true,
             )
         );
+        
+        /*
         $extras = $factory->createItem('Discover', $dropdownExtrasOptions);
-
         $extras->addChild('Bundles', array('route' => 'page_slug', 'routeParameters' => array('path' => '/bundles')));
         $extras->addChild('Api', array('route' => 'page_slug', 'routeParameters' => array('path' => '/api-landing')));
         $extras->addChild('Gallery', array('route' => 'sonata_media_gallery_index'));
         $extras->addChild('Media & SEO', array('route' => 'sonata_demo_media'));
-
         $menu->addChild($extras);
+        */
 
         $menu->addChild('Admin', array(
             'route' => 'page_slug',

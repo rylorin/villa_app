@@ -11,7 +11,7 @@ cmf_routing:
             router.default: 100
 
 sonata_page:
-    multisite:             host_with_path # host
+    multisite:             host # host_with_path
     use_streamed_response: false # set the value to false in debug mode or if the reverse proxy does not handle streamed response
 
     ignore_uri_patterns:
@@ -46,7 +46,7 @@ sonata_page:
         javascripts:
             - assetic/sonata_front_js.js
 
-    default_template: default
+    default_template: reign_simple_full_width
     templates:
         default:
             path: 'ApplicationSonataPageBundle::demo_layout.html.twig'
@@ -109,8 +109,107 @@ sonata_page:
                      B: content_bottom
                      F: footer
 
+        blank:
+            path: 'SonataPageBundle::blank.html.twig'
+            name: 'blank'
+
+        reign_index_mp_image_classic:
+            path: 'RylReignThemeBundle::reign_index_mp_image_classic.html.twig'
+            name: 'reign_index_mp_image_classic'
+            containers:
+                 header:
+                     name: Header
+                 content_top:
+                     name: Top content
+                 content:
+                     name: Main content
+#                 content_bottom:
+#                     name: Bottom content
+            matrix:
+                 layout: |
+                     HHHHHHHH
+                     TTTTTTTT
+                     CCCCCCCC
+#                     BBBBBBBB
+                 mapping:
+                     H: header
+                     T: content_top
+                     C: content
+#                     B: content_bottom
+
+        reign_simple_full_width:
+            path: 'RylReignThemeBundle::reign_simple_full_width.html.twig'
+            name: 'reign_simple_full_width'
+            containers:
+                 header:
+                     name: Header
+                 content_top:
+                     name: Top content
+                 content:
+                     name: Main content
+            matrix:
+                 layout: |
+                     HHHHHHHH
+                     TTTTTTTT
+                     CCCCCCCC
+                 mapping:
+                     H: header
+                     T: content_top
+                     C: content
+
+        reign_blog_single_full_width:
+            path: 'RylReignThemeBundle::reign_blog_single_full_width.html.twig'
+            name: 'reign_blog_single_full_width'
+            containers:
+                 header:
+                     name: Header
+                 content_top:
+                     name: Top content
+                 content:
+                     name: Main content
+#                 content_bottom:
+#                     name: Bottom content
+            matrix:
+                 layout: |
+                     HHHHHHHH
+                     TTTTTTTT
+                     CCCCCCCC
+#                     BBBBBBBB
+                 mapping:
+                     H: header
+                     T: content_top
+                     C: content
+#                     B: content_bottom
+
+        reign_blog_standard_right_sidebar:
+            path: 'RylReignThemeBundle::reign_blog_standard_right_sidebar.html.twig'
+            name: 'reign_blog_standard_right_sidebar'
+            containers:
+                 header:
+                     name: Header
+                 content_top:
+                     name: Top content
+                 content:
+                     name: Main content
+                 rigth_col:
+                     name: Right content
+#                 content_bottom:
+#                     name: Bottom content
+            matrix:
+                 layout: |
+                     HHHHHHHH
+                     TTTTTTTT
+                     CCCCCCRR
+#                     BBBBBBBB
+                 mapping:
+                     H: header
+                     T: content_top
+                     C: content
+                     R: rigth_col
+#                     B: content_bottom
+                     
     page_defaults:
-        homepage: { decorate: false, enabled: true }
+        homepage: { decorate: false, enabled: true }	# RYL: homepage not defined?
 
     caches:
         esi:

@@ -9,6 +9,8 @@ sonata_block:
         "SonataDemoBundle:Builder:mainMenu": "Main Menu"
 
     blocks:
+        sonata.admin.block.stats:
+            contexts:   [admin]
         sonata.admin.block.admin_list:
             contexts:   [admin]
         sonata.admin.block.search_result:
@@ -40,7 +42,18 @@ sonata_block:
 
         # NewsBundle's Blocks
         sonata.news.block.recent_comments:
+            templates:
+                1:
+                    name: Reign bottom widget
+                    template: RylReignThemeBundle:Block:comments_bottom.html.twig
         sonata.news.block.recent_posts:
+            templates:
+                1:
+                    name: Reign bottom widget
+                    template: RylReignThemeBundle:Block:posts-sm.html.twig
+                2:
+                    name: Reign side widget
+                    template: RylReignThemeBundle:Block:posts_side.html.twig
 
         # Ecommerce's Blocks
         sonata.order.block.recent_orders:
@@ -50,9 +63,6 @@ sonata_block:
         sonata.product.block.filters_menu:
         sonata.product.block.variations_form:
         sonata.customer.block.recent_customers:
-        sonata.basket.block.nb_items:
-            cache: sonata.page.cache.js_async
-            contexts: [user]
         sonata.basket.block.nb_items:
             cache: sonata.page.cache.js_async
             contexts: [user]
@@ -91,3 +101,26 @@ sonata_block:
         sonata.formatter.block.formatter:
 
         sonata.seo.block.breadcrumb.homepage:
+        
+        # RYL
+        ryl.reign.block.about: ~
+        ryl.reign.block.about.sm:
+        ryl.reign.block.contactinfo.sm: ~
+        ryl.reign.block.recentposts.sm: ~
+        ryl.reign.block.copyright: ~
+        ryl.reign.block.social.sm: ~
+        ryl.reign.block.comments.bottom: ~
+        ryl.reign.block.popularposts.side: ~
+        ryl.reign.block.populartags.side: ~
+        
+    container:
+        types: ~
+        templates:
+            SonataPageBundle:Block:block_container.html.twig: SonataPageBundle default template
+            SonataSeoBundle:Block:block_social_container.html.twig: SonataSeoBundle (to contain social buttons)
+            RylReignThemeBundle:Block:header.html.twig: Reign theme navbar
+            RylReignThemeBundle:Block:content_top.html.twig: Reign theme top content (default)
+            RylReignThemeBundle:Block:content_top_home.html.twig: Reign theme top content (home)
+            RylReignThemeBundle:Block:content_bottom.html.twig: Reign theme bottom widgets
+            RylReignThemeBundle:Block:footer.html.twig: Reign theme footer
+            

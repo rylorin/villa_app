@@ -1,15 +1,16 @@
 /*
  * Helpers
  */
+/* en conflit avec aounter-box
 .number {
     text-align: right !important;
 }
+*/
 .truncate {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 /*
  * Sonata Demo
  */

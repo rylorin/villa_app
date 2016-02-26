@@ -19,5 +19,19 @@ _api:
     resource: routing_api.yml
     prefix:   /api
 
+ryl_retirement:
+    resource: "@RylRetirementBundle/Resources/config/routing.xml"
+    prefix:   /retirement
 
+ens_jobeet:
+    resource: "@EnsJobeetBundle/Resources/config/routing.yml"
+    prefix:   /jobeet
+
+ryl_charity:
+    resource: "@RylCharityBundle/Resources/config/routing.xml"
+    prefix:   /charity
+
+#ryl_reign_theme:
+#    resource: "@RylReignThemeBundle/Resources/config/routing.xml"
+#    prefix:   /
 
