@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="2" skipped="0" name="Check invoices administration in backend" tests="62" time="2.581332">
+    <testcase classname="Check invoices administration in backend" name="Check pages security depending on user credentials, Ex #1" time="1.200117" assertions="19">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check invoices administration in backend" name="Check pages security depending on user credentials, Ex #2" time="1.379793" assertions="23">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+</testsuite>

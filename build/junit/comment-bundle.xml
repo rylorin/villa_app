@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Comment Bundle Test Suite" tests="11" assertions="46" failures="0" errors="0" time="0.156787">
+    <testsuite name="Sonata\CommentBundle\Tests\Document\BaseCommentTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Document/BaseCommentTest.php" namespace="Sonata\CommentBundle\Tests\Document" fullPackage="Sonata.CommentBundle.Tests.Document" tests="1" assertions="9" failures="0" errors="0" time="0.088811">
+      <testcase name="testGetters" class="Sonata\CommentBundle\Tests\Document\BaseCommentTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Document/BaseCommentTest.php" line="24" assertions="9" time="0.088811"/>
+    </testsuite>
+    <testsuite name="Sonata\CommentBundle\Tests\Document\BaseThreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Document/BaseThreadTest.php" namespace="Sonata\CommentBundle\Tests\Document" fullPackage="Sonata.CommentBundle.Tests.Document" tests="1" assertions="5" failures="0" errors="0" time="0.000591">
+      <testcase name="testGetters" class="Sonata\CommentBundle\Tests\Document\BaseThreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Document/BaseThreadTest.php" line="23" assertions="5" time="0.000591"/>
+    </testsuite>
+    <testsuite name="Sonata\CommentBundle\Tests\Entity\BaseCommentTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Entity/BaseCommentTest.php" namespace="Sonata\CommentBundle\Tests\Entity" fullPackage="Sonata.CommentBundle.Tests.Entity" tests="1" assertions="9" failures="0" errors="0" time="0.001837">
+      <testcase name="testGetters" class="Sonata\CommentBundle\Tests\Entity\BaseCommentTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Entity/BaseCommentTest.php" line="24" assertions="9" time="0.001837"/>
+    </testsuite>
+    <testsuite name="Sonata\CommentBundle\Tests\Entity\BaseThreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Entity/BaseThreadTest.php" namespace="Sonata\CommentBundle\Tests\Entity" fullPackage="Sonata.CommentBundle.Tests.Entity" tests="2" assertions="8" failures="0" errors="0" time="0.007992">
+      <testcase name="testGetters" class="Sonata\CommentBundle\Tests\Entity\BaseThreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Entity/BaseThreadTest.php" line="26" assertions="6" time="0.000658"/>
+      <testcase name="testCategoryGetters" class="Sonata\CommentBundle\Tests\Entity\BaseThreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Entity/BaseThreadTest.php" line="52" assertions="2" time="0.007334"/>
+    </testsuite>
+    <testsuite name="Sonata\CommentBundle\Tests\Note\NoteProviderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Note/NoteProviderTest.php" namespace="Sonata\CommentBundle\Tests\Note" fullPackage="Sonata.CommentBundle.Tests.Note" tests="2" assertions="3" failures="0" errors="0" time="0.009686">
+      <testcase name="testFindAverageNote" class="Sonata\CommentBundle\Tests\Note\NoteProviderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Note/NoteProviderTest.php" line="26" assertions="2" time="0.007505"/>
+      <testcase name="testGetValues" class="Sonata\CommentBundle\Tests\Note\NoteProviderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Note/NoteProviderTest.php" line="48" assertions="1" time="0.002181"/>
+    </testsuite>
+    <testsuite name="Sonata\CommentBundle\Tests\Renderer\CommentStatusRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Renderer/CommentStatusRendererTest.php" namespace="Sonata\CommentBundle\Tests\Renderer" fullPackage="Sonata.CommentBundle.Tests.Renderer" tests="3" assertions="10" failures="0" errors="0" time="0.005062">
+      <testcase name="testHandles" class="Sonata\CommentBundle\Tests\Renderer\CommentStatusRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Renderer/CommentStatusRendererTest.php" line="27" assertions="6" time="0.004210"/>
+      <testcase name="testGetValidClass" class="Sonata\CommentBundle\Tests\Renderer\CommentStatusRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Renderer/CommentStatusRendererTest.php" line="47" assertions="2" time="0.000516"/>
+      <testcase name="testGetInvalidClass" class="Sonata\CommentBundle\Tests\Renderer\CommentStatusRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Renderer/CommentStatusRendererTest.php" line="60" assertions="2" time="0.000336"/>
+    </testsuite>
+    <testsuite name="Sonata\CommentBundle\Tests\Resources\XliffTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/comment-bundle/Tests/Resources/XliffTest.php" namespace="Sonata\CommentBundle\Tests\Resources" fullPackage="Sonata.CommentBundle.Tests.Resources" tests="1" assertions="2" failures="0" errors="0" time="0.042808">
+      <testsuite name="Sonata\CommentBundle\Tests\Resources\XliffTest::testXliff" tests="1" assertions="2" failures="0" errors="0" time="0.042808">
+        <testcase name="testXliff with data set #0" assertions="2" time="0.042808"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

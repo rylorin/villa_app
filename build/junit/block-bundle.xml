@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BlockBundle Test Suite" tests="63" assertions="165" failures="0" errors="0" time="0.350979">
+    <testsuite name="Sonata\BlockBundle\Tests\Block\BlockContextManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockContextManagerTest.php" namespace="Sonata\BlockBundle\Tests\Block" fullPackage="Sonata.BlockBundle.Tests.Block" tests="3" assertions="15" failures="0" errors="0" time="0.037750">
+      <testcase name="testGetWithValidData" class="Sonata\BlockBundle\Tests\Block\BlockContextManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockContextManagerTest.php" line="19" assertions="5" time="0.018746"/>
+      <testcase name="testGetWithSettings" class="Sonata\BlockBundle\Tests\Block\BlockContextManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockContextManagerTest.php" line="47" assertions="5" time="0.004206"/>
+      <testcase name="testWithInvalidSettings" class="Sonata\BlockBundle\Tests\Block\BlockContextManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockContextManagerTest.php" line="85" assertions="5" time="0.014798"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Block\BlockContextTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockExecutionContextTest.php" namespace="Sonata\BlockBundle\Tests\Block" fullPackage="Sonata.BlockBundle.Tests.Block" tests="2" assertions="4" failures="0" errors="0" time="0.001044">
+      <testcase name="testBasicFeature" class="Sonata\BlockBundle\Tests\Block\BlockContextTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockExecutionContextTest.php" line="18" assertions="3" time="0.000421"/>
+      <testcase name="testInvalidParameter" class="Sonata\BlockBundle\Tests\Block\BlockContextTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockExecutionContextTest.php" line="35" assertions="1" time="0.000623"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Block\BlockLoaderChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockLoaderChainTest.php" namespace="Sonata\BlockBundle\Tests\Block" fullPackage="Sonata.BlockBundle.Tests.Block" tests="3" assertions="7" failures="0" errors="0" time="0.009612">
+      <testcase name="testBlockNotFoundException" class="Sonata\BlockBundle\Tests\Block\BlockLoaderChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockLoaderChainTest.php" line="22" assertions="1" time="0.007084"/>
+      <testcase name="testLoaderWithSupportedLoader" class="Sonata\BlockBundle\Tests\Block\BlockLoaderChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockLoaderChainTest.php" line="28" assertions="3" time="0.001298"/>
+      <testcase name="testLoaderWithUnSupportedLoader" class="Sonata\BlockBundle\Tests\Block\BlockLoaderChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockLoaderChainTest.php" line="46" assertions="3" time="0.001230"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Block\BlockRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockRendererTest.php" namespace="Sonata\BlockBundle\Tests\Block" fullPackage="Sonata.BlockBundle.Tests.Block" tests="3" assertions="14" failures="0" errors="0" time="0.023896">
+      <testcase name="testRenderWithoutErrors" class="Sonata\BlockBundle\Tests\Block\BlockRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockRendererTest.php" line="57" assertions="3" time="0.016975"/>
+      <testcase name="testRenderWithWrongResponse" class="Sonata\BlockBundle\Tests\Block\BlockRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockRendererTest.php" line="85" assertions="6" time="0.003661"/>
+      <testcase name="testRenderBlockWithException" class="Sonata\BlockBundle\Tests\Block\BlockRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockRendererTest.php" line="120" assertions="5" time="0.003260"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Block\BlockServiceManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockServiceManagerTest.php" namespace="Sonata\BlockBundle\Tests\Block" fullPackage="Sonata.BlockBundle.Tests.Block" tests="5" assertions="10" failures="0" errors="0" time="0.005373">
+      <testcase name="testGetBlockService" class="Sonata\BlockBundle\Tests\Block\BlockServiceManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockServiceManagerTest.php" line="19" assertions="3" time="0.003182"/>
+      <testcase name="testInvalidServiceType" class="Sonata\BlockBundle\Tests\Block\BlockServiceManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockServiceManagerTest.php" line="39" assertions="3" time="0.000930"/>
+      <testcase name="testGetBlockServiceException" class="Sonata\BlockBundle\Tests\Block\BlockServiceManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockServiceManagerTest.php" line="59" assertions="2" time="0.000497"/>
+      <testcase name="testGetEmptyListFromInvalidContext" class="Sonata\BlockBundle\Tests\Block\BlockServiceManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockServiceManagerTest.php" line="71" assertions="1" time="0.000335"/>
+      <testcase name="testGetListFromValidContext" class="Sonata\BlockBundle\Tests\Block\BlockServiceManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/BlockServiceManagerTest.php" line="83" assertions="1" time="0.000429"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Block\ServiceLoaderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/Loader/ServiceLoaderTest.php" namespace="Sonata\BlockBundle\Tests\Block" fullPackage="Sonata.BlockBundle.Tests.Block" tests="2" assertions="3" failures="0" errors="0" time="0.022841">
+      <testcase name="testBlockNotFoundException" class="Sonata\BlockBundle\Tests\Block\ServiceLoaderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/Loader/ServiceLoaderTest.php" line="22" assertions="1" time="0.000495"/>
+      <testcase name="testLoader" class="Sonata\BlockBundle\Tests\Block\ServiceLoaderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/Loader/ServiceLoaderTest.php" line="28" assertions="2" time="0.022346"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Block\Service\RssBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/Service/RssBlockServiceTest.php" namespace="Sonata\BlockBundle\Tests\Block\Service" fullPackage="Sonata.BlockBundle.Tests.Block.Service" tests="1" assertions="1" failures="0" errors="0" time="0.007695">
+      <testcase name="testService" class="Sonata\BlockBundle\Tests\Block\Service\RssBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/Service/RssBlockServiceTest.php" line="25" assertions="1" time="0.007695"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Block\Service\TextBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/Service/TextBlockServiceTest.php" namespace="Sonata\BlockBundle\Tests\Block\Service" fullPackage="Sonata.BlockBundle.Tests.Block.Service" tests="1" assertions="2" failures="0" errors="0" time="0.002121">
+      <testcase name="testService" class="Sonata\BlockBundle\Tests\Block\Service\TextBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Block/Service/TextBlockServiceTest.php" line="21" assertions="2" time="0.002121"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Cache\HttpCacheHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Cache/HttpCacheHandlerTest.php" namespace="Sonata\BlockBundle\Tests\Cache" fullPackage="Sonata.BlockBundle.Tests.Cache" tests="3" assertions="3" failures="0" errors="0" time="0.009355">
+      <testcase name="testComputeTtlWithPrivateResponse" class="Sonata\BlockBundle\Tests\Cache\HttpCacheHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Cache/HttpCacheHandlerTest.php" line="22" assertions="1" time="0.003614"/>
+      <testcase name="testComputeTtlWithPublicResponse" class="Sonata\BlockBundle\Tests\Cache\HttpCacheHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Cache/HttpCacheHandlerTest.php" line="35" assertions="1" time="0.004575"/>
+      <testcase name="testResponseTtlNotAlteredIfNoRenderedBlock" class="Sonata\BlockBundle\Tests\Cache\HttpCacheHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Cache/HttpCacheHandlerTest.php" line="48" assertions="1" time="0.001166"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Cache\NoopHttpCacheHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Cache/NoopHttpCacheHandlerTest.php" namespace="Sonata\BlockBundle\Tests\Cache" fullPackage="Sonata.BlockBundle.Tests.Cache" tests="1" assertions="0" failures="0" errors="0" time="0.000666">
+      <testcase name="testComputeTtl" class="Sonata\BlockBundle\Tests\Cache\NoopHttpCacheHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Cache/NoopHttpCacheHandlerTest.php" line="18" assertions="0" time="0.000666"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/DependencyInjection/ConfigurationTest.php" namespace="Sonata\BlockBundle\Tests" fullPackage="Sonata.BlockBundle.Tests" tests="2" assertions="3" failures="0" errors="0" time="0.038864">
+      <testcase name="testOptions" class="Sonata\BlockBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/DependencyInjection/ConfigurationTest.php" line="19" assertions="1" time="0.034405"/>
+      <testcase name="testOptionsDuplicated" class="Sonata\BlockBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/DependencyInjection/ConfigurationTest.php" line="101" assertions="2" time="0.004459"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\BlockEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Event/BlockEventTest.php" namespace="Sonata\BlockBundle\Tests" fullPackage="Sonata.BlockBundle.Tests" tests="1" assertions="5" failures="0" errors="0" time="0.001368">
+      <testcase name="testBlockEvent" class="Sonata\BlockBundle\Tests\BlockEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Event/BlockEventTest.php" line="19" assertions="5" time="0.001368"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\TextBlockListenerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Event/TextBlockListenerTest.php" namespace="Sonata\BlockBundle\Tests" fullPackage="Sonata.BlockBundle.Tests" tests="2" assertions="5" failures="0" errors="0" time="0.023205">
+      <testcase name="testEvent" class="Sonata\BlockBundle\Tests\TextBlockListenerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Event/TextBlockListenerTest.php" line="21" assertions="2" time="0.000771"/>
+      <testcase name="testEventWithAdmin" class="Sonata\BlockBundle\Tests\TextBlockListenerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Event/TextBlockListenerTest.php" line="35" assertions="3" time="0.022434"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\DebugOnlyFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/DebugOnlyFilterTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Renderer" fullPackage="Sonata.BlockBundle.Tests.Exception.Renderer" tests="2" assertions="2" failures="0" errors="0" time="0.001893">
+      <testcase name="testWithDebugEnabled" class="Sonata\BlockBundle\Tests\Exception\Renderer\DebugOnlyFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/DebugOnlyFilterTest.php" line="25" assertions="1" time="0.001553"/>
+      <testcase name="testWithDebugDisabled" class="Sonata\BlockBundle\Tests\Exception\Renderer\DebugOnlyFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/DebugOnlyFilterTest.php" line="42" assertions="1" time="0.000340"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\IgnoreClassFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/IgnoreClassFilterTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Renderer" fullPackage="Sonata.BlockBundle.Tests.Exception.Renderer" tests="2" assertions="2" failures="0" errors="0" time="0.002583">
+      <testcase name="testWithInheritedException" class="Sonata\BlockBundle\Tests\Exception\Renderer\IgnoreClassFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/IgnoreClassFilterTest.php" line="25" assertions="1" time="0.002304"/>
+      <testcase name="testWithNonInheritedException" class="Sonata\BlockBundle\Tests\Exception\Renderer\IgnoreClassFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/IgnoreClassFilterTest.php" line="42" assertions="1" time="0.000279"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\KeepAllFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/KeepAllFilterTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Renderer" fullPackage="Sonata.BlockBundle.Tests.Exception.Renderer" tests="2" assertions="2" failures="0" errors="0" time="0.000923">
+      <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\KeepAllFilterTest::testFilter" tests="2" assertions="2" failures="0" errors="0" time="0.000923">
+        <testcase name="testFilter with data set #0" assertions="1" time="0.000649"/>
+        <testcase name="testFilter with data set #1" assertions="1" time="0.000274"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\KeepNoneFilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Filter/KeepNoneFilterTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Renderer" fullPackage="Sonata.BlockBundle.Tests.Exception.Renderer" tests="2" assertions="2" failures="0" errors="0" time="0.000853">
+      <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\KeepNoneFilterTest::testFilter" tests="2" assertions="2" failures="0" errors="0" time="0.000853">
+        <testcase name="testFilter with data set #0" assertions="1" time="0.000670"/>
+        <testcase name="testFilter with data set #1" assertions="1" time="0.000183"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\InlineDebugRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/InlineDebugRendererTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Renderer" fullPackage="Sonata.BlockBundle.Tests.Exception.Renderer" tests="2" assertions="5" failures="0" errors="0" time="0.019984">
+      <testcase name="testRenderWithoutDebug" class="Sonata\BlockBundle\Tests\Exception\Renderer\InlineDebugRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/InlineDebugRendererTest.php" line="25" assertions="2" time="0.002208"/>
+      <testcase name="testRenderWithDebugEnabled" class="Sonata\BlockBundle\Tests\Exception\Renderer\InlineDebugRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/InlineDebugRendererTest.php" line="47" assertions="3" time="0.017776"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\InlineRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/InlineRendererTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Renderer" fullPackage="Sonata.BlockBundle.Tests.Exception.Renderer" tests="1" assertions="3" failures="0" errors="0" time="0.003394">
+      <testcase name="testRender" class="Sonata\BlockBundle\Tests\Exception\Renderer\InlineRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/InlineRendererTest.php" line="25" assertions="3" time="0.003394"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Renderer\MonkeyThrowRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/MonkeyThrowRendererTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Renderer" fullPackage="Sonata.BlockBundle.Tests.Exception.Renderer" tests="2" assertions="2" failures="0" errors="0" time="0.001623">
+      <testcase name="testRenderWithStandardException" class="Sonata\BlockBundle\Tests\Exception\Renderer\MonkeyThrowRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/MonkeyThrowRendererTest.php" line="27" assertions="1" time="0.001108"/>
+      <testcase name="testRenderWithRuntimeException" class="Sonata\BlockBundle\Tests\Exception\Renderer\MonkeyThrowRendererTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Renderer/MonkeyThrowRendererTest.php" line="46" assertions="1" time="0.000515"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Exception\Strategy\StrategyManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Strategy/StrategyManagerTest.php" namespace="Sonata\BlockBundle\Tests\Exception\Strategy" fullPackage="Sonata.BlockBundle.Tests.Exception.Strategy" tests="6" assertions="27" failures="0" errors="0" time="0.015256">
+      <testcase name="testGetBlockRendererWithExisting" class="Sonata\BlockBundle\Tests\Exception\Strategy\StrategyManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Strategy/StrategyManagerTest.php" line="116" assertions="4" time="0.010036"/>
+      <testcase name="testGetBlockRendererWithNonExisting" class="Sonata\BlockBundle\Tests\Exception\Strategy\StrategyManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Strategy/StrategyManagerTest.php" line="132" assertions="4" time="0.000885"/>
+      <testcase name="testGetBlockFilterWithExisting" class="Sonata\BlockBundle\Tests\Exception\Strategy\StrategyManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Strategy/StrategyManagerTest.php" line="148" assertions="4" time="0.000942"/>
+      <testcase name="testGetBlockFilterWithNonExisting" class="Sonata\BlockBundle\Tests\Exception\Strategy\StrategyManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Strategy/StrategyManagerTest.php" line="164" assertions="4" time="0.000906"/>
+      <testcase name="testHandleExceptionWithKeepNoneFilter" class="Sonata\BlockBundle\Tests\Exception\Strategy\StrategyManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Strategy/StrategyManagerTest.php" line="180" assertions="5" time="0.001141"/>
+      <testcase name="testHandleExceptionWithKeepAllFilter" class="Sonata\BlockBundle\Tests\Exception\Strategy\StrategyManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Exception/Strategy/StrategyManagerTest.php" line="200" assertions="6" time="0.001346"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Form\Type\ServiceListTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Form/Type/ServiceListTypeTest.php" namespace="Sonata\BlockBundle\Tests\Form\Type" fullPackage="Sonata.BlockBundle.Tests.Form.Type" tests="3" assertions="6" failures="0" errors="0" time="0.046256">
+      <testcase name="testFormType" class="Sonata\BlockBundle\Tests\Form\Type\ServiceListTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Form/Type/ServiceListTypeTest.php" line="20" assertions="2" time="0.000919"/>
+      <testcase name="testOptionsWithInvalidContext" class="Sonata\BlockBundle\Tests\Form\Type\ServiceListTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Form/Type/ServiceListTypeTest.php" line="33" assertions="1" time="0.041483"/>
+      <testcase name="testOptionWithValidContext" class="Sonata\BlockBundle\Tests\Form\Type\ServiceListTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Form/Type/ServiceListTypeTest.php" line="47" assertions="3" time="0.003854"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Model\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Model/BlockTest.php" namespace="Sonata\BlockBundle\Tests\Model" fullPackage="Sonata.BlockBundle.Tests.Model" tests="3" assertions="16" failures="0" errors="0" time="0.008359">
+      <testcase name="testGetTtl" class="Sonata\BlockBundle\Tests\Model\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Model/BlockTest.php" line="17" assertions="6" time="0.007638"/>
+      <testcase name="testSetterGetter" class="Sonata\BlockBundle\Tests\Model\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Model/BlockTest.php" line="41" assertions="7" time="0.000483"/>
+      <testcase name="testSetting" class="Sonata\BlockBundle\Tests\Model\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Model/BlockTest.php" line="66" assertions="3" time="0.000238"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Resources\XliffTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Resources/XliffTest.php" namespace="Sonata\BlockBundle\Tests\Resources" fullPackage="Sonata.BlockBundle.Tests.Resources" tests="1" assertions="0" failures="0" errors="0" time="0.000807">
+      <testsuite name="Sonata\BlockBundle\Tests\Resources\XliffTest::testXliff" tests="1" assertions="0" failures="0" errors="0" time="0.000807">
+        <testcase name="testXliff with data set #0" assertions="0" time="0.000807"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Templating\Helper\BlockHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Templating/Helper/BlockHelperTest.php" namespace="Sonata\BlockBundle\Tests\Templating\Helper" fullPackage="Sonata.BlockBundle.Tests.Templating.Helper" tests="2" assertions="12" failures="0" errors="0" time="0.008083">
+      <testcase name="testRenderEventWithNoListener" class="Sonata\BlockBundle\Tests\Templating\Helper\BlockHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Templating/Helper/BlockHelperTest.php" line="22" assertions="2" time="0.005932"/>
+      <testcase name="testRenderEventWithListeners" class="Sonata\BlockBundle\Tests\Templating\Helper\BlockHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Templating/Helper/BlockHelperTest.php" line="37" assertions="10" time="0.002151"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Twig\Extension\BlockExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Twig/Extension/BlockExtensionTest.php" namespace="Sonata\BlockBundle\Twig\Extension" fullPackage="Sonata.BlockBundle.Twig.Extension" tests="4" assertions="8" failures="0" errors="0" time="0.020750">
+      <testsuite name="Sonata\BlockBundle\Twig\Extension\BlockExtensionTest::testFunction" tests="4" assertions="8" failures="0" errors="0" time="0.020750">
+        <testcase name="testFunction with data set #0" assertions="2" time="0.015050"/>
+        <testcase name="testFunction with data set #1" assertions="2" time="0.002636"/>
+        <testcase name="testFunction with data set #2" assertions="2" time="0.001544"/>
+        <testcase name="testFunction with data set #3" assertions="2" time="0.001520"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Twig\Extension\GlobalVariablesTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Twig/GlobalVariablesTest.php" namespace="Sonata\BlockBundle\Twig\Extension" fullPackage="Sonata.BlockBundle.Twig.Extension" tests="1" assertions="1" failures="0" errors="0" time="0.000443">
+      <testcase name="testGlobalVariables" class="Sonata\BlockBundle\Twig\Extension\GlobalVariablesTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Twig/GlobalVariablesTest.php" line="10" assertions="1" time="0.000443"/>
+    </testsuite>
+    <testsuite name="Sonata\BlockBundle\Tests\Entity\RecursiveBlockIteratorIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Util/RecursiveBlockIteratorIteratorTest.php" namespace="Sonata\BlockBundle\Tests\Entity" fullPackage="Sonata.BlockBundle.Tests.Entity" tests="1" assertions="5" failures="0" errors="0" time="0.035983">
+      <testcase name="testInterface" class="Sonata\BlockBundle\Tests\Entity\RecursiveBlockIteratorIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/block-bundle/Tests/Util/RecursiveBlockIteratorIteratorTest.php" line="20" assertions="5" time="0.035983"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

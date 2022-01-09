@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the categories browsing and security" tests="152" time="12.812623">
+    <testcase classname="Check the categories browsing and security" name="Check the correct display of catalog" time="2.105398" assertions="7">
+    </testcase>
+    <testcase classname="Check the categories browsing and security" name="Browse catalog through the Goodies' category" time="4.704897" assertions="9">
+    </testcase>
+    <testcase classname="Check the categories browsing and security" name="Browse catalog through the Travels' category" time="3.683759" assertions="7">
+    </testcase>
+    <testcase classname="Check the categories browsing and security" name="Browse catalog through the Dummies' category" time="2.316261" assertions="12">
+    </testcase>
+</testsuite>

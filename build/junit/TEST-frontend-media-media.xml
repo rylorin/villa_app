@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="3" skipped="0" name="Check the Media / Gallery frontend" tests="162" time="3.726536">
+    <testcase classname="Check the Media / Gallery frontend" name="Check gallery list status code" time="1.281762" assertions="4">
+        <failure message="The text &quot;Gallery List&quot; was not found anywhere in the text of the current page." type="failed"><![CDATA[
+The text "Gallery List" was not found anywhere in the text of the current page.
+
++--[ HTTP/1.1 200 | http://demo.sonata-project.org/media/gallery/ | GoutteDriver ]
+|
+|  Sonata Project var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F'; (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');Note: this website is a demo of Sonata. Any orders placed on this site will not be processed. Neque quas quia nisi. Japan Canada Paris Switzerland
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the Media / Gallery frontend" name="Check Media &amp; SEO page status code" time="0.551998" assertions="4">
+    </testcase>
+    <testcase classname="Check the Media / Gallery frontend" name="Watch medias from a selected gallery" time="0.259819" assertions="2">
+    </testcase>
+    <testcase classname="Check the Media / Gallery frontend" name="Watch a selected media non authenticated" time="1.192644" assertions="3">
+        <failure message="The text &quot;Authentication&quot; was not found anywhere in the text of the current page." type="failed"><![CDATA[
+The text "Authentication" was not found anywhere in the text of the current page.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/media/view/ | GoutteDriver ]
+|
+|  Sonata Project var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F'; (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');Note: this website is a demo of Sonata. Any orders placed on this site will not be processed.
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the Media / Gallery frontend" name="Watch a selected media authenticated" time="0.436616" assertions="7">
+        <failure message="Form field with id|name|label|value &quot;username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "username" not found.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/media/view/ | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+</testsuite>

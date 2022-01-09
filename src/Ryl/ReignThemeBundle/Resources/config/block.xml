@@ -67,6 +67,31 @@
             <argument>Reign Popular Tags (side)</argument>
             <argument type="service" id="templating" />
             <argument type="service" id="sonata.classification.manager.tag" />
+            <argument type="service" id="sonata.classification.manager.context" />
+        </service>
+
+        <service id="ryl.reign.block.home.title" class="Ryl\ReignThemeBundle\Block\HomeTitleBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Title (home)</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="sonata.classification.manager.tag" />
+            <argument type="service" id="sonata.classification.manager.context" />
+        </service>
+
+        <service id="ryl.reign.block.home.newsletter" class="Ryl\ReignThemeBundle\Block\HomeNewsletterBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Newsletter (home)</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="form.factory" />
+            <argument>ryl_reigntheme_form_type_newsletter</argument>
+        </service>
+
+        <service id="ryl.reign.block.picture" class="Ryl\ReignThemeBundle\Block\PictureBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>Reign Picture block (homepage)</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="service_container" />
+            <argument type="service" id="sonata.media.manager.media" />
         </service>
 
     </services>

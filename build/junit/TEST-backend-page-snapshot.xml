@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the snapshot admin module" tests="126" time="15.346260">
+    <testcase classname="Check the snapshot admin module" name="Check snapshot admin pages when not connected" time="0.343853" assertions="3">
+    </testcase>
+    <testcase classname="Check the snapshot admin module" name="Check page admin pages when connected" time="4.101973" assertions="2">
+    </testcase>
+    <testcase classname="Check the snapshot admin module" name="Export JSON data" time="2.854948" assertions="3">
+    </testcase>
+    <testcase classname="Check the snapshot admin module" name="Export CSV data" time="2.798486" assertions="3">
+    </testcase>
+    <testcase classname="Check the snapshot admin module" name="Export XML data" time="2.232743" assertions="3">
+    </testcase>
+    <testcase classname="Check the snapshot admin module" name="Export XLS data" time="3.009459" assertions="3">
+    </testcase>
+</testsuite>

@@ -7,6 +7,7 @@ sonata_news:
     description:  %sonata_news.blog_description%
     salt:         %sonata_news.salt%
 
+    # permalink_generator: sonata.news.permalink.collection # /party/new-year
     # permalink_generator: sonata.news.permalink.category # /party/new-year
     permalink_generator: sonata.news.permalink.date # /2011/12/31/new-year
 

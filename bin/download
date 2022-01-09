@@ -1,0 +1,23 @@
+#!/bin/sh
+#set -x
+
+if [ $# -ge 1 ]; then
+        dir=/root/VillaMilaWines/${1}
+else
+        dir=/root/VillaMilaWines/staging
+fi
+if [ $# -ge 2 ]; then
+        remote=root@${2}
+else
+        remote=root@vps312177.ovh.net
+fi
+app=.
+
+${app}/app/console server:stop
+
+rsync -rv --update --exclude '.git' ${remote}:${dir}/app/db ${app}/app/
+rsync -rv --update --exclude '.git' ${remote}:${dir}/web/uploads ${app}/web/
+
+# ${app}/app/console server:start
+
+exit 0

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="105" assertions="168" failures="0" errors="8" time="211.608395">
+    <testsuite name="Ens\JobeetBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ens/JobeetBundle/Tests/Controller/DefaultControllerTest.php" namespace="Ens\JobeetBundle\Tests\Controller" fullPackage="Ens.JobeetBundle.Tests.Controller" tests="1" assertions="0" failures="0" errors="1" time="30.494901">
+      <testcase name="testIndex" class="Ens\JobeetBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ens/JobeetBundle/Tests/Controller/DefaultControllerTest.php" line="9" assertions="0" time="30.494901">
+        <error type="RuntimeException">Ens\JobeetBundle\Tests\Controller\DefaultControllerTest::testIndex
+RuntimeException: You must change the main Request object in the front controller (app.php) in order to use the `host_with_path` strategy
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/HostPathSiteSelector.php:35
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/BaseSiteSelector.php:94
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:457
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:164
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:53
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/ContainerAwareEventDispatcher.php:167
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:139
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2861
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2846
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2975
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2255
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Client.php:81
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Client.php:111
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Client.php:339
+/Users/ronan/Sites/sandbox/src/Ens/JobeetBundle/Tests/Controller/DefaultControllerTest.php:13
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Ens\JobeetBundle\Tests\Controller\JobControllerTest" file="/Users/ronan/Sites/sandbox/src/Ens/JobeetBundle/Tests/Controller/JobControllerTest.php" namespace="Ens\JobeetBundle\Tests\Controller" fullPackage="Ens.JobeetBundle.Tests.Controller" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="Ryl\CharityBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/CharityBundle/Tests/Controller/DefaultControllerTest.php" namespace="Ryl\CharityBundle\Tests\Controller" fullPackage="Ryl.CharityBundle.Tests.Controller" tests="1" assertions="0" failures="0" errors="1" time="0.065948">
+      <testcase name="testIndex" class="Ryl\CharityBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/CharityBundle/Tests/Controller/DefaultControllerTest.php" line="9" assertions="0" time="0.065948">
+        <error type="RuntimeException">Ryl\CharityBundle\Tests\Controller\DefaultControllerTest::testIndex
+RuntimeException: You must change the main Request object in the front controller (app.php) in order to use the `host_with_path` strategy
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/HostPathSiteSelector.php:35
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/BaseSiteSelector.php:94
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:457
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:164
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:53
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/ContainerAwareEventDispatcher.php:167
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:139
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2861
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2846
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2975
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2255
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Client.php:81
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Client.php:111
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Client.php:339
+/Users/ronan/Sites/sandbox/src/Ryl/CharityBundle/Tests/Controller/DefaultControllerTest.php:13
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Ryl\CharityBundle\Tests\Controller\ProjectControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/CharityBundle/Tests/Controller/ProjectControllerTest.php" namespace="Ryl\CharityBundle\Tests\Controller" fullPackage="Ryl.CharityBundle.Tests.Controller" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="Ryl\CharityBundle\Tests\Controller\SponsorControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/CharityBundle/Tests/Controller/SponsorControllerTest.php" namespace="Ryl\CharityBundle\Tests\Controller" fullPackage="Ryl.CharityBundle.Tests.Controller" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="Ryl\LandingBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/LandingBundle/Tests/Controller/DefaultControllerTest.php" namespace="Ryl\LandingBundle\Tests\Controller" fullPackage="Ryl.LandingBundle.Tests.Controller" tests="1" assertions="0" failures="0" errors="1" time="0.072490">
+      <testcase name="testIndex" class="Ryl\LandingBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/LandingBundle/Tests/Controller/DefaultControllerTest.php" line="9" assertions="0" time="0.072490">
+        <error type="RuntimeException">Ryl\LandingBundle\Tests\Controller\DefaultControllerTest::testIndex
+RuntimeException: You must change the main Request object in the front controller (app.php) in order to use the `host_with_path` strategy
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/HostPathSiteSelector.php:35
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/BaseSiteSelector.php:94
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:457
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:164
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:53
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/ContainerAwareEventDispatcher.php:167
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:139
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2861
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2846
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2975
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2255
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Client.php:81
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Client.php:111
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Client.php:339
+/Users/ronan/Sites/sandbox/src/Ryl/LandingBundle/Tests/Controller/DefaultControllerTest.php:13
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Ryl\RetirementBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/RetirementBundle/Tests/Controller/DefaultControllerTest.php" namespace="Ryl\RetirementBundle\Tests\Controller" fullPackage="Ryl.RetirementBundle.Tests.Controller" tests="1" assertions="0" failures="0" errors="1" time="0.082703">
+      <testcase name="testIndex" class="Ryl\RetirementBundle\Tests\Controller\DefaultControllerTest" file="/Users/ronan/Sites/sandbox/src/Ryl/RetirementBundle/Tests/Controller/DefaultControllerTest.php" line="9" assertions="0" time="0.082703">
+        <error type="RuntimeException">Ryl\RetirementBundle\Tests\Controller\DefaultControllerTest::testIndex
+RuntimeException: You must change the main Request object in the front controller (app.php) in order to use the `host_with_path` strategy
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/HostPathSiteSelector.php:35
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Site/BaseSiteSelector.php:94
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:457
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:164
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php:53
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/ContainerAwareEventDispatcher.php:167
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Debug/TraceableEventDispatcher.php:139
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2861
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2846
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2975
+/Users/ronan/Sites/sandbox/app/bootstrap.php.cache:2255
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Client.php:81
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Client.php:111
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Client.php:339
+/Users/ronan/Sites/sandbox/src/Ryl/RetirementBundle/Tests/Controller/DefaultControllerTest.php:13
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\ListCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/ListCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="2.544288">
+      <testcase name="testDefaultDoesNotInstall" class="Sonata\Bundle\QABundle\Tests\ListCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/ListCommandTest.php" line="16" assertions="1" time="2.544288"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataAdminExplainCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataAdminExplainCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="27" assertions="27" failures="0" errors="0" time="18.737689">
+      <testcase name="testExplainException" class="Sonata\Bundle\QABundle\Tests\SonataAdminExplainCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataAdminExplainCommandTest.php" line="19" assertions="1" time="0.110333"/>
+      <testsuite name="Sonata\Bundle\QABundle\Tests\SonataAdminExplainCommandTest::testExplain" tests="26" assertions="26" failures="0" errors="0" time="18.627356">
+        <testcase name="testExplain with data set #0" assertions="1" time="2.969858"/>
+        <testcase name="testExplain with data set #1" assertions="1" time="0.465718"/>
+        <testcase name="testExplain with data set #2" assertions="1" time="2.819053"/>
+        <testcase name="testExplain with data set #3" assertions="1" time="2.428195"/>
+        <testcase name="testExplain with data set #4" assertions="1" time="0.545025"/>
+        <testcase name="testExplain with data set #5" assertions="1" time="0.402553"/>
+        <testcase name="testExplain with data set #6" assertions="1" time="0.831447"/>
+        <testcase name="testExplain with data set #7" assertions="1" time="0.441408"/>
+        <testcase name="testExplain with data set #8" assertions="1" time="0.552037"/>
+        <testcase name="testExplain with data set #9" assertions="1" time="0.240690"/>
+        <testcase name="testExplain with data set #10" assertions="1" time="0.258135"/>
+        <testcase name="testExplain with data set #11" assertions="1" time="0.291777"/>
+        <testcase name="testExplain with data set #12" assertions="1" time="0.430675"/>
+        <testcase name="testExplain with data set #13" assertions="1" time="0.355879"/>
+        <testcase name="testExplain with data set #14" assertions="1" time="0.507226"/>
+        <testcase name="testExplain with data set #15" assertions="1" time="0.587702"/>
+        <testcase name="testExplain with data set #16" assertions="1" time="0.255407"/>
+        <testcase name="testExplain with data set #17" assertions="1" time="0.686143"/>
+        <testcase name="testExplain with data set #18" assertions="1" time="0.475147"/>
+        <testcase name="testExplain with data set #19" assertions="1" time="0.571081"/>
+        <testcase name="testExplain with data set #20" assertions="1" time="0.668522"/>
+        <testcase name="testExplain with data set #21" assertions="1" time="0.377146"/>
+        <testcase name="testExplain with data set #22" assertions="1" time="0.516943"/>
+        <testcase name="testExplain with data set #23" assertions="1" time="0.239468"/>
+        <testcase name="testExplain with data set #24" assertions="1" time="0.174324"/>
+        <testcase name="testExplain with data set #25" assertions="1" time="0.535797"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataAdminListCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataAdminListCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="53" failures="0" errors="0" time="0.385122">
+      <testcase name="testListing" class="Sonata\Bundle\QABundle\Tests\SonataAdminListCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataAdminListCommandTest.php" line="16" assertions="53" time="0.385122"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataBlockDebugCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataBlockDebugCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="23" failures="0" errors="0" time="0.530458">
+      <testcase name="testFlushAll" class="Sonata\Bundle\QABundle\Tests\SonataBlockDebugCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataBlockDebugCommandTest.php" line="16" assertions="23" time="0.530458"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataCacheFlushAllCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataCacheFlushAllCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="2" failures="0" errors="0" time="0.165153">
+      <testcase name="testFlushAll" class="Sonata\Bundle\QABundle\Tests\SonataCacheFlushAllCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataCacheFlushAllCommandTest.php" line="16" assertions="2" time="0.165153"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataCacheFlushCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataCacheFlushCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="6" assertions="1" failures="0" errors="0" time="0.685512">
+      <testcase name="testFlushException" class="Sonata\Bundle\QABundle\Tests\SonataCacheFlushCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataCacheFlushCommandTest.php" line="19" assertions="1" time="0.097028"/>
+      <testsuite name="Sonata\Bundle\QABundle\Tests\SonataCacheFlushCommandTest::testFlush" tests="5" assertions="0" failures="0" errors="0" time="0.588484">
+        <testcase name="testFlush with data set #0" assertions="0" time="0.108586"/>
+        <testcase name="testFlush with data set #1" assertions="0" time="0.105923"/>
+        <testcase name="testFlush with data set #2" assertions="0" time="0.103831"/>
+        <testcase name="testFlush with data set #3" assertions="0" time="0.109800"/>
+        <testcase name="testFlush with data set #4" assertions="0" time="0.160344"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataEasyExtendsDumpMappingCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataEasyExtendsDumpMappingCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="27" assertions="1" failures="0" errors="0" time="3.192902">
+      <testcase name="testDumpException" class="Sonata\Bundle\QABundle\Tests\SonataEasyExtendsDumpMappingCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataEasyExtendsDumpMappingCommandTest.php" line="19" assertions="1" time="0.115469"/>
+      <testsuite name="Sonata\Bundle\QABundle\Tests\SonataEasyExtendsDumpMappingCommandTest::testDumpInformation" tests="26" assertions="0" failures="0" errors="0" time="3.077433">
+        <testcase name="testDumpInformation with data set #0" assertions="0" time="0.130024"/>
+        <testcase name="testDumpInformation with data set #1" assertions="0" time="0.111871"/>
+        <testcase name="testDumpInformation with data set #2" assertions="0" time="0.112985"/>
+        <testcase name="testDumpInformation with data set #3" assertions="0" time="0.106563"/>
+        <testcase name="testDumpInformation with data set #4" assertions="0" time="0.137741"/>
+        <testcase name="testDumpInformation with data set #5" assertions="0" time="0.119852"/>
+        <testcase name="testDumpInformation with data set #6" assertions="0" time="0.110981"/>
+        <testcase name="testDumpInformation with data set #7" assertions="0" time="0.109298"/>
+        <testcase name="testDumpInformation with data set #8" assertions="0" time="0.109983"/>
+        <testcase name="testDumpInformation with data set #9" assertions="0" time="0.109224"/>
+        <testcase name="testDumpInformation with data set #10" assertions="0" time="0.112575"/>
+        <testcase name="testDumpInformation with data set #11" assertions="0" time="0.148213"/>
+        <testcase name="testDumpInformation with data set #12" assertions="0" time="0.109953"/>
+        <testcase name="testDumpInformation with data set #13" assertions="0" time="0.097260"/>
+        <testcase name="testDumpInformation with data set #14" assertions="0" time="0.114220"/>
+        <testcase name="testDumpInformation with data set #15" assertions="0" time="0.115713"/>
+        <testcase name="testDumpInformation with data set #16" assertions="0" time="0.108217"/>
+        <testcase name="testDumpInformation with data set #17" assertions="0" time="0.151890"/>
+        <testcase name="testDumpInformation with data set #18" assertions="0" time="0.109994"/>
+        <testcase name="testDumpInformation with data set #19" assertions="0" time="0.120702"/>
+        <testcase name="testDumpInformation with data set #20" assertions="0" time="0.112149"/>
+        <testcase name="testDumpInformation with data set #21" assertions="0" time="0.116511"/>
+        <testcase name="testDumpInformation with data set #22" assertions="0" time="0.118821"/>
+        <testcase name="testDumpInformation with data set #23" assertions="0" time="0.166717"/>
+        <testcase name="testDumpInformation with data set #24" assertions="0" time="0.108690"/>
+        <testcase name="testDumpInformation with data set #25" assertions="0" time="0.107286"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataMediaAddCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataMediaAddCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="2" assertions="3" failures="0" errors="0" time="0.845796">
+      <testcase name="testException" class="Sonata\Bundle\QABundle\Tests\SonataMediaAddCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataMediaAddCommandTest.php" line="19" assertions="1" time="0.107985"/>
+      <testcase name="testMediaAdd" class="Sonata\Bundle\QABundle\Tests\SonataMediaAddCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataMediaAddCommandTest.php" line="25" assertions="2" time="0.737811"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataMediaRefreshMediaCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataMediaRefreshMediaCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="5" assertions="5" failures="0" errors="0" time="0.703400">
+      <testsuite name="Sonata\Bundle\QABundle\Tests\SonataMediaRefreshMediaCommandTest::testRefresh" tests="5" assertions="5" failures="0" errors="0" time="0.703400">
+        <testcase name="testRefresh with data set #0" assertions="1" time="0.225166"/>
+        <testcase name="testRefresh with data set #1" assertions="1" time="0.122721"/>
+        <testcase name="testRefresh with data set #2" assertions="1" time="0.122760"/>
+        <testcase name="testRefresh with data set #3" assertions="1" time="0.119325"/>
+        <testcase name="testRefresh with data set #4" assertions="1" time="0.113428"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataMediaSyncCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataMediaSyncCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="5" assertions="5" failures="0" errors="0" time="0.819384">
+      <testsuite name="Sonata\Bundle\QABundle\Tests\SonataMediaSyncCommandTest::testRefresh" tests="5" assertions="5" failures="0" errors="0" time="0.819384">
+        <testcase name="testRefresh with data set #0" assertions="1" time="0.307567"/>
+        <testcase name="testRefresh with data set #1" assertions="1" time="0.165675"/>
+        <testcase name="testRefresh with data set #2" assertions="1" time="0.118749"/>
+        <testcase name="testRefresh with data set #3" assertions="1" time="0.121194"/>
+        <testcase name="testRefresh with data set #4" assertions="1" time="0.106199"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataNewsSyncCommentTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNewsSyncCommentTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="0" failures="0" errors="1" time="0.724515">
+      <testcase name="testRefresh" class="Sonata\Bundle\QABundle\Tests\SonataNewsSyncCommentTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNewsSyncCommentTest.php" line="17" assertions="0" time="0.724515">
+        <error type="Doctrine\DBAL\DBALException">Sonata\Bundle\QABundle\Tests\SonataNewsSyncCommentTest::testRefresh
+Doctrine\DBAL\DBALException: An exception occurred while executing 'UPDATE news__post p, (SELECT c.post_id, count(*) as total FROM news__comment as c WHERE c.status = 1 GROUP BY c.post_id) as count_comment
+            SET p.comments_count = count_comment.total
+            WHERE p.id = count_comment.post_id':
+
+SQLSTATE[HY000]: General error: 1 near "p": syntax error
+
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php:91
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:801
+/Users/ronan/Sites/sandbox/vendor/sonata-project/news-bundle/Entity/CommentManager.php:74
+/Users/ronan/Sites/sandbox/vendor/sonata-project/news-bundle/Command/SynchronizeCommentsCountCommand.php:39
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:244
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:898
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:191
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:96
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:121
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/CommandTestCase.php:39
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNewsSyncCommentTest.php:21
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataNotificationCleanUpCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationCleanUpCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="0.136661">
+      <testcase name="testRefresh" class="Sonata\Bundle\QABundle\Tests\SonataNotificationCleanUpCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationCleanUpCommandTest.php" line="16" assertions="1" time="0.136661"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataNotificationHandlerListCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationHandlerListCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="15" failures="0" errors="0" time="0.151481">
+      <testcase name="testRefresh" class="Sonata\Bundle\QABundle\Tests\SonataNotificationHandlerListCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationHandlerListCommandTest.php" line="16" assertions="15" time="0.151481"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataNotificationListQueuesCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationListQueuesCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="0.131886">
+      <testcase name="testCommand" class="Sonata\Bundle\QABundle\Tests\SonataNotificationListQueuesCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationListQueuesCommandTest.php" line="16" assertions="1" time="0.131886"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataNotificationRestartCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationRestartCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="0.307410">
+      <testcase name="testRefresh" class="Sonata\Bundle\QABundle\Tests\SonataNotificationRestartCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationRestartCommandTest.php" line="16" assertions="1" time="0.307410"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataNotificationStartCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationStartCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="8" failures="0" errors="0" time="0.412701">
+      <testcase name="testRefresh" class="Sonata\Bundle\QABundle\Tests\SonataNotificationStartCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataNotificationStartCommandTest.php" line="16" assertions="8" time="0.412701"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataPageCleanSnapshotCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageCleanSnapshotCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="1.938228">
+      <testcase name="testRefresh" class="Sonata\Bundle\QABundle\Tests\SonataPageCleanSnapshotCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageCleanSnapshotCommandTest.php" line="17" assertions="1" time="1.938228"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataPageCreateSiteCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageCreateSiteCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="0" failures="0" errors="1" time="60.313856">
+      <testcase name="testCreateSite" class="Sonata\Bundle\QABundle\Tests\SonataPageCreateSiteCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageCreateSiteCommandTest.php" line="17" assertions="0" time="60.313856">
+        <error type="Doctrine\DBAL\DBALException">Sonata\Bundle\QABundle\Tests\SonataPageCreateSiteCommandTest::testCreateSite
+Doctrine\DBAL\DBALException: An exception occurred while executing 'INSERT INTO page__site (enabled, name, relative_path, host, enabled_from, enabled_to, is_default, created_at, updated_at, locale, title, meta_keywords, meta_description) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)' with params [1, "Test", "", "test.localhost", "2015-02-12 22:26:44", "2015-02-12 22:26:44", 0, "2015-02-12 22:26:44", "2015-02-12 22:26:44", "fr_FR", null, null, null]:
+
+SQLSTATE[HY000]: General error: 5 database is locked
+
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php:91
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php:165
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/BasicEntityPersister.php:279
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:966
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:335
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:389
+/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Model/BaseManager.php:121
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Entity/SiteManager.php:30
+/Users/ronan/Sites/sandbox/vendor/sonata-project/page-bundle/Command/CreateSiteCommand.php:110
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:244
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:898
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:191
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:96
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:121
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/CommandTestCase.php:39
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageCreateSiteCommandTest.php:32
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataPageCreateSnapshotCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageCreateSnapshotCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="2.589646">
+      <testcase name="testRefresh" class="Sonata\Bundle\QABundle\Tests\SonataPageCreateSnapshotCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageCreateSnapshotCommandTest.php" line="17" assertions="1" time="2.589646"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataPageDumpCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageDumpCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="4" assertions="5" failures="0" errors="0" time="0.582689">
+      <testcase name="testMissingArguments" class="Sonata\Bundle\QABundle\Tests\SonataPageDumpCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageDumpCommandTest.php" line="19" assertions="1" time="0.106699"/>
+      <testcase name="testDumpInvalidService" class="Sonata\Bundle\QABundle\Tests\SonataPageDumpCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageDumpCommandTest.php" line="29" assertions="1" time="0.113399"/>
+      <testcase name="testDumpInvalidPageId" class="Sonata\Bundle\QABundle\Tests\SonataPageDumpCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageDumpCommandTest.php" line="39" assertions="1" time="0.160388"/>
+      <testcase name="testDump" class="Sonata\Bundle\QABundle\Tests\SonataPageDumpCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageDumpCommandTest.php" line="46" assertions="2" time="0.202203"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataPageRenderBlockCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageRenderBlockCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="4" assertions="6" failures="0" errors="0" time="1.594656">
+      <testcase name="testMissingArguments" class="Sonata\Bundle\QABundle\Tests\SonataPageRenderBlockCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageRenderBlockCommandTest.php" line="19" assertions="1" time="0.111232"/>
+      <testcase name="testDumpInvalidService" class="Sonata\Bundle\QABundle\Tests\SonataPageRenderBlockCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageRenderBlockCommandTest.php" line="29" assertions="1" time="0.150045"/>
+      <testcase name="testDumpInvalidPageId" class="Sonata\Bundle\QABundle\Tests\SonataPageRenderBlockCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageRenderBlockCommandTest.php" line="39" assertions="1" time="0.120590"/>
+      <testcase name="testDump" class="Sonata\Bundle\QABundle\Tests\SonataPageRenderBlockCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageRenderBlockCommandTest.php" line="46" assertions="3" time="1.212789"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataPageUpdateCoreRouteCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageUpdateCoreRouteCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="3" assertions="5" failures="0" errors="0" time="22.286856">
+      <testcase name="testMissingArguments" class="Sonata\Bundle\QABundle\Tests\SonataPageUpdateCoreRouteCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageUpdateCoreRouteCommandTest.php" line="16" assertions="1" time="0.139122"/>
+      <testcase name="testUpdateOneSite" class="Sonata\Bundle\QABundle\Tests\SonataPageUpdateCoreRouteCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageUpdateCoreRouteCommandTest.php" line="25" assertions="2" time="7.964499"/>
+      <testcase name="testUpdateSites" class="Sonata\Bundle\QABundle\Tests\SonataPageUpdateCoreRouteCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataPageUpdateCoreRouteCommandTest.php" line="37" assertions="2" time="14.183235"/>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataSeoSitemapCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataSeoSitemapCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="2" assertions="1" failures="0" errors="1" time="0.432620">
+      <testcase name="testMissingArguments" class="Sonata\Bundle\QABundle\Tests\SonataSeoSitemapCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataSeoSitemapCommandTest.php" line="19" assertions="1" time="0.167775"/>
+      <testcase name="testGenerate" class="Sonata\Bundle\QABundle\Tests\SonataSeoSitemapCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataSeoSitemapCommandTest.php" line="26" assertions="0" time="0.264845">
+        <error type="Doctrine\DBAL\DBALException">Sonata\Bundle\QABundle\Tests\SonataSeoSitemapCommandTest::testGenerate
+Doctrine\DBAL\DBALException: An exception occurred while executing 'SELECT id, updated_at as lastmod, 'weekly' as changefreq, '0.5' as prioriy FROM media__media WHERE enabled = true':
+
+SQLSTATE[HY000]: General error: 1 no such column: true
+
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php:91
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php:86
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:647
+/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/lib/Exporter/Source/DoctrineDBALConnectionSourceIterator.php:89
+/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/lib/Exporter/Source/SymfonySitemapSourceIterator.php:84
+/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/lib/Exporter/Source/ChainSourceIterator.php:88
+/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/lib/Exporter/Handler.php:40
+/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Command/SitemapGeneratorCommand.php:87
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:244
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:898
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:191
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:96
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:121
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/CommandTestCase.php:39
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataSeoSitemapCommandTest.php:30
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Sonata\Bundle\QABundle\Tests\SonataUserTwoStepVerificationCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataUserTwoStepVerificationCommandTest.php" namespace="Sonata\Bundle\QABundle\Tests" fullPackage="Sonata.Bundle.QABundle.Tests" tests="3" assertions="2" failures="0" errors="1" time="60.679443">
+      <testcase name="testMissingArguments" class="Sonata\Bundle\QABundle\Tests\SonataUserTwoStepVerificationCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataUserTwoStepVerificationCommandTest.php" line="19" assertions="1" time="0.101028"/>
+      <testcase name="testReset" class="Sonata\Bundle\QABundle\Tests\SonataUserTwoStepVerificationCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataUserTwoStepVerificationCommandTest.php" line="26" assertions="0" time="60.454725">
+        <error type="Doctrine\DBAL\DBALException">Sonata\Bundle\QABundle\Tests\SonataUserTwoStepVerificationCommandTest::testReset
+Doctrine\DBAL\DBALException: An exception occurred while executing 'UPDATE fos_user_user SET two_step_code = ?, updated_at = ? WHERE id = ?' with params ["BIDA6GUPWBMEGE2I", "2015-02-12 22:28:12", 2]:
+
+SQLSTATE[HY000]: General error: 5 database is locked
+
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php:91
+/Users/ronan/Sites/sandbox/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php:855
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/BasicEntityPersister.php:481
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/BasicEntityPersister.php:369
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:1014
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php:341
+/Users/ronan/Sites/sandbox/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php:389
+/Users/ronan/Sites/sandbox/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Doctrine/UserManager.php:100
+/Users/ronan/Sites/sandbox/vendor/sonata-project/user-bundle/Command/TwoStepVerificationCommand.php:55
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php:244
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:898
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:191
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:96
+/Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:121
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/CommandTestCase.php:39
+/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataUserTwoStepVerificationCommandTest.php:30
+</error>
+      </testcase>
+      <testcase name="testGenerateOnGenerateUser" class="Sonata\Bundle\QABundle\Tests\SonataUserTwoStepVerificationCommandTest" file="/Users/ronan/Sites/sandbox/src/Sonata/Bundle/QABundle/Tests/SonataUserTwoStepVerificationCommandTest.php" line="41" assertions="1" time="0.123690"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

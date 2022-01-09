@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="14" skipped="0" name="Check the media admin module" tests="93" time="14.721862">
+    <testcase classname="Check the media admin module" name="Check media admin pages when not connected" time="0.867028" assertions="3">
+    </testcase>
+    <testcase classname="Check the media admin module" name="Check media admin pages when connected" time="0.686625" assertions="2">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Add a new media with errors" time="0.620143" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Add a new youtube video" time="1.155342" assertions="4">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Add a new dailymotion video" time="1.508061" assertions="4">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Export JSON data" time="0.878737" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Export CSV data" time="0.978693" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Export XML data" time="0.633327" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Export XLS data" time="0.747921" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Filter medias" time="0.872125" assertions="4">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Edit a media" time="1.224514" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="View a media" time="0.888518" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="View revisions of a media" time="1.011041" assertions="4">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Add a Media, then delete it immediately" time="0.910142" assertions="7">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the media admin module" name="Try to delete an undeletable Media" time="1.728600" assertions="7">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+</testsuite>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Make sure there is no regression" tests="184" time="2.119151">
+    <testcase classname="Make sure there is no regression" name="Make sure we can create sub class" time="2.117570" assertions="3">
+    </testcase>
+</testsuite>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="3" skipped="0" name="Order" tests="175" time="14.426042">
+    <testcase classname="Order" name="Buy some products and ensure final review, order and invoice pages prices are correct, Ex #1" time="5.890518" assertions="101">
+        <failure message="Form field with id|name|label|value &quot;sonata_customer_address_countryCode&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "sonata_customer_address_countryCode" not found.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/user/address/edit/30 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Order" name="Buy some products and ensure final review, order and invoice pages prices are correct, Ex #2" time="4.549717" assertions="160">
+        <failure message="The field &quot;sonata_basket_basket_basketElements_0_quantity&quot; value is &quot;3&quot;, but &quot;5&quot; expected." type="failed"><![CDATA[
+The field "sonata_basket_basket_basketElements_0_quantity" value is "3", but "5" expected.
+
++--[ HTTP/1.1 200 | http://demo.sonata-project.org/shop/basket/ | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Your basket</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|      ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Order" name="Buy some products and ensure final review, order and invoice pages prices are correct, Ex #3" time="3.981420" assertions="219">
+        <failure message="The field &quot;sonata_basket_basket_basketElements_0_quantity&quot; value is &quot;3&quot;, but &quot;8&quot; expected." type="failed"><![CDATA[
+The field "sonata_basket_basket_basketElements_0_quantity" value is "3", but "8" expected.
+
++--[ HTTP/1.1 200 | http://demo.sonata-project.org/shop/basket/ | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Your basket</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|      ...
+|  
+]]></failure>
+    </testcase>
+</testsuite>

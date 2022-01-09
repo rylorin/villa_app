@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Google Authenticator Test Suite" tests="3" assertions="3" failures="0" errors="0" time="0.010848">
+    <testsuite name="Google\Authenticator\Tests\HandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/google-authenticator/tests/GoogleAuthenticatorTest.php" namespace="Google\Authenticator\Tests" fullPackage="Google.Authenticator.Tests" tests="3" assertions="3" failures="0" errors="0" time="0.010848">
+      <testcase name="testGenerateSecret" class="Google\Authenticator\Tests\HandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/google-authenticator/tests/GoogleAuthenticatorTest.php" line="19" assertions="1" time="0.004520"/>
+      <testcase name="testGetCode" class="Google\Authenticator\Tests\HandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/google-authenticator/tests/GoogleAuthenticatorTest.php" line="26" assertions="1" time="0.004011"/>
+      <testcase name="testGetUrl" class="Google\Authenticator\Tests\HandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/google-authenticator/tests/GoogleAuthenticatorTest.php" line="33" assertions="1" time="0.002317"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="14" skipped="0" name="Check the post admin module" tests="27" time="10.019947">
+    <testcase classname="Check the post admin module" name="Check comment admin pages when not connected" time="0.377015" assertions="3">
+    </testcase>
+    <testcase classname="Check the post admin module" name="Check post admin pages when connected" time="0.321404" assertions="2">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Add a new post with some errors" time="0.455511" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Add a new post" time="0.637984" assertions="8">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Edit a post" time="0.529977" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="View revision of a post" time="3.606356" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="View the last revision of a post" time="0.426213" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Set ACL of a post" time="0.457018" assertions="18">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Update ACL of a post" time="0.410498" assertions="14">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Filter posts" time="0.386092" assertions="4">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Export JSON data" time="0.364653" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Export CSV data" time="0.350857" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Export XML data" time="0.360694" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Export XLS data" time="0.456388" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the post admin module" name="Delete a post" time="0.868268" assertions="7">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+</testsuite>

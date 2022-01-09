@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="DatagridBundle Test Suite" tests="60" assertions="258" failures="0" errors="0" time="0.158307">
+    <testsuite name="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" namespace="Sonata\DatagridBundle\Tests\Datagrid" fullPackage="Sonata.DatagridBundle.Tests.Datagrid" tests="11" assertions="64" failures="0" errors="0" time="0.093616">
+      <testcase name="testGetPager" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="106" assertions="2" time="0.035607"/>
+      <testcase name="testFilter" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="111" assertions="8" time="0.004308"/>
+      <testcase name="testGetFilters" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="132" assertions="7" time="0.002895"/>
+      <testcase name="testReorderFilters" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="162" assertions="9" time="0.003673"/>
+      <testcase name="testGetValues" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="194" assertions="3" time="0.001021"/>
+      <testcase name="testGetQuery" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="203" assertions="2" time="0.000603"/>
+      <testcase name="testHasActiveFilters" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="208" assertions="6" time="0.004061"/>
+      <testcase name="testGetForm" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="237" assertions="2" time="0.003764"/>
+      <testcase name="testGetResults" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="242" assertions="4" time="0.003729"/>
+      <testcase name="testBuildPager" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="253" assertions="12" time="0.016652"/>
+      <testcase name="testBuildPagerWithSortBy" class="Sonata\DatagridBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Datagrid/DatagridTest.php" line="300" assertions="9" time="0.017303"/>
+    </testsuite>
+    <testsuite name="Sonata\DatagridBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Filter/BaseFilterTest.php" namespace="Sonata\DatagridBundle\Tests\Filter" fullPackage="Sonata.DatagridBundle.Tests.Filter" tests="9" assertions="20" failures="0" errors="0" time="0.002852">
+      <testcase name="testFilter" class="Sonata\DatagridBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Filter/BaseFilterTest.php" line="41" assertions="10" time="0.001123"/>
+      <testcase name="testInitialize" class="Sonata\DatagridBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Filter/BaseFilterTest.php" line="76" assertions="3" time="0.000262"/>
+      <testcase name="testLabel" class="Sonata\DatagridBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Filter/BaseFilterTest.php" line="88" assertions="1" time="0.000166"/>
+      <testcase name="testExceptionOnNonDefinedFieldName" class="Sonata\DatagridBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Filter/BaseFilterTest.php" line="99" assertions="1" time="0.000476"/>
+      <testsuite name="Sonata\DatagridBundle\Tests\Filter\FilterTest::testIsActive" tests="5" assertions="5" failures="0" errors="0" time="0.000825">
+        <testcase name="testIsActive with data set #0" assertions="1" time="0.000168"/>
+        <testcase name="testIsActive with data set #1" assertions="1" time="0.000167"/>
+        <testcase name="testIsActive with data set #2" assertions="1" time="0.000164"/>
+        <testcase name="testIsActive with data set #3" assertions="1" time="0.000163"/>
+        <testcase name="testIsActive with data set #4" assertions="1" time="0.000163"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" namespace="Sonata\DatagridBundle\Tests\Pager" fullPackage="Sonata.DatagridBundle.Tests.Pager" tests="38" assertions="170" failures="0" errors="0" time="0.048342">
+      <testsuite name="Sonata\DatagridBundle\Tests\Pager\PagerTest::testGetMaxPerPage1" tests="8" assertions="32" failures="0" errors="0" time="0.005847">
+        <testcase name="testGetMaxPerPage1 with data set #0" assertions="4" time="0.001896"/>
+        <testcase name="testGetMaxPerPage1 with data set #1" assertions="4" time="0.000582"/>
+        <testcase name="testGetMaxPerPage1 with data set #2" assertions="4" time="0.000559"/>
+        <testcase name="testGetMaxPerPage1 with data set #3" assertions="4" time="0.000565"/>
+        <testcase name="testGetMaxPerPage1 with data set #4" assertions="4" time="0.000562"/>
+        <testcase name="testGetMaxPerPage1 with data set #5" assertions="4" time="0.000561"/>
+        <testcase name="testGetMaxPerPage1 with data set #6" assertions="4" time="0.000568"/>
+        <testcase name="testGetMaxPerPage1 with data set #7" assertions="4" time="0.000554"/>
+      </testsuite>
+      <testcase name="testGetMaxPerPage2" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="63" assertions="6" time="0.000654"/>
+      <testcase name="testGetMaxPerPage3" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="80" assertions="6" time="0.000654"/>
+      <testcase name="testGetCurrentMaxLink" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="96" assertions="4" time="0.000614"/>
+      <testcase name="testGetMaxRecordLimit" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="112" assertions="2" time="0.000464"/>
+      <testcase name="testGetNbResults" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="120" assertions="2" time="0.000481"/>
+      <testcase name="testCount" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="129" assertions="2" time="0.000484"/>
+      <testcase name="testGetQuery" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="138" assertions="1" time="0.000461"/>
+      <testcase name="testGetCountColumn" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="146" assertions="2" time="0.000614"/>
+      <testcase name="testParameters" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="154" assertions="16" time="0.001285"/>
+      <testcase name="testGetMaxPageLinks" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="183" assertions="2" time="0.000464"/>
+      <testcase name="testIsFirstPage" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="191" assertions="2" time="0.000396"/>
+      <testcase name="testIsLastPage" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="199" assertions="8" time="0.000755"/>
+      <testcase name="testGetLinks" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="218" assertions="11" time="0.002718"/>
+      <testcase name="testHaveToPaginate" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="249" assertions="3" time="0.000456"/>
+      <testcase name="testIterator" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="260" assertions="7" time="0.001002"/>
+      <testcase name="testValid" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="296" assertions="1" time="0.000404"/>
+      <testcase name="testNext" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="301" assertions="2" time="0.000493"/>
+      <testcase name="testKey" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="310" assertions="2" time="0.000536"/>
+      <testcase name="testCurrent" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="319" assertions="2" time="0.000552"/>
+      <testcase name="testGetCursor" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="330" assertions="5" time="0.000630"/>
+      <testcase name="testGetObjectByCursor" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="349" assertions="9" time="0.007573"/>
+      <testcase name="testGetFirstPage" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="411" assertions="1" time="0.000532"/>
+      <testcase name="testGetNextPage" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="416" assertions="3" time="0.000574"/>
+      <testcase name="testGetPreviousPage" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="428" assertions="3" time="0.000552"/>
+      <testcase name="testGetFirstIndice" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="439" assertions="4" time="0.000591"/>
+      <testcase name="testGetLastIndice" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="456" assertions="6" time="0.000703"/>
+      <testcase name="testGetNext" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="478" assertions="6" time="0.007606"/>
+      <testcase name="testGetPrevious" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="539" assertions="6" time="0.007142"/>
+      <testcase name="testSerialize" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="600" assertions="2" time="0.001935"/>
+      <testcase name="testUnserialize" class="Sonata\DatagridBundle\Tests\Pager\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/BasePagerTest.php" line="614" assertions="12" time="0.001170"/>
+    </testsuite>
+    <testsuite name="Sonata\DatagridBundle\Tests\Pager\Doctrine\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/Doctrine/PagerTest.php" namespace="Sonata\DatagridBundle\Tests\Pager\Doctrine" fullPackage="Sonata.DatagridBundle.Tests.Pager.Doctrine" tests="1" assertions="2" failures="0" errors="0" time="0.002868">
+      <testcase name="testGetResults" class="Sonata\DatagridBundle\Tests\Pager\Doctrine\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/Pager/Doctrine/PagerTest.php" line="39" assertions="2" time="0.002868"/>
+    </testsuite>
+    <testsuite name="Sonata\DatagridBundle\Tests\ProxyQuery\BaseProxyQueryTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/ProxyQuery/BaseProxyQueryTest.php" namespace="Sonata\DatagridBundle\Tests\ProxyQuery" fullPackage="Sonata.DatagridBundle.Tests.ProxyQuery" tests="1" assertions="2" failures="0" errors="0" time="0.010629">
+      <testcase name="testFallbackOnQuerybuilder" class="Sonata\DatagridBundle\Tests\ProxyQuery\BaseProxyQueryTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/datagrid-bundle/Tests/ProxyQuery/BaseProxyQueryTest.php" line="22" assertions="2" time="0.010629"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

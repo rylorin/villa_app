@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the User controller calls for UserBundle" tests="30" time="6.501395">
+    <testcase classname="Check the User controller calls for UserBundle" name="Retrieve all available users, Ex #1" time="1.246665" assertions="31">
+    </testcase>
+    <testcase classname="Check the User controller calls for UserBundle" name="Retrieve all available users, Ex #2" time="1.159878" assertions="37">
+    </testcase>
+    <testcase classname="Check the User controller calls for UserBundle" name="Post new user with errors" time="0.321752" assertions="4">
+    </testcase>
+    <testcase classname="Check the User controller calls for UserBundle" name="User full workflow" time="3.770466" assertions="42">
+    </testcase>
+</testsuite>

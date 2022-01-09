@@ -1,0 +1,4 @@
+#!/bin/sh
+#set -x
+
+tar -czf sonata-project-sandbox-2.3-dev-`date +%y%m%d%H%M`.tgz app/AppKernel.php app/config app/db bin/ composer.json src/ vendor/ web/

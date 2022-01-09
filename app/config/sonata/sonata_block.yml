@@ -106,13 +106,16 @@ sonata_block:
         ryl.reign.block.about: ~
         ryl.reign.block.about.sm:
         ryl.reign.block.contactinfo.sm: ~
-        ryl.reign.block.recentposts.sm: ~
+#        ryl.reign.block.recentposts.sm: ~
         ryl.reign.block.copyright: ~
         ryl.reign.block.social.sm: ~
         ryl.reign.block.comments.bottom: ~
         ryl.reign.block.popularposts.side: ~
         ryl.reign.block.populartags.side: ~
-        
+        ryl.reign.block.home.title: ~
+        ryl.reign.block.home.newsletter: ~
+        ryl.reign.block.picture: ~
+
     container:
         types: ~
         templates:
@@ -123,4 +126,3 @@ sonata_block:
             RylReignThemeBundle:Block:content_top_home.html.twig: Reign theme top content (home)
             RylReignThemeBundle:Block:content_bottom.html.twig: Reign theme bottom widgets
             RylReignThemeBundle:Block:footer.html.twig: Reign theme footer
-            

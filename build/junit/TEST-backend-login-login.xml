@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="7" skipped="0" name="Check login" tests="66" time="4.676358">
+    <testcase classname="Check login" name="Check page accessibility" time="0.612947" assertions="5">
+    </testcase>
+    <testcase classname="Check login" name="Check authentication with different couples of login / pwd, Ex #1" time="0.860459" assertions="10">
+    </testcase>
+    <testcase classname="Check login" name="Check authentication with different couples of login / pwd, Ex #2" time="0.743948" assertions="15">
+        <failure message="The string &quot;Welcome&quot; was not found anywhere in the HTML response of the current page." type="failed"><![CDATA[
+The string "Welcome" was not found anywhere in the HTML response of the current page.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/ | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                                                   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+|                      <!--[if lt IE 9]>
+|                          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+|                   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check login" name="Check user logout action" time="0.610318" assertions="5">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check login" name="Check menu items present on the dashboard, Ex #1" time="0.387335" assertions="7">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check login" name="Check menu items present on the dashboard, Ex #2" time="0.367069" assertions="9">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check login" name="Check menu items present on the dashboard, Ex #3" time="0.387672" assertions="11">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check login" name="Check menu items present on the dashboard, Ex #4" time="0.334741" assertions="13">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check login" name="Check menu items present on the dashboard, Ex #5" time="0.365170" assertions="15">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No site available for the current request with uri http://demo.sonata-project.org/login
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+</testsuite>

@@ -37,4 +37,5 @@ class Post extends BasePost
     {
         return $this->id;
     }
+
 }

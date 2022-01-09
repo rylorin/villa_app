@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the user admin module" tests="146" time="100.951438">
+    <testcase classname="Check the user admin module" name="Check user admin pages when not connected" time="0.373940" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Check user admin pages when connected" time="4.208818" assertions="2">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Add a new user with some errors" time="7.713130" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Add a new user" time="15.029353" assertions="6">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Filter users" time="12.932990" assertions="4">
+    </testcase>
+    <testcase classname="Check the user admin module" name="View revisions of a user" time="14.356377" assertions="6">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Edit a user" time="14.229358" assertions="6">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Export JSON data" time="5.378116" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Export CSV data" time="4.129652" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Export XML data" time="6.521190" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Export XLS data" time="5.135925" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Delete a user" time="10.933069" assertions="7">
+    </testcase>
+</testsuite>

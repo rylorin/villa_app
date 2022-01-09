@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="AdminBundle Test Suite" tests="814" assertions="3420" failures="0" errors="0" time="11.154238">
+    <testsuite name="Sonata\AdminBundle\Tests\Admin\AdminHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminHelperTest.php" namespace="Sonata\AdminBundle\Tests\Admin" fullPackage="Sonata.AdminBundle.Tests.Admin" tests="5" assertions="11" failures="0" errors="0" time="0.155958">
+      <testcase name="testGetChildFormBuilder" class="Sonata\AdminBundle\Tests\Admin\AdminHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminHelperTest.php" line="26" assertions="1" time="0.066249"/>
+      <testcase name="testGetChildFormView" class="Sonata\AdminBundle\Tests\Admin\AdminHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminHelperTest.php" line="45" assertions="1" time="0.019522"/>
+      <testcase name="testAddNewInstance" class="Sonata\AdminBundle\Tests\Admin\AdminHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminHelperTest.php" line="61" assertions="3" time="0.064278"/>
+      <testcase name="testAddNewInstancePlural" class="Sonata\AdminBundle\Tests\Admin\AdminHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminHelperTest.php" line="81" assertions="3" time="0.001992"/>
+      <testcase name="testAddNewInstanceInflector" class="Sonata\AdminBundle\Tests\Admin\AdminHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminHelperTest.php" line="101" assertions="3" time="0.003917"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" namespace="Sonata\AdminBundle\Tests\Admin" fullPackage="Sonata.AdminBundle.Tests.Admin" tests="97" assertions="240" failures="0" errors="0" time="0.741620">
+      <testcase name="testConstructor" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="40" assertions="3" time="0.021203"/>
+      <testcase name="testChildren" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="59" assertions="10" time="0.010086"/>
+      <testcase name="testConfigure" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="83" assertions="4" time="0.006047"/>
+      <testcase name="testConfigureWithValidParentAssociationMapping" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="99" assertions="1" time="0.004359"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Admin\AdminTest::testGetBaseRoutePattern" tests="13" assertions="13" failures="0" errors="0" time="0.048522">
+        <testcase name="testGetBaseRoutePattern with data set #0" assertions="1" time="0.003591"/>
+        <testcase name="testGetBaseRoutePattern with data set #1" assertions="1" time="0.003465"/>
+        <testcase name="testGetBaseRoutePattern with data set #2" assertions="1" time="0.003413"/>
+        <testcase name="testGetBaseRoutePattern with data set #3" assertions="1" time="0.003428"/>
+        <testcase name="testGetBaseRoutePattern with data set #4" assertions="1" time="0.003422"/>
+        <testcase name="testGetBaseRoutePattern with data set #5" assertions="1" time="0.003382"/>
+        <testcase name="testGetBaseRoutePattern with data set #6" assertions="1" time="0.003399"/>
+        <testcase name="testGetBaseRoutePattern with data set #7" assertions="1" time="0.003511"/>
+        <testcase name="testGetBaseRoutePattern with data set #8" assertions="1" time="0.003954"/>
+        <testcase name="testGetBaseRoutePattern with data set #9" assertions="1" time="0.004632"/>
+        <testcase name="testGetBaseRoutePattern with data set #10" assertions="1" time="0.004889"/>
+        <testcase name="testGetBaseRoutePattern with data set #11" assertions="1" time="0.003938"/>
+        <testcase name="testGetBaseRoutePattern with data set #12" assertions="1" time="0.003499"/>
+      </testsuite>
+      <testcase name="testGetBaseRoutePatternWithChildAdmin" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="175" assertions="1" time="0.003515"/>
+      <testcase name="testGetBaseRoutePatternWithUnreconizedClassname" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="187" assertions="1" time="0.004484"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Admin\AdminTest::testGetBaseRouteName" tests="13" assertions="13" failures="0" errors="0" time="0.047924">
+        <testcase name="testGetBaseRouteName with data set #0" assertions="1" time="0.003505"/>
+        <testcase name="testGetBaseRouteName with data set #1" assertions="1" time="0.003442"/>
+        <testcase name="testGetBaseRouteName with data set #2" assertions="1" time="0.003412"/>
+        <testcase name="testGetBaseRouteName with data set #3" assertions="1" time="0.003566"/>
+        <testcase name="testGetBaseRouteName with data set #4" assertions="1" time="0.003603"/>
+        <testcase name="testGetBaseRouteName with data set #5" assertions="1" time="0.003582"/>
+        <testcase name="testGetBaseRouteName with data set #6" assertions="1" time="0.004527"/>
+        <testcase name="testGetBaseRouteName with data set #7" assertions="1" time="0.004438"/>
+        <testcase name="testGetBaseRouteName with data set #8" assertions="1" time="0.004023"/>
+        <testcase name="testGetBaseRouteName with data set #9" assertions="1" time="0.003466"/>
+        <testcase name="testGetBaseRouteName with data set #10" assertions="1" time="0.003415"/>
+        <testcase name="testGetBaseRouteName with data set #11" assertions="1" time="0.003483"/>
+        <testcase name="testGetBaseRouteName with data set #12" assertions="1" time="0.003462"/>
+      </testsuite>
+      <testcase name="testGetBaseRouteNameWithChildAdmin" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="261" assertions="7" time="0.025194"/>
+      <testcase name="testGetBaseRouteNameWithUnreconizedClassname" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="294" assertions="1" time="0.005434"/>
+      <testcase name="testUniqid" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="304" assertions="1" time="0.004249"/>
+      <testcase name="testToString" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="314" assertions="4" time="0.005805"/>
+      <testcase name="testIsAclEnabled" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="332" assertions="2" time="0.043294"/>
+      <testcase name="testSubClass" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="353" assertions="22" time="0.043392"/>
+      <testcase name="testNonExistantSubclass" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="394" assertions="2" time="0.006892"/>
+      <testcase name="testGetPerPageOptions" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="406" assertions="2" time="0.005405"/>
+      <testcase name="testGetLabelTranslatorStrategy" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="415" assertions="2" time="0.004463"/>
+      <testcase name="testGetRouteBuilder" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="426" assertions="2" time="0.004088"/>
+      <testcase name="testGetMenuFactory" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="437" assertions="2" time="0.019190"/>
+      <testcase name="testGetExtensions" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="448" assertions="2" time="0.025611"/>
+      <testcase name="testGetFilterTheme" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="462" assertions="2" time="0.005857"/>
+      <testcase name="testGetFormTheme" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="472" assertions="2" time="0.004330"/>
+      <testcase name="testGetValidator" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="483" assertions="2" time="0.004731"/>
+      <testcase name="testGetSecurityHandler" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="494" assertions="2" time="0.005186"/>
+      <testcase name="testGetSecurityInformation" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="505" assertions="2" time="0.003991"/>
+      <testcase name="testGetManagerType" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="517" assertions="2" time="0.007470"/>
+      <testcase name="testGetModelManager" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="527" assertions="2" time="0.008795"/>
+      <testcase name="testGetBaseCodeRoute" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="539" assertions="2" time="0.004214"/>
+      <testcase name="testGetRouteGenerator" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="549" assertions="2" time="0.004634"/>
+      <testcase name="testGetConfigurationPool" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="561" assertions="2" time="0.027909"/>
+      <testcase name="testGetShowBuilder" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="575" assertions="2" time="0.007732"/>
+      <testcase name="testGetListBuilder" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="587" assertions="2" time="0.004631"/>
+      <testcase name="testGetDatagridBuilder" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="599" assertions="2" time="0.004899"/>
+      <testcase name="testGetFormContractor" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="611" assertions="2" time="0.005797"/>
+      <testcase name="testGetRequest" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="623" assertions="3" time="0.005616"/>
+      <testcase name="testGetRequestWithException" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="636" assertions="2" time="0.007013"/>
+      <testcase name="testGetTranslationDomain" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="644" assertions="2" time="0.005480"/>
+      <testcase name="testGetTranslator" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="654" assertions="2" time="0.006658"/>
+      <testcase name="testGetShowGroups" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="666" assertions="2" time="0.004926"/>
+      <testcase name="testGetFormGroups" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="678" assertions="2" time="0.004490"/>
+      <testcase name="testGetMaxPageLinks" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="690" assertions="2" time="0.005021"/>
+      <testcase name="testGetMaxPerPage" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="700" assertions="2" time="0.005245"/>
+      <testcase name="testGetLabel" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="710" assertions="2" time="0.005359"/>
+      <testcase name="testGetBaseController" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="720" assertions="2" time="0.003978"/>
+      <testcase name="testGetTemplates" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="730" assertions="2" time="0.003795"/>
+      <testcase name="testGetTemplate1" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="746" assertions="3" time="0.003853"/>
+      <testcase name="testGetTemplate2" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="765" assertions="3" time="0.003767"/>
+      <testcase name="testGetIdParameter" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="783" assertions="4" time="0.003481"/>
+      <testcase name="testGetExportFormats" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="797" assertions="1" time="0.003454"/>
+      <testcase name="testGetUrlsafeIdentifier" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="804" assertions="2" time="0.004102"/>
+      <testcase name="testDeterminedPerPageValue" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="820" assertions="14" time="0.003401"/>
+      <testcase name="testIsGranted" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="842" assertions="5" time="0.004776"/>
+      <testcase name="testSupportsPreviewMode" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="869" assertions="1" time="0.003506"/>
+      <testcase name="testGetPermissionsShow" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="876" assertions="3" time="0.004227"/>
+      <testcase name="testShowIn" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="885" assertions="4" time="0.003497"/>
+      <testcase name="testGetObjectIdentifier" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="907" assertions="1" time="0.003161"/>
+      <testcase name="testTransWithNoTranslator" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="914" assertions="1" time="0.003118"/>
+      <testcase name="testTrans" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="921" assertions="2" time="0.004148"/>
+      <testcase name="testTransWithMessageDomain" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="937" assertions="2" time="0.004440"/>
+      <testcase name="testTransChoiceWithNoTranslator" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="952" assertions="1" time="0.003168"/>
+      <testcase name="testTransChoice" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="959" assertions="2" time="0.004925"/>
+      <testcase name="testTransChoiceWithMessageDomain" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="975" assertions="2" time="0.005515"/>
+      <testcase name="testSetPersistFilters" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="990" assertions="2" time="0.003541"/>
+      <testcase name="testGetRootCode" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="999" assertions="5" time="0.003645"/>
+      <testcase name="testGetRoot" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1017" assertions="5" time="0.004503"/>
+      <testcase name="testGetExportFields" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1035" assertions="2" time="0.004897"/>
+      <testcase name="testGetPersistentParametersWithNoExtension" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1049" assertions="1" time="0.005408"/>
+      <testcase name="testGetPersistentParametersWithInvalidExtension" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1059" assertions="2" time="0.003924"/>
+      <testcase name="testGetPersistentParametersWithValidExtension" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1071" assertions="2" time="0.003442"/>
+      <testcase name="testGetFormWithNonCollectionParentValue" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1087" assertions="4" time="0.097492"/>
+      <testcase name="testGetFormWithCollectionParentValue" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1098" assertions="14" time="0.037985"/>
+      <testcase name="testRemoveFieldFromFormGroup" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1161" assertions="2" time="0.006085"/>
+      <testcase name="testGetFilterParameters" class="Sonata\AdminBundle\Tests\Admin\AdminTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/AdminTest.php" line="1188" assertions="4" time="0.007244"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Admin\BaseAdminModelManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseAdminModelManagerTest.php" namespace="Sonata\AdminBundle\Tests\Admin" fullPackage="Sonata.AdminBundle.Tests.Admin" tests="4" assertions="4" failures="0" errors="0" time="0.003211">
+      <testcase name="testHook" class="Sonata\AdminBundle\Tests\Admin\BaseAdminModelManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseAdminModelManagerTest.php" line="24" assertions="1" time="0.002165"/>
+      <testcase name="testObject" class="Sonata\AdminBundle\Tests\Admin\BaseAdminModelManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseAdminModelManagerTest.php" line="44" assertions="1" time="0.000342"/>
+      <testcase name="testCreateQuery" class="Sonata\AdminBundle\Tests\Admin\BaseAdminModelManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseAdminModelManagerTest.php" line="62" assertions="1" time="0.000330"/>
+      <testcase name="testId" class="Sonata\AdminBundle\Tests\Admin\BaseAdminModelManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseAdminModelManagerTest.php" line="76" assertions="1" time="0.000374"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" namespace="Sonata\AdminBundle\Tests\Admin" fullPackage="Sonata.AdminBundle.Tests.Admin" tests="8" assertions="36" failures="0" errors="0" time="0.006372">
+      <testcase name="testSetName" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="19" assertions="2" time="0.000245"/>
+      <testcase name="testOptions" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="28" assertions="17" time="0.001425"/>
+      <testcase name="testAdmin" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="76" assertions="3" time="0.000443"/>
+      <testcase name="testGetValue" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="97" assertions="6" time="0.002871"/>
+      <testcase name="testGetValueNoValueException" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="140" assertions="1" time="0.000371"/>
+      <testcase name="testExceptionOnNonArrayOption" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="151" assertions="1" time="0.000282"/>
+      <testcase name="testGetTranslationDomain" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="158" assertions="3" time="0.000443"/>
+      <testcase name="testCamelize" class="Sonata\AdminBundle\Tests\Admin\BaseFieldDescriptionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/BaseFieldDescriptionTest.php" line="177" assertions="3" time="0.000292"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Admin\FieldDescriptionCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/FieldDescriptionCollectionTest.php" namespace="Sonata\AdminBundle\Tests\Admin" fullPackage="Sonata.AdminBundle.Tests.Admin" tests="5" assertions="22" failures="0" errors="0" time="0.002398">
+      <testcase name="testMethods" class="Sonata\AdminBundle\Tests\Admin\FieldDescriptionCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/FieldDescriptionCollectionTest.php" line="19" assertions="11" time="0.000659"/>
+      <testcase name="testNonExistentField" class="Sonata\AdminBundle\Tests\Admin\FieldDescriptionCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/FieldDescriptionCollectionTest.php" line="55" assertions="2" time="0.000313"/>
+      <testcase name="testArrayAccessSetField" class="Sonata\AdminBundle\Tests\Admin\FieldDescriptionCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/FieldDescriptionCollectionTest.php" line="65" assertions="2" time="0.000295"/>
+      <testcase name="testReorderListWithoutBatchField" class="Sonata\AdminBundle\Tests\Admin\FieldDescriptionCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/FieldDescriptionCollectionTest.php" line="72" assertions="3" time="0.000485"/>
+      <testcase name="testReorderListWithBatchField" class="Sonata\AdminBundle\Tests\Admin\FieldDescriptionCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/FieldDescriptionCollectionTest.php" line="91" assertions="4" time="0.000646"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" namespace="Sonata\AdminBundle\Tests\Admin" fullPackage="Sonata.AdminBundle.Tests.Admin" tests="21" assertions="57" failures="0" errors="0" time="0.028478">
+      <testcase name="testGetGroups" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="28" assertions="2" time="0.000515"/>
+      <testcase name="testHasGroup" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="43" assertions="3" time="0.000239"/>
+      <testcase name="testGetDashboardGroups" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="53" assertions="6" time="0.016524"/>
+      <testcase name="testGetAdminsByGroupWhenGroupNotSet" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="93" assertions="2" time="0.000843"/>
+      <testcase name="testGetAdminsByGroupWhenGroupIsEmpty" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="102" assertions="2" time="0.000819"/>
+      <testcase name="testGetAdminsByGroup" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="111" assertions="3" time="0.001269"/>
+      <testcase name="testGetAdminForClassWhenAdminClassIsNotSet" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="122" assertions="3" time="0.000597"/>
+      <testcase name="testGetAdminForClassWithInvalidFormat" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="133" assertions="3" time="0.000970"/>
+      <testcase name="testGetAdminForClassWithTooManyRegisteredAdmin" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="145" assertions="3" time="0.000766"/>
+      <testcase name="testGetAdminForClassWhenAdminClassIsSet" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="152" assertions="3" time="0.000538"/>
+      <testcase name="testGetAdminByAdminCode" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="159" assertions="2" time="0.000412"/>
+      <testcase name="testGetAdminByAdminCodeForChildClass" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="164" assertions="4" time="0.001610"/>
+      <testcase name="testGetAdminClasses" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="187" assertions="2" time="0.000532"/>
+      <testcase name="testGetAdminGroups" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="193" assertions="2" time="0.000559"/>
+      <testcase name="testGetAdminServiceIds" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="199" assertions="2" time="0.000591"/>
+      <testcase name="testGetContainer" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="205" assertions="2" time="0.000259"/>
+      <testcase name="testTemplates" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="210" assertions="4" time="0.000300"/>
+      <testcase name="testGetTitleLogo" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="220" assertions="2" time="0.000294"/>
+      <testcase name="testGetTitle" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="225" assertions="2" time="0.000250"/>
+      <testcase name="testGetOption" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="230" assertions="3" time="0.000341"/>
+      <testcase name="testOptionDefault" class="Sonata\AdminBundle\Tests\Admin\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Admin/PoolTest.php" line="237" assertions="2" time="0.000250"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Command\CreateClassCacheCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/CreateClassCacheCommandTest.php" namespace="Sonata\AdminBundle\Tests\Command" fullPackage="Sonata.AdminBundle.Tests.Command" tests="2" assertions="6" failures="0" errors="0" time="0.072322">
+      <testcase name="testExecute" class="Sonata\AdminBundle\Tests\Command\CreateClassCacheCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/CreateClassCacheCommandTest.php" line="94" assertions="2" time="0.049063"/>
+      <testcase name="testExecuteWithException" class="Sonata\AdminBundle\Tests\Command\CreateClassCacheCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/CreateClassCacheCommandTest.php" line="110" assertions="4" time="0.023259"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Command\ExplainAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/ExplainAdminCommandTest.php" namespace="Sonata\AdminBundle\Tests\Command" fullPackage="Sonata.AdminBundle.Tests.Command" tests="3" assertions="23" failures="0" errors="0" time="0.192130">
+      <testcase name="testExecute" class="Sonata\AdminBundle\Tests\Command\ExplainAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/ExplainAdminCommandTest.php" line="165" assertions="8" time="0.118590"/>
+      <testcase name="testExecuteEmptyValidator" class="Sonata\AdminBundle\Tests\Command\ExplainAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/ExplainAdminCommandTest.php" line="215" assertions="8" time="0.070890"/>
+      <testcase name="testExecuteNonAdminService" class="Sonata\AdminBundle\Tests\Command\ExplainAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/ExplainAdminCommandTest.php" line="260" assertions="7" time="0.002650"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/GenerateAdminCommandTest.php" namespace="Sonata\AdminBundle\Tests\Command" fullPackage="Sonata.AdminBundle.Tests.Command" tests="9" assertions="75" failures="0" errors="0" time="0.446800">
+      <testcase name="testExecute" class="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/GenerateAdminCommandTest.php" line="118" assertions="19" time="0.369791"/>
+      <testcase name="testExecuteWithExceptionNoModelManagers" class="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/GenerateAdminCommandTest.php" line="167" assertions="3" time="0.005730"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest::testExecuteInteractive" tests="2" assertions="40" failures="0" errors="0" time="0.052179">
+        <testcase name="testExecuteInteractive with data set #0" assertions="20" time="0.039552"/>
+        <testcase name="testExecuteInteractive with data set #1" assertions="20" time="0.012627"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest::testValidateManagerType" tests="2" assertions="4" failures="0" errors="0" time="0.007554">
+        <testcase name="testValidateManagerType with data set #0" assertions="2" time="0.003972"/>
+        <testcase name="testValidateManagerType with data set #1" assertions="2" time="0.003582"/>
+      </testsuite>
+      <testcase name="testValidateManagerTypeWithException1" class="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/GenerateAdminCommandTest.php" line="324" assertions="3" time="0.003632"/>
+      <testcase name="testValidateManagerTypeWithException2" class="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/GenerateAdminCommandTest.php" line="331" assertions="3" time="0.003681"/>
+      <testcase name="testValidateManagerTypeWithException3" class="Sonata\AdminBundle\Tests\Command\GenerateAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/GenerateAdminCommandTest.php" line="341" assertions="3" time="0.004233"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Command\ListAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/ListAdminCommandTest.php" namespace="Sonata\AdminBundle\Tests\Command" fullPackage="Sonata.AdminBundle.Tests.Command" tests="1" assertions="4" failures="0" errors="0" time="0.022431">
+      <testcase name="testExecute" class="Sonata\AdminBundle\Tests\Command\ListAdminCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/ListAdminCommandTest.php" line="24" assertions="4" time="0.022431"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Command\SetupAclCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/SetupAclCommandTest.php" namespace="Sonata\AdminBundle\Tests\Command" fullPackage="Sonata.AdminBundle.Tests.Command" tests="3" assertions="6" failures="0" errors="0" time="0.034999">
+      <testcase name="testExecute" class="Sonata\AdminBundle\Tests\Command\SetupAclCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/SetupAclCommandTest.php" line="25" assertions="2" time="0.027022"/>
+      <testcase name="testExecuteWithException1" class="Sonata\AdminBundle\Tests\Command\SetupAclCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/SetupAclCommandTest.php" line="68" assertions="2" time="0.004314"/>
+      <testcase name="testExecuteWithException2" class="Sonata\AdminBundle\Tests\Command\SetupAclCommandTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/SetupAclCommandTest.php" line="99" assertions="2" time="0.003663"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Command/ValidatorsTest.php" namespace="Sonata\AdminBundle\Tests\Command" fullPackage="Sonata.AdminBundle.Tests.Command" tests="75" assertions="75" failures="0" errors="0" time="0.021509">
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateUsername" tests="2" assertions="2" failures="0" errors="0" time="0.000523">
+        <testcase name="testValidateUsername with data set #0" assertions="1" time="0.000278"/>
+        <testcase name="testValidateUsername with data set #1" assertions="1" time="0.000245"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateUsernameWithException" tests="1" assertions="1" failures="0" errors="0" time="0.000422">
+        <testcase name="testValidateUsernameWithException with data set #0" assertions="1" time="0.000422"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateEntityName" tests="3" assertions="3" failures="0" errors="0" time="0.001629">
+        <testcase name="testValidateEntityName with data set #0" assertions="1" time="0.000828"/>
+        <testcase name="testValidateEntityName with data set #1" assertions="1" time="0.000401"/>
+        <testcase name="testValidateEntityName with data set #2" assertions="1" time="0.000400"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateEntityNameWithException" tests="7" assertions="7" failures="0" errors="0" time="0.001912">
+        <testcase name="testValidateEntityNameWithException with data set #0" assertions="1" time="0.000286"/>
+        <testcase name="testValidateEntityNameWithException with data set #1" assertions="1" time="0.000274"/>
+        <testcase name="testValidateEntityNameWithException with data set #2" assertions="1" time="0.000270"/>
+        <testcase name="testValidateEntityNameWithException with data set #3" assertions="1" time="0.000275"/>
+        <testcase name="testValidateEntityNameWithException with data set #4" assertions="1" time="0.000270"/>
+        <testcase name="testValidateEntityNameWithException with data set #5" assertions="1" time="0.000269"/>
+        <testcase name="testValidateEntityNameWithException with data set #6" assertions="1" time="0.000268"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateClass" tests="2" assertions="2" failures="0" errors="0" time="0.000326">
+        <testcase name="testValidateClass with data set #0" assertions="1" time="0.000165"/>
+        <testcase name="testValidateClass with data set #1" assertions="1" time="0.000161"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateClassWithException" tests="3" assertions="3" failures="0" errors="0" time="0.000884">
+        <testcase name="testValidateClassWithException with data set #0" assertions="1" time="0.000276"/>
+        <testcase name="testValidateClassWithException with data set #1" assertions="1" time="0.000270"/>
+        <testcase name="testValidateClassWithException with data set #2" assertions="1" time="0.000338"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateAdminClassBasename" tests="3" assertions="3" failures="0" errors="0" time="0.000490">
+        <testcase name="testValidateAdminClassBasename with data set #0" assertions="1" time="0.000163"/>
+        <testcase name="testValidateAdminClassBasename with data set #1" assertions="1" time="0.000161"/>
+        <testcase name="testValidateAdminClassBasename with data set #2" assertions="1" time="0.000166"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateAdminClassBasenameWithException" tests="3" assertions="3" failures="0" errors="0" time="0.000818">
+        <testcase name="testValidateAdminClassBasenameWithException with data set #0" assertions="1" time="0.000277"/>
+        <testcase name="testValidateAdminClassBasenameWithException with data set #1" assertions="1" time="0.000273"/>
+        <testcase name="testValidateAdminClassBasenameWithException with data set #2" assertions="1" time="0.000268"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateControllerClassBasename" tests="3" assertions="3" failures="0" errors="0" time="0.000611">
+        <testcase name="testValidateControllerClassBasename with data set #0" assertions="1" time="0.000167"/>
+        <testcase name="testValidateControllerClassBasename with data set #1" assertions="1" time="0.000169"/>
+        <testcase name="testValidateControllerClassBasename with data set #2" assertions="1" time="0.000275"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateControllerClassBasenameWithException" tests="20" assertions="20" failures="0" errors="0" time="0.007162">
+        <testcase name="testValidateControllerClassBasenameWithException with data set #0" assertions="1" time="0.000476"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #1" assertions="1" time="0.000452"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #2" assertions="1" time="0.000461"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #3" assertions="1" time="0.000981"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #4" assertions="1" time="0.000278"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #5" assertions="1" time="0.000423"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #6" assertions="1" time="0.000292"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #7" assertions="1" time="0.000423"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #8" assertions="1" time="0.000282"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #9" assertions="1" time="0.000301"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #10" assertions="1" time="0.000291"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #11" assertions="1" time="0.000292"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #12" assertions="1" time="0.000281"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #13" assertions="1" time="0.000276"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #14" assertions="1" time="0.000273"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #15" assertions="1" time="0.000275"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #16" assertions="1" time="0.000273"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #17" assertions="1" time="0.000281"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #18" assertions="1" time="0.000273"/>
+        <testcase name="testValidateControllerClassBasenameWithException with data set #19" assertions="1" time="0.000278"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateServicesFile" tests="7" assertions="7" failures="0" errors="0" time="0.001212">
+        <testcase name="testValidateServicesFile with data set #0" assertions="1" time="0.000232"/>
+        <testcase name="testValidateServicesFile with data set #1" assertions="1" time="0.000163"/>
+        <testcase name="testValidateServicesFile with data set #2" assertions="1" time="0.000161"/>
+        <testcase name="testValidateServicesFile with data set #3" assertions="1" time="0.000164"/>
+        <testcase name="testValidateServicesFile with data set #4" assertions="1" time="0.000162"/>
+        <testcase name="testValidateServicesFile with data set #5" assertions="1" time="0.000163"/>
+        <testcase name="testValidateServicesFile with data set #6" assertions="1" time="0.000167"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateServiceId" tests="3" assertions="3" failures="0" errors="0" time="0.000529">
+        <testcase name="testValidateServiceId with data set #0" assertions="1" time="0.000201"/>
+        <testcase name="testValidateServiceId with data set #1" assertions="1" time="0.000164"/>
+        <testcase name="testValidateServiceId with data set #2" assertions="1" time="0.000164"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Command\ValidatorsTest::testValidateServiceIdWithException" tests="18" assertions="18" failures="0" errors="0" time="0.004991">
+        <testcase name="testValidateServiceIdWithException with data set #0" assertions="1" time="0.000284"/>
+        <testcase name="testValidateServiceIdWithException with data set #1" assertions="1" time="0.000275"/>
+        <testcase name="testValidateServiceIdWithException with data set #2" assertions="1" time="0.000281"/>
+        <testcase name="testValidateServiceIdWithException with data set #3" assertions="1" time="0.000281"/>
+        <testcase name="testValidateServiceIdWithException with data set #4" assertions="1" time="0.000275"/>
+        <testcase name="testValidateServiceIdWithException with data set #5" assertions="1" time="0.000274"/>
+        <testcase name="testValidateServiceIdWithException with data set #6" assertions="1" time="0.000275"/>
+        <testcase name="testValidateServiceIdWithException with data set #7" assertions="1" time="0.000274"/>
+        <testcase name="testValidateServiceIdWithException with data set #8" assertions="1" time="0.000274"/>
+        <testcase name="testValidateServiceIdWithException with data set #9" assertions="1" time="0.000273"/>
+        <testcase name="testValidateServiceIdWithException with data set #10" assertions="1" time="0.000302"/>
+        <testcase name="testValidateServiceIdWithException with data set #11" assertions="1" time="0.000275"/>
+        <testcase name="testValidateServiceIdWithException with data set #12" assertions="1" time="0.000276"/>
+        <testcase name="testValidateServiceIdWithException with data set #13" assertions="1" time="0.000276"/>
+        <testcase name="testValidateServiceIdWithException with data set #14" assertions="1" time="0.000275"/>
+        <testcase name="testValidateServiceIdWithException with data set #15" assertions="1" time="0.000273"/>
+        <testcase name="testValidateServiceIdWithException with data set #16" assertions="1" time="0.000274"/>
+        <testcase name="testValidateServiceIdWithException with data set #17" assertions="1" time="0.000274"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" namespace="Sonata\AdminBundle\Tests\Controller" fullPackage="Sonata.AdminBundle.Tests.Controller" tests="85" assertions="875" failures="0" errors="0" time="1.548217">
+      <testcase name="testRenderJson1" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="324" assertions="8" time="0.077425"/>
+      <testcase name="testRenderJson2" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="335" assertions="8" time="0.004889"/>
+      <testcase name="testRenderJsonAjax" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="346" assertions="8" time="0.005011"/>
+      <testcase name="testIsXmlHttpRequest" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="358" assertions="10" time="0.006379"/>
+      <testcase name="testConfigure" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="373" assertions="8" time="0.017702"/>
+      <testcase name="testConfigureChild" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="390" assertions="8" time="0.011802"/>
+      <testcase name="testConfigureWithException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="416" assertions="8" time="0.006444"/>
+      <testcase name="testConfigureWithException2" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="424" assertions="8" time="0.005332"/>
+      <testcase name="testGetBaseTemplate" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="432" assertions="10" time="0.014873"/>
+      <testcase name="testRender" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="446" assertions="11" time="0.006467"/>
+      <testcase name="testRenderWithResponse" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="456" assertions="12" time="0.008222"/>
+      <testcase name="testRenderCustomParams" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="471" assertions="12" time="0.006876"/>
+      <testcase name="testRenderAjax" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="482" assertions="12" time="0.008558"/>
+      <testcase name="testListActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="494" assertions="7" time="0.017537"/>
+      <testcase name="testListAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="506" assertions="18" time="0.047028"/>
+      <testcase name="testBatchActionDeleteAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="546" assertions="7" time="0.007481"/>
+      <testcase name="testBatchActionDelete" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="558" assertions="9" time="0.024048"/>
+      <testcase name="testBatchActionDeleteWithModelManagerException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="582" assertions="10" time="0.017746"/>
+      <testcase name="testShowActionNotFoundException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="607" assertions="7" time="0.012178"/>
+      <testcase name="testShowActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="618" assertions="7" time="0.009801"/>
+      <testcase name="testShowAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="634" assertions="15" time="0.020649"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest::testRedirectTo" tests="5" assertions="40" failures="0" errors="0" time="0.043325">
+        <testcase name="testRedirectTo with data set #0" assertions="8" time="0.007007"/>
+        <testcase name="testRedirectTo with data set #1" assertions="8" time="0.012001"/>
+        <testcase name="testRedirectTo with data set #2" assertions="8" time="0.007630"/>
+        <testcase name="testRedirectTo with data set #3" assertions="8" time="0.008451"/>
+        <testcase name="testRedirectTo with data set #4" assertions="8" time="0.008236"/>
+      </testsuite>
+      <testcase name="testAddFlash" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="698" assertions="7" time="0.009089"/>
+      <testcase name="testDeleteActionNotFoundException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="704" assertions="7" time="0.008497"/>
+      <testcase name="testDeleteActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="715" assertions="7" time="0.008693"/>
+      <testcase name="testDeleteAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="731" assertions="15" time="0.020876"/>
+      <testcase name="testDeleteActionNoCsrfToken" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="758" assertions="15" time="0.018189"/>
+      <testcase name="testDeleteActionAjaxSuccess1" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="787" assertions="9" time="0.020571"/>
+      <testcase name="testDeleteActionAjaxSuccess2" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="812" assertions="9" time="0.012382"/>
+      <testcase name="testDeleteActionAjaxError" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="838" assertions="9" time="0.013366"/>
+      <testcase name="testDeleteActionSuccess1" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="869" assertions="9" time="0.026444"/>
+      <testcase name="testDeleteActionSuccess2" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="900" assertions="9" time="0.025943"/>
+      <testcase name="testDeleteActionSuccessNoCsrfTokenProvider" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="927" assertions="9" time="0.024101"/>
+      <testcase name="testDeleteActionWrongRequestMethod" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="954" assertions="15" time="0.013882"/>
+      <testcase name="testDeleteActionError" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="984" assertions="9" time="0.027224"/>
+      <testcase name="testDeleteActionInvalidCsrfToken" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1015" assertions="8" time="0.010655"/>
+      <testcase name="testEditActionNotFoundException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1040" assertions="7" time="0.011894"/>
+      <testcase name="testEditActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1051" assertions="7" time="0.008551"/>
+      <testcase name="testEditAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1067" assertions="16" time="0.023792"/>
+      <testcase name="testEditActionSuccess" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1107" assertions="10" time="0.060294"/>
+      <testcase name="testEditActionError" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1147" assertions="16" time="0.028353"/>
+      <testcase name="testEditActionAjaxSuccess" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1196" assertions="10" time="0.023808"/>
+      <testcase name="testEditActionAjaxError" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1240" assertions="16" time="0.027560"/>
+      <testcase name="testEditActionWithPreview" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1288" assertions="16" time="0.037995"/>
+      <testcase name="testCreateActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1340" assertions="7" time="0.005960"/>
+      <testcase name="testCreateAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1352" assertions="16" time="0.018825"/>
+      <testcase name="testCreateActionSuccess" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1393" assertions="10" time="0.027497"/>
+      <testcase name="testCreateActionAccessDenied2" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1442" assertions="8" time="0.015252"/>
+      <testcase name="testCreateActionError" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1482" assertions="16" time="0.028455"/>
+      <testcase name="testCreateActionAjaxSuccess" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1531" assertions="10" time="0.030276"/>
+      <testcase name="testCreateActionAjaxError" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1584" assertions="16" time="0.019790"/>
+      <testcase name="testCreateActionWithPreview" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1632" assertions="16" time="0.029071"/>
+      <testcase name="testExportActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1684" assertions="7" time="0.005621"/>
+      <testcase name="testExportActionWrongFormat" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1696" assertions="8" time="0.013983"/>
+      <testcase name="testExportAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1718" assertions="9" time="0.017535"/>
+      <testcase name="testHistoryActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1743" assertions="7" time="0.008352"/>
+      <testcase name="testHistoryActionNotFoundException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1755" assertions="7" time="0.008484"/>
+      <testcase name="testHistoryActionNoReader" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1771" assertions="9" time="0.016225"/>
+      <testcase name="testHistoryAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1800" assertions="17" time="0.034897"/>
+      <testcase name="testAclActionAclNotEnabled" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1850" assertions="8" time="0.005265"/>
+      <testcase name="testAclActionNotFoundException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1857" assertions="7" time="0.008142"/>
+      <testcase name="testAclActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1872" assertions="7" time="0.016129"/>
+      <testcase name="testAclAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1894" assertions="20" time="0.036315"/>
+      <testcase name="testAclActionInvalidUpdate" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="1957" assertions="20" time="0.027740"/>
+      <testcase name="testAclActionSuccessfulUpdate" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2026" assertions="12" time="0.021104"/>
+      <testcase name="testHistoryViewRevisionActionAccessDenied" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2087" assertions="7" time="0.005762"/>
+      <testcase name="testHistoryViewRevisionActionNotFoundException" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2099" assertions="8" time="0.013752"/>
+      <testcase name="testHistoryViewRevisionActionNoReader" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2117" assertions="9" time="0.012392"/>
+      <testcase name="testHistoryViewRevisionActionNotFoundRevision" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2146" assertions="10" time="0.018633"/>
+      <testcase name="testHistoryViewRevisionAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2187" assertions="17" time="0.033543"/>
+      <testcase name="testBatchActionWrongMethod" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2250" assertions="8" time="0.004917"/>
+      <testcase name="testBatchActionActionNotDefined" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2257" assertions="8" time="0.008195"/>
+      <testcase name="testBatchActionActionInvalidCsrfToken" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2274" assertions="8" time="0.006191"/>
+      <testcase name="testBatchActionMethodNotExist" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2288" assertions="8" time="0.011465"/>
+      <testcase name="testBatchActionWithoutConfirmation" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2310" assertions="11" time="0.031207"/>
+      <testcase name="testBatchActionWithoutConfirmation2" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2360" assertions="11" time="0.039069"/>
+      <testcase name="testBatchActionWithConfirmation" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2411" assertions="19" time="0.023695"/>
+      <testcase name="testBatchActionNonRelevantAction" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2464" assertions="9" time="0.039750"/>
+      <testcase name="testBatchActionNonRelevantAction2" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2493" assertions="9" time="0.018223"/>
+      <testcase name="testBatchActionNoItems" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2522" assertions="9" time="0.020632"/>
+      <testcase name="testBatchActionNoItemsEmptyQuery" class="Sonata\AdminBundle\Tests\Controller\CRUDControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CRUDControllerTest.php" line="2548" assertions="9" time="0.023940"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Controller\CoreControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CoreControllerTest.php" namespace="Sonata\AdminBundle\Tests\Controller" fullPackage="Sonata.AdminBundle.Tests.Controller" tests="2" assertions="2" failures="0" errors="0" time="0.005754">
+      <testcase name="testdashboardActionStandardRequest" class="Sonata\AdminBundle\Tests\Controller\CoreControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CoreControllerTest.php" line="24" assertions="1" time="0.003527"/>
+      <testcase name="testdashboardActionAjaxLayout" class="Sonata\AdminBundle\Tests\Controller\CoreControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/CoreControllerTest.php" line="66" assertions="1" time="0.002227"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" namespace="Sonata\AdminBundle\Tests\Controller" fullPackage="Sonata.AdminBundle.Tests.Controller" tests="8" assertions="35" failures="0" errors="0" time="0.096615">
+      <testcase name="testgetShortObjectDescriptionActionInvalidAdmin" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="77" assertions="1" time="0.007296"/>
+      <testcase name="testgetShortObjectDescriptionActionObjectDoesNotExist" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="98" assertions="3" time="0.004375"/>
+      <testcase name="testgetShortObjectDescriptionActionEmptyObjectId" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="124" assertions="2" time="0.003529"/>
+      <testcase name="testgetShortObjectDescriptionActionObject" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="151" assertions="4" time="0.010913"/>
+      <testcase name="testsetObjectFieldValueAction" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="200" assertions="5" time="0.020956"/>
+      <testcase name="testappendFormFieldElementAction" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="242" assertions="7" time="0.012330"/>
+      <testcase name="testretrieveFormFieldElementAction" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="315" assertions="8" time="0.020802"/>
+      <testcase name="testSetObjectFieldValueActionWithViolations" class="Sonata\AdminBundle\Tests\Controller\HelperControllerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Controller/HelperControllerTest.php" line="384" assertions="5" time="0.016414"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" namespace="Sonata\AdminBundle\Tests\Datagrid" fullPackage="Sonata.AdminBundle.Tests.Datagrid" tests="8" assertions="61" failures="0" errors="0" time="0.024199">
+      <testcase name="testFluidInterface" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="95" assertions="7" time="0.007192"/>
+      <testcase name="testGet" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="104" assertions="12" time="0.002267"/>
+      <testcase name="testGet2" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="128" assertions="12" time="0.002439"/>
+      <testcase name="testAdd" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="155" assertions="7" time="0.001915"/>
+      <testcase name="testAddRemove" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="167" assertions="7" time="0.001730"/>
+      <testcase name="testAddException" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="180" assertions="5" time="0.001398"/>
+      <testcase name="testAddException2" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="193" assertions="5" time="0.001825"/>
+      <testcase name="testReorder" class="Sonata\AdminBundle\Tests\Datagrid\DatagridMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridMapperTest.php" line="211" assertions="6" time="0.005433"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" namespace="Sonata\AdminBundle\Tests\Datagrid" fullPackage="Sonata.AdminBundle.Tests.Datagrid" tests="15" assertions="90" failures="0" errors="0" time="0.118494">
+      <testcase name="testGetPager" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="105" assertions="2" time="0.000863"/>
+      <testcase name="testFilter" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="110" assertions="8" time="0.003629"/>
+      <testcase name="testGetFilters" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="131" assertions="7" time="0.001482"/>
+      <testcase name="testReorderFilters" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="161" assertions="9" time="0.002059"/>
+      <testcase name="testGetValues" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="193" assertions="3" time="0.000874"/>
+      <testcase name="testGetColumns" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="202" assertions="2" time="0.000621"/>
+      <testcase name="testGetQuery" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="207" assertions="2" time="0.000587"/>
+      <testcase name="testHasActiveFilters" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="212" assertions="6" time="0.002385"/>
+      <testcase name="testGetForm" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="241" assertions="2" time="0.009794"/>
+      <testcase name="testGetResults" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="246" assertions="4" time="0.009805"/>
+      <testcase name="testBuildPager" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="257" assertions="12" time="0.026361"/>
+      <testcase name="testBuildPagerWithException" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="308" assertions="4" time="0.009364"/>
+      <testcase name="testBuildPagerWithSortBy" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="328" assertions="11" time="0.014464"/>
+      <testcase name="testBuildPagerWithPage" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="374" assertions="11" time="0.024519"/>
+      <testcase name="testBuildPagerWithPage2" class="Sonata\AdminBundle\Tests\Datagrid\DatagridTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/DatagridTest.php" line="420" assertions="7" time="0.011687"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" namespace="Sonata\AdminBundle\Tests\Datagrid" fullPackage="Sonata.AdminBundle.Tests.Datagrid" tests="9" assertions="53" failures="0" errors="0" time="0.029326">
+      <testcase name="testFluidInterface" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="77" assertions="6" time="0.011019"/>
+      <testcase name="testGet" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="86" assertions="5" time="0.002076"/>
+      <testcase name="testAddIdentifier" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="96" assertions="5" time="0.002791"/>
+      <testcase name="testAdd" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="106" assertions="7" time="0.003806"/>
+      <testcase name="testAddViewInlineActionException" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="119" assertions="6" time="0.001137"/>
+      <testcase name="testAddViewInlineAction" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="127" assertions="9" time="0.003100"/>
+      <testcase name="testAddRemove" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="147" assertions="6" time="0.001527"/>
+      <testcase name="testAddException" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="160" assertions="4" time="0.001034"/>
+      <testcase name="testReorder" class="Sonata\AdminBundle\Tests\Datagrid\ListMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/ListMapperTest.php" line="173" assertions="5" time="0.002836"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" namespace="Sonata\AdminBundle\Tests\Datagrid" fullPackage="Sonata.AdminBundle.Tests.Datagrid" tests="38" assertions="170" failures="0" errors="0" time="0.055938">
+      <testsuite name="Sonata\AdminBundle\Tests\Datagrid\PagerTest::testGetMaxPerPage1" tests="8" assertions="32" failures="0" errors="0" time="0.005989">
+        <testcase name="testGetMaxPerPage1 with data set #0" assertions="4" time="0.001848"/>
+        <testcase name="testGetMaxPerPage1 with data set #1" assertions="4" time="0.000609"/>
+        <testcase name="testGetMaxPerPage1 with data set #2" assertions="4" time="0.000597"/>
+        <testcase name="testGetMaxPerPage1 with data set #3" assertions="4" time="0.000592"/>
+        <testcase name="testGetMaxPerPage1 with data set #4" assertions="4" time="0.000588"/>
+        <testcase name="testGetMaxPerPage1 with data set #5" assertions="4" time="0.000582"/>
+        <testcase name="testGetMaxPerPage1 with data set #6" assertions="4" time="0.000584"/>
+        <testcase name="testGetMaxPerPage1 with data set #7" assertions="4" time="0.000589"/>
+      </testsuite>
+      <testcase name="testGetMaxPerPage2" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="63" assertions="6" time="0.002242"/>
+      <testcase name="testGetMaxPerPage3" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="80" assertions="6" time="0.001005"/>
+      <testcase name="testGetCurrentMaxLink" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="96" assertions="4" time="0.000681"/>
+      <testcase name="testGetMaxRecordLimit" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="112" assertions="2" time="0.000505"/>
+      <testcase name="testGetNbResults" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="120" assertions="2" time="0.000515"/>
+      <testcase name="testCount" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="129" assertions="2" time="0.000521"/>
+      <testcase name="testGetQuery" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="138" assertions="1" time="0.000475"/>
+      <testcase name="testGetCountColumn" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="146" assertions="2" time="0.000631"/>
+      <testcase name="testParameters" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="154" assertions="16" time="0.001281"/>
+      <testcase name="testGetMaxPageLinks" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="183" assertions="2" time="0.000478"/>
+      <testcase name="testIsFirstPage" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="191" assertions="2" time="0.000406"/>
+      <testcase name="testIsLastPage" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="199" assertions="8" time="0.000683"/>
+      <testcase name="testGetLinks" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="218" assertions="11" time="0.002760"/>
+      <testcase name="testHaveToPaginate" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="249" assertions="3" time="0.000449"/>
+      <testcase name="testIterator" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="260" assertions="7" time="0.001007"/>
+      <testcase name="testValid" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="296" assertions="1" time="0.000405"/>
+      <testcase name="testNext" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="301" assertions="2" time="0.000502"/>
+      <testcase name="testKey" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="310" assertions="2" time="0.000538"/>
+      <testcase name="testCurrent" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="319" assertions="2" time="0.000531"/>
+      <testcase name="testGetCursor" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="330" assertions="5" time="0.000634"/>
+      <testcase name="testGetObjectByCursor" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="349" assertions="9" time="0.007445"/>
+      <testcase name="testGetFirstPage" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="411" assertions="1" time="0.001264"/>
+      <testcase name="testGetNextPage" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="416" assertions="3" time="0.000554"/>
+      <testcase name="testGetPreviousPage" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="428" assertions="3" time="0.000550"/>
+      <testcase name="testGetFirstIndice" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="439" assertions="4" time="0.000584"/>
+      <testcase name="testGetLastIndice" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="456" assertions="6" time="0.000695"/>
+      <testcase name="testGetNext" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="478" assertions="6" time="0.007883"/>
+      <testcase name="testGetPrevious" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="539" assertions="6" time="0.007648"/>
+      <testcase name="testSerialize" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="600" assertions="2" time="0.005165"/>
+      <testcase name="testUnserialize" class="Sonata\AdminBundle\Tests\Datagrid\PagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Datagrid/PagerTest.php" line="614" assertions="12" time="0.001912"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\DependencyInjection\AddDependencyCallsCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/AddDependencyCallsCompilerPassTest.php" namespace="Sonata\AdminBundle\Tests\DependencyInjection" fullPackage="Sonata.AdminBundle.Tests.DependencyInjection" tests="3" assertions="42" failures="0" errors="0" time="0.554904">
+      <testcase name="testProcessParsingFullValidConfig" class="Sonata\AdminBundle\Tests\DependencyInjection\AddDependencyCallsCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/AddDependencyCallsCompilerPassTest.php" line="40" assertions="12" time="0.372604"/>
+      <testcase name="testProcessResultingConfig" class="Sonata\AdminBundle\Tests\DependencyInjection\AddDependencyCallsCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/AddDependencyCallsCompilerPassTest.php" line="71" assertions="28" time="0.089306"/>
+      <testcase name="testProcessGroupNameAsParameter" class="Sonata\AdminBundle\Tests\DependencyInjection\AddDependencyCallsCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/AddDependencyCallsCompilerPassTest.php" line="141" assertions="2" time="0.092994"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\DependencyInjection\ExtensionCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/ExtensionCompilerPassTest.php" namespace="Sonata\AdminBundle\Tests\DependencyInjection" fullPackage="Sonata.AdminBundle.Tests.DependencyInjection" tests="6" assertions="67" failures="0" errors="0" time="0.229258">
+      <testcase name="testAdminExtensionLoad" class="Sonata\AdminBundle\Tests\DependencyInjection\ExtensionCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/ExtensionCompilerPassTest.php" line="56" assertions="7" time="0.033433"/>
+      <testcase name="testFlattenEmptyExtensionConfiguration" class="Sonata\AdminBundle\Tests\DependencyInjection\ExtensionCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/ExtensionCompilerPassTest.php" line="73" assertions="10" time="0.019705"/>
+      <testcase name="testFlattenExtensionConfiguration" class="Sonata\AdminBundle\Tests\DependencyInjection\ExtensionCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/ExtensionCompilerPassTest.php" line="101" assertions="28" time="0.024761"/>
+      <testcase name="testProcessWithInvalidExtensionId" class="Sonata\AdminBundle\Tests\DependencyInjection\ExtensionCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/ExtensionCompilerPassTest.php" line="163" assertions="1" time="0.029716"/>
+      <testcase name="testProcessWithInvalidAdminId" class="Sonata\AdminBundle\Tests\DependencyInjection\ExtensionCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/ExtensionCompilerPassTest.php" line="185" assertions="0" time="0.054358"/>
+      <testcase name="testProcess" class="Sonata\AdminBundle\Tests\DependencyInjection\ExtensionCompilerPassTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/Compiler/ExtensionCompilerPassTest.php" line="209" assertions="21" time="0.067285"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/ConfigurationTest.php" namespace="Sonata\AdminBundle\Tests" fullPackage="Sonata.AdminBundle.Tests" tests="2" assertions="5" failures="0" errors="0" time="0.036387">
+      <testcase name="testOptions" class="Sonata\AdminBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/ConfigurationTest.php" line="19" assertions="4" time="0.008475"/>
+      <testcase name="testOptionsWithInvalidFormat" class="Sonata\AdminBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/DependencyInjection/ConfigurationTest.php" line="31" assertions="1" time="0.027912"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" namespace="Sonata\AdminBundle\Tests\Event" fullPackage="Sonata.AdminBundle.Tests.Event" tests="11" assertions="15" failures="0" errors="0" time="0.029207">
+      <testcase name="testConfigureFormFields" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="78" assertions="2" time="0.013471"/>
+      <testcase name="testConfigureListFields" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="88" assertions="2" time="0.004219"/>
+      <testcase name="testConfigureDatagridFields" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="98" assertions="2" time="0.002093"/>
+      <testcase name="testConfigureShowFields" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="108" assertions="2" time="0.002313"/>
+      <testcase name="testPreUpdate" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="118" assertions="1" time="0.001402"/>
+      <testcase name="testConfigureQuery" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="126" assertions="1" time="0.001237"/>
+      <testcase name="testPostUpdate" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="133" assertions="1" time="0.000899"/>
+      <testcase name="testPrePersist" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="141" assertions="1" time="0.000893"/>
+      <testcase name="testPostPersist" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="149" assertions="1" time="0.000896"/>
+      <testcase name="testPreRemove" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="157" assertions="1" time="0.000893"/>
+      <testcase name="testPostRemove" class="Sonata\AdminBundle\Tests\Event\AdminEventExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/AdminEventExtensionTest.php" line="165" assertions="1" time="0.000891"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Event\ConfigureEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureEventTest.php" namespace="Sonata\AdminBundle\Tests\Event" fullPackage="Sonata.AdminBundle.Tests.Event" tests="3" assertions="5" failures="0" errors="0" time="0.001813">
+      <testcase name="testGetType" class="Sonata\AdminBundle\Tests\Event\ConfigureEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureEventTest.php" line="45" assertions="1" time="0.001261"/>
+      <testcase name="testGetAdmin" class="Sonata\AdminBundle\Tests\Event\ConfigureEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureEventTest.php" line="50" assertions="2" time="0.000280"/>
+      <testcase name="testGetMapper" class="Sonata\AdminBundle\Tests\Event\ConfigureEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureEventTest.php" line="58" assertions="2" time="0.000272"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Event\ConfigureQueryEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureQueryEventTest.php" namespace="Sonata\AdminBundle\Tests\Event" fullPackage="Sonata.AdminBundle.Tests.Event" tests="3" assertions="5" failures="0" errors="0" time="0.000836">
+      <testcase name="testGetContext" class="Sonata\AdminBundle\Tests\Event\ConfigureQueryEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureQueryEventTest.php" line="43" assertions="1" time="0.000285"/>
+      <testcase name="testGetAdmin" class="Sonata\AdminBundle\Tests\Event\ConfigureQueryEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureQueryEventTest.php" line="48" assertions="2" time="0.000269"/>
+      <testcase name="testGetProxyQuery" class="Sonata\AdminBundle\Tests\Event\ConfigureQueryEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/ConfigureQueryEventTest.php" line="56" assertions="2" time="0.000282"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Event\PersistenceEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/PersistenceEventTest.php" namespace="Sonata\AdminBundle\Tests\Event" fullPackage="Sonata.AdminBundle.Tests.Event" tests="3" assertions="4" failures="0" errors="0" time="0.000684">
+      <testcase name="testGetType" class="Sonata\AdminBundle\Tests\Event\PersistenceEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/PersistenceEventTest.php" line="42" assertions="1" time="0.000237"/>
+      <testcase name="testGetAdmin" class="Sonata\AdminBundle\Tests\Event\PersistenceEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/PersistenceEventTest.php" line="47" assertions="2" time="0.000229"/>
+      <testcase name="testGetObject" class="Sonata\AdminBundle\Tests\Event\PersistenceEventTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Event/PersistenceEventTest.php" line="55" assertions="1" time="0.000218"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Filter\ExporterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Export/ExporterTest.php" namespace="Sonata\AdminBundle\Tests\Filter" fullPackage="Sonata.AdminBundle.Tests.Filter" tests="5" assertions="13" failures="0" errors="0" time="0.024061">
+      <testcase name="testFilter" class="Sonata\AdminBundle\Tests\Filter\ExporterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Export/ExporterTest.php" line="24" assertions="1" time="0.000603"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Filter\ExporterTest::testGetResponse" tests="4" assertions="12" failures="0" errors="0" time="0.023458">
+        <testcase name="testGetResponse with data set #0" assertions="3" time="0.019224"/>
+        <testcase name="testGetResponse with data set #1" assertions="3" time="0.001578"/>
+        <testcase name="testGetResponse with data set #2" assertions="3" time="0.001406"/>
+        <testcase name="testGetResponse with data set #3" assertions="3" time="0.001250"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Filter\FilterFactoryTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterFactoryTest.php" namespace="Sonata\AdminBundle\Tests\Filter" fullPackage="Sonata.AdminBundle.Tests.Filter" tests="4" assertions="6" failures="0" errors="0" time="0.002924">
+      <testcase name="testEmptyType" class="Sonata\AdminBundle\Tests\Filter\FilterFactoryTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterFactoryTest.php" line="21" assertions="1" time="0.001060"/>
+      <testcase name="testUnknownType" class="Sonata\AdminBundle\Tests\Filter\FilterFactoryTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterFactoryTest.php" line="32" assertions="1" time="0.000534"/>
+      <testcase name="testInvalidTypeInstance" class="Sonata\AdminBundle\Tests\Filter\FilterFactoryTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterFactoryTest.php" line="43" assertions="2" time="0.000716"/>
+      <testcase name="testCreateFilter" class="Sonata\AdminBundle\Tests\Filter\FilterFactoryTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterFactoryTest.php" line="54" assertions="2" time="0.000614"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" namespace="Sonata\AdminBundle\Tests\Filter" fullPackage="Sonata.AdminBundle.Tests.Filter" tests="15" assertions="28" failures="0" errors="0" time="0.016751">
+      <testcase name="testFilter" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="19" assertions="10" time="0.009746"/>
+      <testcase name="testInitialize" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="54" assertions="3" time="0.000614"/>
+      <testcase name="testLabel" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="66" assertions="1" time="0.000249"/>
+      <testcase name="testExceptionOnNonDefinedFieldName" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="77" assertions="1" time="0.000598"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Filter\FilterTest::testIsActive" tests="5" assertions="5" failures="0" errors="0" time="0.001280">
+        <testcase name="testIsActive with data set #0" assertions="1" time="0.000259"/>
+        <testcase name="testIsActive with data set #1" assertions="1" time="0.000251"/>
+        <testcase name="testIsActive with data set #2" assertions="1" time="0.000257"/>
+        <testcase name="testIsActive with data set #3" assertions="1" time="0.000258"/>
+        <testcase name="testIsActive with data set #4" assertions="1" time="0.000255"/>
+      </testsuite>
+      <testcase name="testGetTranslationDomain" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="109" assertions="2" time="0.000335"/>
+      <testcase name="testGetFieldMappingException" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="117" assertions="1" time="0.000451"/>
+      <testcase name="testGetFieldMapping" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="133" assertions="1" time="0.001044"/>
+      <testcase name="testGetParentAssociationMappings" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="150" assertions="2" time="0.001022"/>
+      <testcase name="testGetAssociationMappingException" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="174" assertions="1" time="0.000538"/>
+      <testcase name="testGetAssociationMapping" class="Sonata\AdminBundle\Tests\Filter\FilterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Filter/FilterTest.php" line="189" assertions="1" time="0.000873"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\DataTransformer\ArrayToModelTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ArrayToModelTransformerTest.php" namespace="Sonata\AdminBundle\Tests\Form\DataTransformer" fullPackage="Sonata.AdminBundle.Tests.Form.DataTransformer" tests="13" assertions="20" failures="0" errors="0" time="0.005297">
+      <testcase name="testReverseTransformEntity" class="Sonata\AdminBundle\Tests\Form\DataTransformer\ArrayToModelTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ArrayToModelTransformerTest.php" line="30" assertions="1" time="0.002192"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Form\DataTransformer\ArrayToModelTransformerTest::testReverseTransform" tests="7" assertions="14" failures="0" errors="0" time="0.001867">
+        <testcase name="testReverseTransform with data set #0" assertions="2" time="0.000303"/>
+        <testcase name="testReverseTransform with data set #1" assertions="2" time="0.000328"/>
+        <testcase name="testReverseTransform with data set #2" assertions="2" time="0.000304"/>
+        <testcase name="testReverseTransform with data set #3" assertions="2" time="0.000234"/>
+        <testcase name="testReverseTransform with data set #4" assertions="2" time="0.000233"/>
+        <testcase name="testReverseTransform with data set #5" assertions="2" time="0.000233"/>
+        <testcase name="testReverseTransform with data set #6" assertions="2" time="0.000232"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Form\DataTransformer\ArrayToModelTransformerTest::testTransform" tests="5" assertions="5" failures="0" errors="0" time="0.001238">
+        <testcase name="testTransform with data set #0" assertions="1" time="0.000226"/>
+        <testcase name="testTransform with data set #1" assertions="1" time="0.000217"/>
+        <testcase name="testTransform with data set #2" assertions="1" time="0.000342"/>
+        <testcase name="testTransform with data set #3" assertions="1" time="0.000220"/>
+        <testcase name="testTransform with data set #4" assertions="1" time="0.000233"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdPropertyTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdPropertyTransformerTest.php" namespace="Sonata\AdminBundle\Tests\Form\DataTransformer" fullPackage="Sonata.AdminBundle.Tests.Form.DataTransformer" tests="10" assertions="37" failures="0" errors="0" time="0.013999">
+      <testcase name="testReverseTransform" class="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdPropertyTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdPropertyTransformerTest.php" line="27" assertions="5" time="0.002788"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdPropertyTransformerTest::testReverseTransformMultiple" tests="6" assertions="18" failures="0" errors="0" time="0.007643">
+        <testcase name="testReverseTransformMultiple with data set #0" assertions="3" time="0.000929"/>
+        <testcase name="testReverseTransformMultiple with data set #1" assertions="3" time="0.000825"/>
+        <testcase name="testReverseTransformMultiple with data set #2" assertions="3" time="0.000805"/>
+        <testcase name="testReverseTransformMultiple with data set #3" assertions="3" time="0.000872"/>
+        <testcase name="testReverseTransformMultiple with data set #4" assertions="3" time="0.002195"/>
+        <testcase name="testReverseTransformMultiple with data set #5" assertions="3" time="0.002018"/>
+      </testsuite>
+      <testcase name="testTransform" class="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdPropertyTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdPropertyTransformerTest.php" line="112" assertions="6" time="0.001206"/>
+      <testcase name="testTransformToStringCallback" class="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdPropertyTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdPropertyTransformerTest.php" line="131" assertions="2" time="0.000622"/>
+      <testcase name="testTransformMultiple" class="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdPropertyTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdPropertyTransformerTest.php" line="148" assertions="6" time="0.001739"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdTransformerTest.php" namespace="Sonata\AdminBundle\Tests\Form\DataTransformer" fullPackage="Sonata.AdminBundle.Tests.Form.DataTransformer" tests="6" assertions="20" failures="0" errors="0" time="0.002136">
+      <testcase name="testReverseTransformWhenPassing0AsId" class="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdTransformerTest.php" line="25" assertions="6" time="0.000702"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdTransformerTest::testReverseTransform" tests="4" assertions="8" failures="0" errors="0" time="0.001043">
+        <testcase name="testReverseTransform with data set #0" assertions="2" time="0.000270"/>
+        <testcase name="testReverseTransform with data set #1" assertions="2" time="0.000257"/>
+        <testcase name="testReverseTransform with data set #2" assertions="2" time="0.000258"/>
+        <testcase name="testReverseTransform with data set #3" assertions="2" time="0.000258"/>
+      </testsuite>
+      <testcase name="testTransform" class="Sonata\AdminBundle\Tests\Form\DataTransformer\ModelToIdTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelToIdTransformerTest.php" line="71" assertions="6" time="0.000391"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Form\DataTransformer\ModelsToArrayTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelsToArrayTransformerTest.php" namespace="Sonata\AdminBundle\Form\DataTransformer" fullPackage="Sonata.AdminBundle.Form.DataTransformer" tests="11" assertions="33" failures="0" errors="0" time="0.028929">
+      <testsuite name="Sonata\AdminBundle\Form\DataTransformer\ModelsToArrayTransformerTest::testTransform" tests="5" assertions="10" failures="0" errors="0" time="0.016912">
+        <testcase name="testTransform with data set #0" assertions="2" time="0.003822"/>
+        <testcase name="testTransform with data set #1" assertions="2" time="0.003078"/>
+        <testcase name="testTransform with data set #2" assertions="2" time="0.002044"/>
+        <testcase name="testTransform with data set #3" assertions="2" time="0.005073"/>
+        <testcase name="testTransform with data set #4" assertions="2" time="0.002895"/>
+      </testsuite>
+      <testcase name="testReverseTransformWithException1" class="Sonata\AdminBundle\Form\DataTransformer\ModelsToArrayTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelsToArrayTransformerTest.php" line="92" assertions="4" time="0.000881"/>
+      <testcase name="testReverseTransformWithException2" class="Sonata\AdminBundle\Form\DataTransformer\ModelsToArrayTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelsToArrayTransformerTest.php" line="105" assertions="4" time="0.000876"/>
+      <testsuite name="Sonata\AdminBundle\Form\DataTransformer\ModelsToArrayTransformerTest::testReverseTransformEmpty" tests="2" assertions="6" failures="0" errors="0" time="0.001463">
+        <testcase name="testReverseTransformEmpty with data set #0" assertions="3" time="0.000730"/>
+        <testcase name="testReverseTransformEmpty with data set #1" assertions="3" time="0.000733"/>
+      </testsuite>
+      <testcase name="testReverseTransform" class="Sonata\AdminBundle\Form\DataTransformer\ModelsToArrayTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelsToArrayTransformerTest.php" line="140" assertions="5" time="0.002274"/>
+      <testcase name="testReverseTransformWithNonexistentEntityKey" class="Sonata\AdminBundle\Form\DataTransformer\ModelsToArrayTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/DataTransformer/ModelsToArrayTransformerTest.php" line="178" assertions="4" time="0.006523"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\Extension\Field\Type\FormTypeFieldExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Extension/Field/Type/FormTypeFieldExtensionTest.php" namespace="Sonata\AdminBundle\Tests\Form\Extension\Field\Type" fullPackage="Sonata.AdminBundle.Tests.Form.Extension.Field.Type" tests="4" assertions="13" failures="0" errors="0" time="0.004471">
+      <testcase name="testExtendedType" class="Sonata\AdminBundle\Tests\Form\Extension\Field\Type\FormTypeFieldExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Extension/Field/Type/FormTypeFieldExtensionTest.php" line="24" assertions="1" time="0.001056"/>
+      <testcase name="testDefaultOptions" class="Sonata\AdminBundle\Tests\Form\Extension\Field\Type\FormTypeFieldExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Extension/Field/Type/FormTypeFieldExtensionTest.php" line="31" assertions="4" time="0.001435"/>
+      <testcase name="testbuildViewWithNoSonataAdminArray" class="Sonata\AdminBundle\Tests\Form\Extension\Field\Type\FormTypeFieldExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Extension/Field/Type/FormTypeFieldExtensionTest.php" line="47" assertions="2" time="0.000563"/>
+      <testcase name="testbuildViewWithWithSonataAdmin" class="Sonata\AdminBundle\Tests\Form\Extension\Field\Type\FormTypeFieldExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Extension/Field/Type/FormTypeFieldExtensionTest.php" line="78" assertions="6" time="0.001417"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\FormMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/FormMapperTest.php" namespace="Sonata\AdminBundle\Tests\Form" fullPackage="Sonata.AdminBundle.Tests.Form" tests="4" assertions="6" failures="0" errors="0" time="0.013999">
+      <testcase name="testWithNoOptions" class="Sonata\AdminBundle\Tests\Form\FormMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/FormMapperTest.php" line="36" assertions="1" time="0.002151"/>
+      <testcase name="testWithOptions" class="Sonata\AdminBundle\Tests\Form\FormMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/FormMapperTest.php" line="52" assertions="1" time="0.002122"/>
+      <testcase name="testWithFieldsCascadeTranslationDomain" class="Sonata\AdminBundle\Tests\Form\FormMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/FormMapperTest.php" line="70" assertions="3" time="0.008678"/>
+      <testcase name="testRemoveCascadeRemoveFieldFromFormGroup" class="Sonata\AdminBundle\Tests\Form\FormMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/FormMapperTest.php" line="120" assertions="1" time="0.001048"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\Type\AdminTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/AdminTypeTest.php" namespace="Sonata\AdminBundle\Tests\Form\Type" fullPackage="Sonata.AdminBundle.Tests.Form.Type" tests="1" assertions="6" failures="0" errors="0" time="0.036550">
+      <testcase name="testGetDefaultOptions" class="Sonata\AdminBundle\Tests\Form\Type\AdminTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/AdminTypeTest.php" line="20" assertions="6" time="0.036550"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\Type\DateTimeRangeTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/Filter/DateTimeRangeTypeTest.php" namespace="Sonata\AdminBundle\Tests\Form\Type" fullPackage="Sonata.AdminBundle.Tests.Form.Type" tests="1" assertions="1" failures="0" errors="0" time="0.002028">
+      <testcase name="testGetDefaultOptions" class="Sonata\AdminBundle\Tests\Form\Type\DateTimeRangeTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/Filter/DateTimeRangeTypeTest.php" line="11" assertions="1" time="0.002028"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\Type\ModelAutocompleteTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelAutocompleteTypeTest.php" namespace="Sonata\AdminBundle\Tests\Form\Type" fullPackage="Sonata.AdminBundle.Tests.Form.Type" tests="1" assertions="16" failures="0" errors="0" time="0.003235">
+      <testcase name="testGetDefaultOptions" class="Sonata\AdminBundle\Tests\Form\Type\ModelAutocompleteTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelAutocompleteTypeTest.php" line="21" assertions="16" time="0.003235"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\Type\ModelHiddenTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelHiddenTypeTest.php" namespace="Sonata\AdminBundle\Tests\Form\Type" fullPackage="Sonata.AdminBundle.Tests.Form.Type" tests="3" assertions="5" failures="0" errors="0" time="0.015091">
+      <testcase name="testGetDefaultOptions" class="Sonata\AdminBundle\Tests\Form\Type\ModelHiddenTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelHiddenTypeTest.php" line="21" assertions="3" time="0.014471"/>
+      <testcase name="testGetName" class="Sonata\AdminBundle\Tests\Form\Type\ModelHiddenTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelHiddenTypeTest.php" line="36" assertions="1" time="0.000322"/>
+      <testcase name="testGetParent" class="Sonata\AdminBundle\Tests\Form\Type\ModelHiddenTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelHiddenTypeTest.php" line="42" assertions="1" time="0.000298"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\Type\ModelTypeListTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelTypeListTest.php" namespace="Sonata\AdminBundle\Tests\Form\Type" fullPackage="Sonata.AdminBundle.Tests.Form.Type" tests="1" assertions="6" failures="0" errors="0" time="0.000777">
+      <testcase name="testGetDefaultOptions" class="Sonata\AdminBundle\Tests\Form\Type\ModelTypeListTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelTypeListTest.php" line="20" assertions="6" time="0.000777"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Form\Type\ModelTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelTypeTest.php" namespace="Sonata\AdminBundle\Tests\Form\Type" fullPackage="Sonata.AdminBundle.Tests.Form.Type" tests="5" assertions="75" failures="0" errors="0" time="0.005035">
+      <testcase name="testGetDefaultOptions" class="Sonata\AdminBundle\Tests\Form\Type\ModelTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Form/Type/ModelTypeTest.php" line="21" assertions="15" time="0.001210"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Form\Type\ModelTypeTest::testCompundOption" tests="4" assertions="60" failures="0" errors="0" time="0.003825">
+        <testcase name="testCompundOption with data set #0" assertions="15" time="0.000962"/>
+        <testcase name="testCompundOption with data set #1" assertions="15" time="0.000949"/>
+        <testcase name="testCompundOption with data set #2" assertions="15" time="0.000954"/>
+        <testcase name="testCompundOption with data set #3" assertions="15" time="0.000960"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Generator\AbstractBcGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Generator/AbstractBcGeneratorTest.php" namespace="Sonata\AdminBundle\Tests\Generator" fullPackage="Sonata.AdminBundle.Tests.Generator" tests="2" assertions="2" failures="0" errors="0" time="0.012689">
+      <testcase name="testRenderBc23" class="Sonata\AdminBundle\Tests\Generator\AbstractBcGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Generator/AbstractBcGeneratorTest.php" line="71" assertions="1" time="0.012366"/>
+      <testcase name="testRenderFileBc23" class="Sonata\AdminBundle\Tests\Generator\AbstractBcGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Generator/AbstractBcGeneratorTest.php" line="87" assertions="1" time="0.000323"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Generator\AdminGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Generator/AdminGeneratorTest.php" namespace="Sonata\AdminBundle\Tests\Generator" fullPackage="Sonata.AdminBundle.Tests.Generator" tests="1" assertions="8" failures="0" errors="0" time="0.012254">
+      <testcase name="testGenerate" class="Sonata\AdminBundle\Tests\Generator\AdminGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Generator/AdminGeneratorTest.php" line="55" assertions="8" time="0.012254"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Generator\ControllerGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Generator/ControllerGeneratorTest.php" namespace="Sonata\AdminBundle\Tests\Generator" fullPackage="Sonata.AdminBundle.Tests.Generator" tests="1" assertions="7" failures="0" errors="0" time="0.006744">
+      <testcase name="testGenerate" class="Sonata\AdminBundle\Tests\Generator\ControllerGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Generator/ControllerGeneratorTest.php" line="51" assertions="7" time="0.006744"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Guesser\TypeGuesserChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Guesser/TypeGuesserChainTest.php" namespace="Sonata\AdminBundle\Tests\Guesser" fullPackage="Sonata.AdminBundle.Tests.Guesser" tests="2" assertions="7" failures="0" errors="0" time="0.002707">
+      <testcase name="testConstructorWithException" class="Sonata\AdminBundle\Tests\Guesser\TypeGuesserChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Guesser/TypeGuesserChainTest.php" line="29" assertions="1" time="0.000667"/>
+      <testcase name="testGuessType" class="Sonata\AdminBundle\Tests\Guesser\TypeGuesserChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Guesser/TypeGuesserChainTest.php" line="36" assertions="6" time="0.002040"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Generator\ServicesManipulatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Manipulator/ServicesManipulatorTest.php" namespace="Sonata\AdminBundle\Tests\Generator" fullPackage="Sonata.AdminBundle.Tests.Generator" tests="3" assertions="5" failures="0" errors="0" time="0.007828">
+      <testcase name="testAddResource" class="Sonata\AdminBundle\Tests\Generator\ServicesManipulatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Manipulator/ServicesManipulatorTest.php" line="44" assertions="2" time="0.004809"/>
+      <testcase name="testAddResourceShouldThrowException" class="Sonata\AdminBundle\Tests\Generator\ServicesManipulatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Manipulator/ServicesManipulatorTest.php" line="90" assertions="2" time="0.001932"/>
+      <testcase name="testAddResourceWithEmptyServices" class="Sonata\AdminBundle\Tests\Generator\ServicesManipulatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Manipulator/ServicesManipulatorTest.php" line="108" assertions="1" time="0.001087"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Mapper\BaseGroupedMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Mapper/BaseGroupedMapperTest.php" namespace="Sonata\AdminBundle\Tests\Mapper" fullPackage="Sonata.AdminBundle.Tests.Mapper" tests="2" assertions="2" failures="0" errors="0" time="0.002406">
+      <testcase name="testWith" class="Sonata\AdminBundle\Tests\Mapper\BaseGroupedMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Mapper/BaseGroupedMapperTest.php" line="37" assertions="1" time="0.001948"/>
+      <testcase name="testEnd" class="Sonata\AdminBundle\Tests\Mapper\BaseGroupedMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Mapper/BaseGroupedMapperTest.php" line="42" assertions="1" time="0.000458"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Mapper\BaseMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Mapper/BaseMapperTest.php" namespace="Sonata\AdminBundle\Tests\Mapper" fullPackage="Sonata.AdminBundle.Tests.Mapper" tests="1" assertions="1" failures="0" errors="0" time="0.001219">
+      <testcase name="testGetAdmin" class="Sonata\AdminBundle\Tests\Mapper\BaseMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Mapper/BaseMapperTest.php" line="44" assertions="1" time="0.001219"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Model\AuditManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Model/AuditManagerTest.php" namespace="Sonata\AdminBundle\Model" fullPackage="Sonata.AdminBundle.Model" tests="2" assertions="6" failures="0" errors="0" time="0.000964">
+      <testcase name="testGetReader" class="Sonata\AdminBundle\Model\AuditManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Model/AuditManagerTest.php" line="24" assertions="4" time="0.000570"/>
+      <testcase name="testGetReaderWithException" class="Sonata\AdminBundle\Model\AuditManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Model/AuditManagerTest.php" line="57" assertions="2" time="0.000394"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Resources\XliffTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Resources/XliffTest.php" namespace="Sonata\AdminBundle\Tests\Resources" fullPackage="Sonata.AdminBundle.Tests.Resources" tests="1" assertions="26" failures="0" errors="0" time="0.400752">
+      <testsuite name="Sonata\AdminBundle\Tests\Resources\XliffTest::testXliff" tests="1" assertions="26" failures="0" errors="0" time="0.400752">
+        <testcase name="testXliff with data set #0" assertions="26" time="0.400752"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Route\AdminPoolLoaderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/AdminPoolLoaderTest.php" namespace="Sonata\AdminBundle\Route" fullPackage="Sonata.AdminBundle.Route" tests="2" assertions="9" failures="0" errors="0" time="0.002124">
+      <testcase name="testSupports" class="Sonata\AdminBundle\Route\AdminPoolLoaderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/AdminPoolLoaderTest.php" line="21" assertions="2" time="0.000646"/>
+      <testcase name="testLoad" class="Sonata\AdminBundle\Route\AdminPoolLoaderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/AdminPoolLoaderTest.php" line="32" assertions="7" time="0.001478"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Route\DefaultRouteGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/DefaultRouteGeneratorTest.php" namespace="Sonata\AdminBundle\Tests\Route" fullPackage="Sonata.AdminBundle.Tests.Route" tests="9" assertions="36" failures="0" errors="0" time="0.354524">
+      <testcase name="testGenerate" class="Sonata\AdminBundle\Tests\Route\DefaultRouteGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/DefaultRouteGeneratorTest.php" line="30" assertions="2" time="0.004620"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Route\DefaultRouteGeneratorTest::testGenerateUrl" tests="2" assertions="6" failures="0" errors="0" time="0.072313">
+        <testcase name="testGenerateUrl with data set #0" assertions="3" time="0.033274"/>
+        <testcase name="testGenerateUrl with data set #1" assertions="3" time="0.039039"/>
+      </testsuite>
+      <testcase name="testGenerateUrlWithException" class="Sonata\AdminBundle\Tests\Route\DefaultRouteGeneratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/DefaultRouteGeneratorTest.php" line="99" assertions="3" time="0.030698"/>
+      <testsuite name="Sonata\AdminBundle\Tests\Route\DefaultRouteGeneratorTest::testGenerateUrlChild" tests="3" assertions="15" failures="0" errors="0" time="0.130719">
+        <testcase name="testGenerateUrlChild with data set #0" assertions="5" time="0.022013"/>
+        <testcase name="testGenerateUrlChild with data set #1" assertions="5" time="0.021987"/>
+        <testcase name="testGenerateUrlChild with data set #2" assertions="5" time="0.086719"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Route\DefaultRouteGeneratorTest::testGenerateUrlParentFieldDescription" tests="2" assertions="10" failures="0" errors="0" time="0.116174">
+        <testcase name="testGenerateUrlParentFieldDescription with data set #0" assertions="5" time="0.053306"/>
+        <testcase name="testGenerateUrlParentFieldDescription with data set #1" assertions="5" time="0.062868"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Route\PathInfoBuilderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/PathInfoBuilderTest.php" namespace="Sonata\AdminBundle\Tests\Route" fullPackage="Sonata.AdminBundle.Tests.Route" tests="1" assertions="3" failures="0" errors="0" time="0.006386">
+      <testcase name="testBuild" class="Sonata\AdminBundle\Tests\Route\PathInfoBuilderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/PathInfoBuilderTest.php" line="20" assertions="3" time="0.006386"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Route\QueryStringBuilderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/QueryStringBuilderTest.php" namespace="Sonata\AdminBundle\Tests\Route" fullPackage="Sonata.AdminBundle.Tests.Route" tests="5" assertions="67" failures="0" errors="0" time="0.030728">
+      <testsuite name="Sonata\AdminBundle\Tests\Route\QueryStringBuilderTest::testBuild" tests="4" assertions="49" failures="0" errors="0" time="0.023756">
+        <testcase name="testBuild with data set #0" assertions="13" time="0.004971"/>
+        <testcase name="testBuild with data set #1" assertions="11" time="0.004026"/>
+        <testcase name="testBuild with data set #2" assertions="12" time="0.007308"/>
+        <testcase name="testBuild with data set #3" assertions="13" time="0.007451"/>
+      </testsuite>
+      <testcase name="testBuildWithChildren" class="Sonata\AdminBundle\Tests\Route\QueryStringBuilderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/QueryStringBuilderTest.php" line="55" assertions="18" time="0.006972"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" namespace="Sonata\AdminBundle\Tests\Route" fullPackage="Sonata.AdminBundle.Tests.Route" tests="9" assertions="32" failures="0" errors="0" time="0.003610">
+      <testcase name="testGetter" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="18" assertions="4" time="0.000416"/>
+      <testcase name="testActionify" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="28" assertions="2" time="0.000405"/>
+      <testcase name="testActionifyService" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="36" assertions="2" time="0.000412"/>
+      <testcase name="testCode" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="44" assertions="2" time="0.000406"/>
+      <testcase name="testCollection" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="52" assertions="10" time="0.000641"/>
+      <testcase name="testGetWithException" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="85" assertions="2" time="0.000322"/>
+      <testcase name="testChildCollection" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="93" assertions="4" time="0.000344"/>
+      <testcase name="testRoute" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="112" assertions="3" time="0.000333"/>
+      <testcase name="testRouteControllerService" class="Sonata\AdminBundle\Tests\Route\RouteCollectionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Route/RouteCollectionTest.php" line="125" assertions="3" time="0.000331"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Route\SearchHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Search/SearchHandlerTest.php" namespace="Sonata\AdminBundle\Route" fullPackage="Sonata.AdminBundle.Route" tests="2" assertions="11" failures="0" errors="0" time="0.004961">
+      <testcase name="testBuildPagerWithNoGlobalSearchField" class="Sonata\AdminBundle\Route\SearchHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Search/SearchHandlerTest.php" line="42" assertions="5" time="0.001052"/>
+      <testcase name="testBuildPagerWithGlobalSearchField" class="Sonata\AdminBundle\Route\SearchHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Search/SearchHandlerTest.php" line="57" assertions="6" time="0.003909"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Admin\Security\Acl\Permission\MaskBuilderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Acl/Permission/MaskBuilderTest.php" namespace="Sonata\AdminBundle\Tests\Admin\Security\Acl\Permission" fullPackage="Sonata.AdminBundle.Tests.Admin.Security.Acl.Permission" tests="1" assertions="6" failures="0" errors="0" time="0.002577">
+      <testcase name="testGetPattern" class="Sonata\AdminBundle\Tests\Admin\Security\Acl\Permission\MaskBuilderTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Acl/Permission/MaskBuilderTest.php" line="18" assertions="6" time="0.002577"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Security\Handler\AclSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/AclSecurityHandlerTest.php" namespace="Sonata\AdminBundle\Tests\Security\Handler" fullPackage="Sonata.AdminBundle.Tests.Security.Handler" tests="4" assertions="13" failures="0" errors="0" time="0.066582">
+      <testcase name="testAcl" class="Sonata\AdminBundle\Tests\Security\Handler\AclSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/AclSecurityHandlerTest.php" line="19" assertions="7" time="0.036149"/>
+      <testcase name="testBuildInformation" class="Sonata\AdminBundle\Tests\Security\Handler\AclSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/AclSecurityHandlerTest.php" line="49" assertions="2" time="0.002133"/>
+      <testcase name="testWithAuthenticationCredentialsNotFoundException" class="Sonata\AdminBundle\Tests\Security\Handler\AclSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/AclSecurityHandlerTest.php" line="74" assertions="2" time="0.026160"/>
+      <testcase name="testWithNonAuthenticationCredentialsNotFoundException" class="Sonata\AdminBundle\Tests\Security\Handler\AclSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/AclSecurityHandlerTest.php" line="93" assertions="2" time="0.002140"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Security\Handler\NoopSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/NoopSecurityHandlerTest.php" namespace="Sonata\AdminBundle\Tests\Security\Handler" fullPackage="Sonata.AdminBundle.Tests.Security.Handler" tests="5" assertions="6" failures="0" errors="0" time="0.003114">
+      <testcase name="testIsGranted" class="Sonata\AdminBundle\Tests\Security\Handler\NoopSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/NoopSecurityHandlerTest.php" line="28" assertions="2" time="0.001296"/>
+      <testcase name="testBuildSecurityInformation" class="Sonata\AdminBundle\Tests\Security\Handler\NoopSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/NoopSecurityHandlerTest.php" line="34" assertions="1" time="0.000432"/>
+      <testcase name="testCreateObjectSecurity" class="Sonata\AdminBundle\Tests\Security\Handler\NoopSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/NoopSecurityHandlerTest.php" line="39" assertions="1" time="0.000372"/>
+      <testcase name="testDeleteObjectSecurity" class="Sonata\AdminBundle\Tests\Security\Handler\NoopSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/NoopSecurityHandlerTest.php" line="44" assertions="1" time="0.000368"/>
+      <testcase name="testGetBaseRole" class="Sonata\AdminBundle\Tests\Security\Handler\NoopSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/NoopSecurityHandlerTest.php" line="49" assertions="1" time="0.000646"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Security\Handler\RoleSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/RoleSecurityHandlerTest.php" namespace="Sonata\AdminBundle\Tests\Security\Handler" fullPackage="Sonata.AdminBundle.Tests.Security.Handler" tests="61" assertions="174" failures="0" errors="0" time="0.039351">
+      <testsuite name="Sonata\AdminBundle\Tests\Security\Handler\RoleSecurityHandlerTest::testGetBaseRole" tests="4" assertions="8" failures="0" errors="0" time="0.003825">
+        <testcase name="testGetBaseRole with data set #0" assertions="2" time="0.001526"/>
+        <testcase name="testGetBaseRole with data set #1" assertions="2" time="0.000945"/>
+        <testcase name="testGetBaseRole with data set #2" assertions="2" time="0.000827"/>
+        <testcase name="testGetBaseRole with data set #3" assertions="2" time="0.000527"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Security\Handler\RoleSecurityHandlerTest::testIsGranted" tests="53" assertions="159" failures="0" errors="0" time="0.033655">
+        <testcase name="testIsGranted with data set #0" assertions="3" time="0.000754"/>
+        <testcase name="testIsGranted with data set #1" assertions="3" time="0.000595"/>
+        <testcase name="testIsGranted with data set #2" assertions="3" time="0.000585"/>
+        <testcase name="testIsGranted with data set #3" assertions="3" time="0.001025"/>
+        <testcase name="testIsGranted with data set #4" assertions="3" time="0.001041"/>
+        <testcase name="testIsGranted with data set #5" assertions="3" time="0.001149"/>
+        <testcase name="testIsGranted with data set #6" assertions="3" time="0.000634"/>
+        <testcase name="testIsGranted with data set #7" assertions="3" time="0.000542"/>
+        <testcase name="testIsGranted with data set #8" assertions="3" time="0.000586"/>
+        <testcase name="testIsGranted with data set #9" assertions="3" time="0.000513"/>
+        <testcase name="testIsGranted with data set #10" assertions="3" time="0.000512"/>
+        <testcase name="testIsGranted with data set #11" assertions="3" time="0.000509"/>
+        <testcase name="testIsGranted with data set #12" assertions="3" time="0.001072"/>
+        <testcase name="testIsGranted with data set #13" assertions="3" time="0.000957"/>
+        <testcase name="testIsGranted with data set #14" assertions="3" time="0.000613"/>
+        <testcase name="testIsGranted with data set #15" assertions="3" time="0.000589"/>
+        <testcase name="testIsGranted with data set #16" assertions="3" time="0.000654"/>
+        <testcase name="testIsGranted with data set #17" assertions="3" time="0.000641"/>
+        <testcase name="testIsGranted with data set #18" assertions="3" time="0.000577"/>
+        <testcase name="testIsGranted with data set #19" assertions="3" time="0.000578"/>
+        <testcase name="testIsGranted with data set #20" assertions="3" time="0.000576"/>
+        <testcase name="testIsGranted with data set #21" assertions="3" time="0.000573"/>
+        <testcase name="testIsGranted with data set #22" assertions="3" time="0.000558"/>
+        <testcase name="testIsGranted with data set #23" assertions="3" time="0.000574"/>
+        <testcase name="testIsGranted with data set #24" assertions="3" time="0.000575"/>
+        <testcase name="testIsGranted with data set #25" assertions="3" time="0.000579"/>
+        <testcase name="testIsGranted with data set #26" assertions="3" time="0.000572"/>
+        <testcase name="testIsGranted with data set #27" assertions="3" time="0.000576"/>
+        <testcase name="testIsGranted with data set #28" assertions="3" time="0.000573"/>
+        <testcase name="testIsGranted with data set #29" assertions="3" time="0.000578"/>
+        <testcase name="testIsGranted with data set #30" assertions="3" time="0.000638"/>
+        <testcase name="testIsGranted with data set #31" assertions="3" time="0.000577"/>
+        <testcase name="testIsGranted with data set #32" assertions="3" time="0.000572"/>
+        <testcase name="testIsGranted with data set #33" assertions="3" time="0.000576"/>
+        <testcase name="testIsGranted with data set #34" assertions="3" time="0.000571"/>
+        <testcase name="testIsGranted with data set #35" assertions="3" time="0.000576"/>
+        <testcase name="testIsGranted with data set #36" assertions="3" time="0.000571"/>
+        <testcase name="testIsGranted with data set #37" assertions="3" time="0.000637"/>
+        <testcase name="testIsGranted with data set #38" assertions="3" time="0.000716"/>
+        <testcase name="testIsGranted with data set #39" assertions="3" time="0.000568"/>
+        <testcase name="testIsGranted with data set #40" assertions="3" time="0.000607"/>
+        <testcase name="testIsGranted with data set #41" assertions="3" time="0.000576"/>
+        <testcase name="testIsGranted with data set #42" assertions="3" time="0.000619"/>
+        <testcase name="testIsGranted with data set #43" assertions="3" time="0.000573"/>
+        <testcase name="testIsGranted with data set #44" assertions="3" time="0.000571"/>
+        <testcase name="testIsGranted with data set #45" assertions="3" time="0.000570"/>
+        <testcase name="testIsGranted with data set #46" assertions="3" time="0.000575"/>
+        <testcase name="testIsGranted with data set #47" assertions="3" time="0.000575"/>
+        <testcase name="testIsGranted with data set #48" assertions="3" time="0.000573"/>
+        <testcase name="testIsGranted with data set #49" assertions="3" time="0.000572"/>
+        <testcase name="testIsGranted with data set #50" assertions="3" time="0.000573"/>
+        <testcase name="testIsGranted with data set #51" assertions="3" time="0.000571"/>
+        <testcase name="testIsGranted with data set #52" assertions="3" time="0.000838"/>
+      </testsuite>
+      <testcase name="testIsGrantedWithException" class="Sonata\AdminBundle\Tests\Security\Handler\RoleSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/RoleSecurityHandlerTest.php" line="174" assertions="4" time="0.000877"/>
+      <testcase name="testCreateObjectSecurity" class="Sonata\AdminBundle\Tests\Security\Handler\RoleSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/RoleSecurityHandlerTest.php" line="192" assertions="1" time="0.000345"/>
+      <testcase name="testDeleteObjectSecurity" class="Sonata\AdminBundle\Tests\Security\Handler\RoleSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/RoleSecurityHandlerTest.php" line="198" assertions="1" time="0.000317"/>
+      <testcase name="testBuildSecurityInformation" class="Sonata\AdminBundle\Tests\Security\Handler\RoleSecurityHandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Security/Handler/RoleSecurityHandlerTest.php" line="204" assertions="1" time="0.000332"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Show\ShowMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Show/ShowMapperTest.php" namespace="Sonata\AdminBundle\Tests\Show" fullPackage="Sonata.AdminBundle.Tests.Show" tests="6" assertions="34" failures="0" errors="0" time="0.081250">
+      <testcase name="testFluidInterface" class="Sonata\AdminBundle\Tests\Show\ShowMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Show/ShowMapperTest.php" line="122" assertions="6" time="0.012550"/>
+      <testcase name="testGet" class="Sonata\AdminBundle\Tests\Show\ShowMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Show/ShowMapperTest.php" line="131" assertions="5" time="0.015114"/>
+      <testcase name="testAdd" class="Sonata\AdminBundle\Tests\Show\ShowMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Show/ShowMapperTest.php" line="141" assertions="7" time="0.013317"/>
+      <testcase name="testAddRemove" class="Sonata\AdminBundle\Tests\Show\ShowMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Show/ShowMapperTest.php" line="154" assertions="6" time="0.009613"/>
+      <testcase name="testAddException" class="Sonata\AdminBundle\Tests\Show\ShowMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Show/ShowMapperTest.php" line="167" assertions="4" time="0.010428"/>
+      <testcase name="testReorder" class="Sonata\AdminBundle\Tests\Show\ShowMapperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Show/ShowMapperTest.php" line="180" assertions="6" time="0.020228"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\SonataAdminBundleTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/SonataAdminBundleTest.php" namespace="Sonata\AdminBundle\Tests" fullPackage="Sonata.AdminBundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="0.051176">
+      <testcase name="testBuild" class="Sonata\AdminBundle\Tests\SonataAdminBundleTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/SonataAdminBundleTest.php" line="29" assertions="1" time="0.051176"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Translator\BCLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/BCLabelTranslatorStrategyTest.php" namespace="Sonata\AdminBundle\Tests\Translator" fullPackage="Sonata.AdminBundle.Tests.Translator" tests="1" assertions="3" failures="0" errors="0" time="0.025174">
+      <testcase name="testLabel" class="Sonata\AdminBundle\Tests\Translator\BCLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/BCLabelTranslatorStrategyTest.php" line="17" assertions="3" time="0.025174"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Translator\Extractor\JMSTranslatorBundle\AdminExtractorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/Extractor/JMSTranslatorBundle/AdminExtractorTest.php" namespace="Sonata\AdminBundle\Translator\Extractor\JMSTranslatorBundle" fullPackage="Sonata.AdminBundle.Translator.Extractor.JMSTranslatorBundle" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="Sonata\AdminBundle\Tests\Translator\FormLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/FormLabelTranslatorStrategyTest.php" namespace="Sonata\AdminBundle\Tests\Translator" fullPackage="Sonata.AdminBundle.Tests.Translator" tests="1" assertions="2" failures="0" errors="0" time="0.001157">
+      <testcase name="testLabel" class="Sonata\AdminBundle\Tests\Translator\FormLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/FormLabelTranslatorStrategyTest.php" line="17" assertions="2" time="0.001157"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Translator\NativeTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/NativeLabelTranslatorStrategyTest.php" namespace="Sonata\AdminBundle\Tests\Translator" fullPackage="Sonata.AdminBundle.Tests.Translator" tests="9" assertions="9" failures="0" errors="0" time="0.002872">
+      <testsuite name="Sonata\AdminBundle\Tests\Translator\NativeTranslatorStrategyTest::testLabel" tests="9" assertions="9" failures="0" errors="0" time="0.002872">
+        <testcase name="testLabel with data set #0" assertions="1" time="0.000728"/>
+        <testcase name="testLabel with data set #1" assertions="1" time="0.000319"/>
+        <testcase name="testLabel with data set #2" assertions="1" time="0.000321"/>
+        <testcase name="testLabel with data set #3" assertions="1" time="0.000292"/>
+        <testcase name="testLabel with data set #4" assertions="1" time="0.000258"/>
+        <testcase name="testLabel with data set #5" assertions="1" time="0.000254"/>
+        <testcase name="testLabel with data set #6" assertions="1" time="0.000250"/>
+        <testcase name="testLabel with data set #7" assertions="1" time="0.000246"/>
+        <testcase name="testLabel with data set #8" assertions="1" time="0.000204"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Translator\NoopLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/NoopLabelTranslatorStrategyTest.php" namespace="Sonata\AdminBundle\Tests\Translator" fullPackage="Sonata.AdminBundle.Tests.Translator" tests="1" assertions="2" failures="0" errors="0" time="0.000270">
+      <testcase name="testLabel" class="Sonata\AdminBundle\Tests\Translator\NoopLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/NoopLabelTranslatorStrategyTest.php" line="17" assertions="2" time="0.000270"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Translator\UnderscoreLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/UnderscoreLabelTranslatorStrategyTest.php" namespace="Sonata\AdminBundle\Tests\Translator" fullPackage="Sonata.AdminBundle.Tests.Translator" tests="1" assertions="2" failures="0" errors="0" time="0.000510">
+      <testcase name="testLabel" class="Sonata\AdminBundle\Tests\Translator\UnderscoreLabelTranslatorStrategyTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Translator/UnderscoreLabelTranslatorStrategyTest.php" line="17" assertions="2" time="0.000510"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" namespace="Sonata\AdminBundle\Tests\Twig\Extension" fullPackage="Sonata.AdminBundle.Tests.Twig.Extension" tests="147" assertions="594" failures="0" errors="0" time="5.330017">
+      <testsuite name="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest::testRenderListElement" tests="70" assertions="280" failures="0" errors="0" time="3.277951">
+        <testcase name="testRenderListElement with data set #0" assertions="4" time="0.378660"/>
+        <testcase name="testRenderListElement with data set #1" assertions="4" time="0.026484"/>
+        <testcase name="testRenderListElement with data set #2" assertions="4" time="0.022803"/>
+        <testcase name="testRenderListElement with data set #3" assertions="4" time="0.027034"/>
+        <testcase name="testRenderListElement with data set #4" assertions="4" time="0.025650"/>
+        <testcase name="testRenderListElement with data set #5" assertions="4" time="0.024305"/>
+        <testcase name="testRenderListElement with data set #6" assertions="4" time="0.020232"/>
+        <testcase name="testRenderListElement with data set #7" assertions="4" time="0.022288"/>
+        <testcase name="testRenderListElement with data set #8" assertions="4" time="0.075542"/>
+        <testcase name="testRenderListElement with data set #9" assertions="4" time="0.026046"/>
+        <testcase name="testRenderListElement with data set #10" assertions="4" time="0.026890"/>
+        <testcase name="testRenderListElement with data set #11" assertions="4" time="0.021896"/>
+        <testcase name="testRenderListElement with data set #12" assertions="4" time="0.043866"/>
+        <testcase name="testRenderListElement with data set #13" assertions="4" time="0.026070"/>
+        <testcase name="testRenderListElement with data set #14" assertions="4" time="0.029639"/>
+        <testcase name="testRenderListElement with data set #15" assertions="4" time="0.022843"/>
+        <testcase name="testRenderListElement with data set #16" assertions="4" time="0.082680"/>
+        <testcase name="testRenderListElement with data set #17" assertions="4" time="0.023881"/>
+        <testcase name="testRenderListElement with data set #18" assertions="4" time="0.020079"/>
+        <testcase name="testRenderListElement with data set #19" assertions="4" time="0.018455"/>
+        <testcase name="testRenderListElement with data set #20" assertions="4" time="0.022014"/>
+        <testcase name="testRenderListElement with data set #21" assertions="4" time="0.022117"/>
+        <testcase name="testRenderListElement with data set #22" assertions="4" time="0.035114"/>
+        <testcase name="testRenderListElement with data set #23" assertions="4" time="0.027593"/>
+        <testcase name="testRenderListElement with data set #24" assertions="4" time="0.078091"/>
+        <testcase name="testRenderListElement with data set #25" assertions="4" time="0.023493"/>
+        <testcase name="testRenderListElement with data set #26" assertions="4" time="0.033566"/>
+        <testcase name="testRenderListElement with data set #27" assertions="4" time="0.031467"/>
+        <testcase name="testRenderListElement with data set #28" assertions="4" time="0.033816"/>
+        <testcase name="testRenderListElement with data set #29" assertions="4" time="0.021204"/>
+        <testcase name="testRenderListElement with data set #30" assertions="4" time="0.138223"/>
+        <testcase name="testRenderListElement with data set #31" assertions="4" time="0.047825"/>
+        <testcase name="testRenderListElement with data set #32" assertions="4" time="0.048196"/>
+        <testcase name="testRenderListElement with data set #33" assertions="4" time="0.122019"/>
+        <testcase name="testRenderListElement with data set #34" assertions="4" time="0.059267"/>
+        <testcase name="testRenderListElement with data set #35" assertions="4" time="0.054723"/>
+        <testcase name="testRenderListElement with data set #36" assertions="4" time="0.065474"/>
+        <testcase name="testRenderListElement with data set #37" assertions="4" time="0.039005"/>
+        <testcase name="testRenderListElement with data set #38" assertions="4" time="0.118177"/>
+        <testcase name="testRenderListElement with data set #39" assertions="4" time="0.038354"/>
+        <testcase name="testRenderListElement with data set #40" assertions="4" time="0.032209"/>
+        <testcase name="testRenderListElement with data set #41" assertions="4" time="0.030452"/>
+        <testcase name="testRenderListElement with data set #42" assertions="4" time="0.034653"/>
+        <testcase name="testRenderListElement with data set #43" assertions="4" time="0.052100"/>
+        <testcase name="testRenderListElement with data set #44" assertions="4" time="0.050168"/>
+        <testcase name="testRenderListElement with data set #45" assertions="4" time="0.049961"/>
+        <testcase name="testRenderListElement with data set #46" assertions="4" time="0.028929"/>
+        <testcase name="testRenderListElement with data set #47" assertions="4" time="0.037141"/>
+        <testcase name="testRenderListElement with data set #48" assertions="4" time="0.040266"/>
+        <testcase name="testRenderListElement with data set #49" assertions="4" time="0.066166"/>
+        <testcase name="testRenderListElement with data set #50" assertions="4" time="0.056949"/>
+        <testcase name="testRenderListElement with data set #51" assertions="4" time="0.072662"/>
+        <testcase name="testRenderListElement with data set #52" assertions="4" time="0.029699"/>
+        <testcase name="testRenderListElement with data set #53" assertions="4" time="0.023873"/>
+        <testcase name="testRenderListElement with data set #54" assertions="4" time="0.036361"/>
+        <testcase name="testRenderListElement with data set #55" assertions="4" time="0.034777"/>
+        <testcase name="testRenderListElement with data set #56" assertions="4" time="0.033180"/>
+        <testcase name="testRenderListElement with data set #57" assertions="4" time="0.032215"/>
+        <testcase name="testRenderListElement with data set #58" assertions="4" time="0.030665"/>
+        <testcase name="testRenderListElement with data set #59" assertions="4" time="0.036485"/>
+        <testcase name="testRenderListElement with data set #60" assertions="4" time="0.035729"/>
+        <testcase name="testRenderListElement with data set #61" assertions="4" time="0.029056"/>
+        <testcase name="testRenderListElement with data set #62" assertions="4" time="0.038337"/>
+        <testcase name="testRenderListElement with data set #63" assertions="4" time="0.048816"/>
+        <testcase name="testRenderListElement with data set #64" assertions="4" time="0.045542"/>
+        <testcase name="testRenderListElement with data set #65" assertions="4" time="0.047802"/>
+        <testcase name="testRenderListElement with data set #66" assertions="4" time="0.047920"/>
+        <testcase name="testRenderListElement with data set #67" assertions="4" time="0.047982"/>
+        <testcase name="testRenderListElement with data set #68" assertions="4" time="0.048437"/>
+        <testcase name="testRenderListElement with data set #69" assertions="4" time="0.054338"/>
+      </testsuite>
+      <testsuite name="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest::testRenderViewElement" tests="66" assertions="264" failures="0" errors="0" time="1.977381">
+        <testcase name="testRenderViewElement with data set #0" assertions="4" time="0.026623"/>
+        <testcase name="testRenderViewElement with data set #1" assertions="4" time="0.015016"/>
+        <testcase name="testRenderViewElement with data set #2" assertions="4" time="0.017323"/>
+        <testcase name="testRenderViewElement with data set #3" assertions="4" time="0.034337"/>
+        <testcase name="testRenderViewElement with data set #4" assertions="4" time="0.017786"/>
+        <testcase name="testRenderViewElement with data set #5" assertions="4" time="0.031310"/>
+        <testcase name="testRenderViewElement with data set #6" assertions="4" time="0.019262"/>
+        <testcase name="testRenderViewElement with data set #7" assertions="4" time="0.027615"/>
+        <testcase name="testRenderViewElement with data set #8" assertions="4" time="0.015247"/>
+        <testcase name="testRenderViewElement with data set #9" assertions="4" time="0.017270"/>
+        <testcase name="testRenderViewElement with data set #10" assertions="4" time="0.027836"/>
+        <testcase name="testRenderViewElement with data set #11" assertions="4" time="0.028743"/>
+        <testcase name="testRenderViewElement with data set #12" assertions="4" time="0.023162"/>
+        <testcase name="testRenderViewElement with data set #13" assertions="4" time="0.043470"/>
+        <testcase name="testRenderViewElement with data set #14" assertions="4" time="0.029787"/>
+        <testcase name="testRenderViewElement with data set #15" assertions="4" time="0.022129"/>
+        <testcase name="testRenderViewElement with data set #16" assertions="4" time="0.042871"/>
+        <testcase name="testRenderViewElement with data set #17" assertions="4" time="0.092492"/>
+        <testcase name="testRenderViewElement with data set #18" assertions="4" time="0.027005"/>
+        <testcase name="testRenderViewElement with data set #19" assertions="4" time="0.022600"/>
+        <testcase name="testRenderViewElement with data set #20" assertions="4" time="0.042347"/>
+        <testcase name="testRenderViewElement with data set #21" assertions="4" time="0.034071"/>
+        <testcase name="testRenderViewElement with data set #22" assertions="4" time="0.033449"/>
+        <testcase name="testRenderViewElement with data set #23" assertions="4" time="0.047174"/>
+        <testcase name="testRenderViewElement with data set #24" assertions="4" time="0.042469"/>
+        <testcase name="testRenderViewElement with data set #25" assertions="4" time="0.068292"/>
+        <testcase name="testRenderViewElement with data set #26" assertions="4" time="0.035333"/>
+        <testcase name="testRenderViewElement with data set #27" assertions="4" time="0.035463"/>
+        <testcase name="testRenderViewElement with data set #28" assertions="4" time="0.082338"/>
+        <testcase name="testRenderViewElement with data set #29" assertions="4" time="0.022932"/>
+        <testcase name="testRenderViewElement with data set #30" assertions="4" time="0.029605"/>
+        <testcase name="testRenderViewElement with data set #31" assertions="4" time="0.032796"/>
+        <testcase name="testRenderViewElement with data set #32" assertions="4" time="0.032071"/>
+        <testcase name="testRenderViewElement with data set #33" assertions="4" time="0.030449"/>
+        <testcase name="testRenderViewElement with data set #34" assertions="4" time="0.022872"/>
+        <testcase name="testRenderViewElement with data set #35" assertions="4" time="0.026734"/>
+        <testcase name="testRenderViewElement with data set #36" assertions="4" time="0.026136"/>
+        <testcase name="testRenderViewElement with data set #37" assertions="4" time="0.037472"/>
+        <testcase name="testRenderViewElement with data set #38" assertions="4" time="0.039441"/>
+        <testcase name="testRenderViewElement with data set #39" assertions="4" time="0.040756"/>
+        <testcase name="testRenderViewElement with data set #40" assertions="4" time="0.052011"/>
+        <testcase name="testRenderViewElement with data set #41" assertions="4" time="0.041268"/>
+        <testcase name="testRenderViewElement with data set #42" assertions="4" time="0.047836"/>
+        <testcase name="testRenderViewElement with data set #43" assertions="4" time="0.052801"/>
+        <testcase name="testRenderViewElement with data set #44" assertions="4" time="0.051147"/>
+        <testcase name="testRenderViewElement with data set #45" assertions="4" time="0.015271"/>
+        <testcase name="testRenderViewElement with data set #46" assertions="4" time="0.014728"/>
+        <testcase name="testRenderViewElement with data set #47" assertions="4" time="0.016177"/>
+        <testcase name="testRenderViewElement with data set #48" assertions="4" time="0.013980"/>
+        <testcase name="testRenderViewElement with data set #49" assertions="4" time="0.015366"/>
+        <testcase name="testRenderViewElement with data set #50" assertions="4" time="0.021708"/>
+        <testcase name="testRenderViewElement with data set #51" assertions="4" time="0.013486"/>
+        <testcase name="testRenderViewElement with data set #52" assertions="4" time="0.014679"/>
+        <testcase name="testRenderViewElement with data set #53" assertions="4" time="0.015429"/>
+        <testcase name="testRenderViewElement with data set #54" assertions="4" time="0.018731"/>
+        <testcase name="testRenderViewElement with data set #55" assertions="4" time="0.013643"/>
+        <testcase name="testRenderViewElement with data set #56" assertions="4" time="0.022343"/>
+        <testcase name="testRenderViewElement with data set #57" assertions="4" time="0.013402"/>
+        <testcase name="testRenderViewElement with data set #58" assertions="4" time="0.018896"/>
+        <testcase name="testRenderViewElement with data set #59" assertions="4" time="0.027715"/>
+        <testcase name="testRenderViewElement with data set #60" assertions="4" time="0.033326"/>
+        <testcase name="testRenderViewElement with data set #61" assertions="4" time="0.022361"/>
+        <testcase name="testRenderViewElement with data set #62" assertions="4" time="0.028320"/>
+        <testcase name="testRenderViewElement with data set #63" assertions="4" time="0.014848"/>
+        <testcase name="testRenderViewElement with data set #64" assertions="4" time="0.019914"/>
+        <testcase name="testRenderViewElement with data set #65" assertions="4" time="0.013910"/>
+      </testsuite>
+      <testcase name="testGetValueFromFieldDescription" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="429" assertions="5" time="0.002520"/>
+      <testcase name="testGetValueFromFieldDescriptionWithRemoveLoopException" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="441" assertions="4" time="0.003653"/>
+      <testcase name="testGetValueFromFieldDescriptionWithNoValueException" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="457" assertions="5" time="0.003519"/>
+      <testcase name="testGetValueFromFieldDescriptionWithNoValueExceptionNewAdminInstance" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="475" assertions="5" time="0.005131"/>
+      <testcase name="testOutput" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="497" assertions="5" time="0.023058"/>
+      <testcase name="testRenderRelationElementNoObject" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="526" assertions="4" time="0.002455"/>
+      <testcase name="testRenderRelationElementToString" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="531" assertions="5" time="0.007674"/>
+      <testcase name="testRenderRelationElementCustomToString" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="553" assertions="5" time="0.005120"/>
+      <testcase name="testRenderRelationElementMethodNotExist" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="576" assertions="4" time="0.009573"/>
+      <testcase name="testRenderRelationElementWithPropertyPath" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="600" assertions="4" time="0.007681"/>
+      <testcase name="testGetUrlsafeIdentifier" class="Sonata\AdminBundle\Tests\Twig\Extension\SonataAdminExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Twig/Extension/SonataAdminExtensionTest.php" line="618" assertions="4" time="0.004302"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" namespace="Sonata\AdminBundle\Tests\Controller" fullPackage="Sonata.AdminBundle.Tests.Controller" tests="12" assertions="70" failures="0" errors="0" time="0.062035">
+      <testcase name="testGetAdmin" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="55" assertions="2" time="0.000820"/>
+      <testcase name="testGetObject" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="61" assertions="2" time="0.000768"/>
+      <testcase name="testGetAclUsers" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="67" assertions="3" time="0.000776"/>
+      <testcase name="testSetAcl" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="73" assertions="3" time="0.032476"/>
+      <testcase name="testGetAcl" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="87" assertions="0" time="0.000188"/>
+      <testcase name="testGetMasks" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="92" assertions="17" time="0.002085"/>
+      <testcase name="testSetForm" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="103" assertions="3" time="0.006003"/>
+      <testcase name="testGetForm" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="117" assertions="0" time="0.000132"/>
+      <testcase name="testGetPermissions" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="122" assertions="10" time="0.001603"/>
+      <testcase name="testgetUserPermissions" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="132" assertions="22" time="0.010583"/>
+      <testcase name="testIsOwner" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="155" assertions="6" time="0.004502"/>
+      <testcase name="testGetSecurityHandler" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclDataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclDataTest.php" line="164" assertions="2" time="0.002099"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Tests\Controller\AdminObjectAclManipulatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclManipulatorTest.php" namespace="Sonata\AdminBundle\Tests\Controller" fullPackage="Sonata.AdminBundle.Tests.Controller" tests="1" assertions="1" failures="0" errors="0" time="0.000454">
+      <testcase name="testGetMaskBuilder" class="Sonata\AdminBundle\Tests\Controller\AdminObjectAclManipulatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Util/AdminObjectAclManipulatorTest.php" line="28" assertions="1" time="0.000454"/>
+    </testsuite>
+    <testsuite name="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" namespace="Sonata\AdminBundle\Test\Validator\Constraints" fullPackage="Sonata.AdminBundle.Test.Validator.Constraints" tests="7" assertions="8" failures="0" errors="0" time="0.002661">
+      <testcase name="testValidatedBy" class="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" line="22" assertions="1" time="0.000598"/>
+      <testcase name="testIsClosure" class="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" line="28" assertions="2" time="0.000284"/>
+      <testcase name="testGetClosure" class="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" line="37" assertions="1" time="0.000283"/>
+      <testcase name="testGetTargets" class="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" line="45" assertions="1" time="0.000284"/>
+      <testcase name="testGetRequiredOptions" class="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" line="51" assertions="1" time="0.000527"/>
+      <testcase name="testGetMethod" class="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" line="57" assertions="1" time="0.000398"/>
+      <testcase name="testGetService" class="Sonata\AdminBundle\Test\Validator\Constraints\InlineConstraintTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/admin-bundle/Tests/Validator/Constraints/InlineConstraintTest.php" line="63" assertions="1" time="0.000287"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="TimelineBundle Test Suite" tests="2" assertions="17" failures="0" errors="0" time="0.035909">
+    <testsuite name="Sonata\TimelineBundle\Tests\Spread\AdminSpreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/timeline-bundle/Tests/Spread/AdminSpreadTest.php" namespace="Sonata\TimelineBundle\Tests\Spread" fullPackage="Sonata.TimelineBundle.Tests.Spread" tests="2" assertions="17" failures="0" errors="0" time="0.035909">
+      <testcase name="testSupportsMethod" class="Sonata\TimelineBundle\Tests\Spread\AdminSpreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/timeline-bundle/Tests/Spread/AdminSpreadTest.php" line="70" assertions="4" time="0.025186"/>
+      <testcase name="testProcessMethod" class="Sonata\TimelineBundle\Tests\Spread\AdminSpreadTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/timeline-bundle/Tests/Spread/AdminSpreadTest.php" line="93" assertions="13" time="0.010723"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

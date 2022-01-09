@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="7" skipped="0" name="Check the API for MediaBundle" tests="14" time="39.347173">
+    <testcase classname="Check the API for MediaBundle" name="Retrieve the list of medias, Ex #1" time="0.322390" assertions="132">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve the list of medias, Ex #2" time="0.267624" assertions="137">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve a specific media information by unique id, Ex #1" time="0.222003" assertions="142">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve a specific media information by unique id, Ex #2" time="0.213229" assertions="147">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve the media binaries for a unique ID, Ex #1" time="9.678994" assertions="151">
+        <failure message="Response Accept-Ranges header not bytes: &quot;&quot;" type="failed"><![CDATA[
+exception 'Exception' with message 'Response Accept-Ranges header not bytes: ""' in /Users/ronan/Sites/sandbox/features/api/bootstrap/FeatureContext.php:459
+Stack trace:
+#0 [internal function]: FeatureContext->theResponseShouldBeABinary()
+#1 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#2 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#3 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#4 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#5 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#6 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 0, Array)
+#9 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#14 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#20 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve the media binaries for a unique ID, Ex #2" time="11.072274" assertions="155">
+        <failure message="Response Accept-Ranges header not bytes: &quot;&quot;" type="failed"><![CDATA[
+exception 'Exception' with message 'Response Accept-Ranges header not bytes: ""' in /Users/ronan/Sites/sandbox/features/api/bootstrap/FeatureContext.php:459
+Stack trace:
+#0 [internal function]: FeatureContext->theResponseShouldBeABinary()
+#1 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#2 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#3 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#4 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#5 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#6 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 1, Array)
+#9 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#14 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#20 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve the media binaries for a unique ID, Ex #3" time="8.744534" assertions="159">
+        <failure message="Response Accept-Ranges header not bytes: &quot;&quot;" type="failed"><![CDATA[
+exception 'Exception' with message 'Response Accept-Ranges header not bytes: ""' in /Users/ronan/Sites/sandbox/features/api/bootstrap/FeatureContext.php:459
+Stack trace:
+#0 [internal function]: FeatureContext->theResponseShouldBeABinary()
+#1 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#2 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#3 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#4 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#5 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#6 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 2, Array)
+#9 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#14 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#20 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Return available urls for each media, Ex #1" time="0.357935" assertions="165">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Return available urls for each media, Ex #2" time="0.521027" assertions="171">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Return media urls for each format, Ex #1" time="0.485905" assertions="176">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Return media urls for each format, Ex #2" time="0.748682" assertions="181">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrive the list of available galleries, Ex #1" time="0.496047" assertions="189">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrive the list of available galleries, Ex #2" time="1.089776" assertions="197">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve a specific gallery by a unique ID, Ex #1" time="0.236448" assertions="202">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve a specific gallery by a unique ID, Ex #2" time="0.225376" assertions="207">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve a specific gallery by a unique ID, Ex #1" time="0.233259" assertions="212">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve a specific gallery by a unique ID, Ex #2" time="0.238084" assertions="217">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve the galleryhasmedias of a specific gallery by a unique ID, Ex #1" time="0.273574" assertions="223">
+        <failure message="Failed asserting that '[{&quot;gallery_id&quot;:1,&quot;position&quot;:1,&quot;updated_at&quot;:&quot;2015-02-13T14:49:25+0100&quot;,&quot;created_at&quot;:&quot;2015-02-13T12:01:13+0100&quot;,&quot;enabled&quot;:false,&quot;id&quot;:1},{&quot;gallery_id&quot;:1,&quot;position&quot;:3,&quot;updated_at&quot;:&quot;2015-02-13T14:49:25+0100&quot;,&quot;created_at&quot;:&quot;2015-02-13T12:01:13+0100&quot;,&quot;enabled&quot;:true,&quot;id&quot;:5},{&quot;gallery_id&quot;:1,&quot;position&quot;:4,&quot;updated_at&quot;:&quot;2015-02-13T14:49:25+0100&quot;,&quot;created_at&quot;:&quot;2015-02-13T14:49:25+0100&quot;,&quot;enabled&quot;:false,&quot;id&quot;:93}]' matches PCRE pattern &quot;/media_id/&quot;." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Failed asserting that '[{"gallery_id":1,"position":1,"updated_at":"2015-02-13T14:49:25+0100","created_at":"2015-02-13T12:01:13+0100","enabled":false,"id":1},{"gallery_id":1,"position":3,"updated_at":"2015-02-13T14:49:25+0100","created_at":"2015-02-13T12:01:13+0100","enabled":true,"id":5},{"gallery_id":1,"position":4,"updated_at":"2015-02-13T14:49:25+0100","created_at":"2015-02-13T14:49:25+0100","enabled":false,"id":93}]' matches PCRE pattern "/media_id/".' in /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php:144
+Stack trace:
+#0 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php(91): PHPUnit_Framework_Constraint->fail('[{"gallery_id":...', '')
+#1 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(2134): PHPUnit_Framework_Constraint->evaluate('[{"gallery_id":...', '')
+#2 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(1348): PHPUnit_Framework_Assert::assertThat('[{"gallery_id":...', Object(PHPUnit_Framework_Constraint_PCREMatch), '')
+#3 [internal function]: PHPUnit_Framework_Assert::assertRegExp('/media_id/', '[{"gallery_id":...')
+#4 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert/Functions.php(1206): call_user_func_array('PHPUnit_Framewo...', Array)
+#5 /Users/ronan/Sites/sandbox/vendor/behat/common-contexts/Behat/CommonContexts/WebApiContext.php(165): assertRegExp('/media_id/', '[{"gallery_id":...')
+#6 [internal function]: Behat\CommonContexts\WebApiContext->theResponseShouldContain('media_id')
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#9 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Then))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#14 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 0, Array)
+#15 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#16 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#18 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#20 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#26 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieve the galleryhasmedias of a specific gallery by a unique ID, Ex #2" time="0.271373" assertions="229">
+        <failure message="Failed asserting that '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;result&gt;
+  &lt;entry position=&quot;1&quot; id=&quot;1&quot;&gt;
+    &lt;gallery_id&gt;1&lt;/gallery_id&gt;
+    &lt;updated_at&gt;&lt;![CDATA[2015-02-13T14:49:25+0100]]&gt;&lt;/updated_at&gt;
+    &lt;created_at&gt;&lt;![CDATA[2015-02-13T12:01:13+0100]]&gt;&lt;/created_at&gt;
+    &lt;enabled&gt;false&lt;/enabled&gt;
+  &lt;/entry&gt;
+  &lt;entry position=&quot;3&quot; id=&quot;5&quot;&gt;
+    &lt;gallery_id&gt;1&lt;/gallery_id&gt;
+    &lt;updated_at&gt;&lt;![CDATA[2015-02-13T14:49:25+0100]]&gt;&lt;/updated_at&gt;
+    &lt;created_at&gt;&lt;![CDATA[2015-02-13T12:01:13+0100]]&gt;&lt;/created_at&gt;
+    &lt;enabled&gt;true&lt;/enabled&gt;
+  &lt;/entry&gt;
+  &lt;entry position=&quot;4&quot; id=&quot;93&quot;&gt;
+    &lt;gallery_id&gt;1&lt;/gallery_id&gt;
+    &lt;updated_at&gt;&lt;![CDATA[2015-02-13T14:49:25+0100]]&gt;&lt;/updated_at&gt;
+    &lt;created_at&gt;&lt;![CDATA[2015-02-13T14:49:25+0100]]&gt;&lt;/created_at&gt;
+    &lt;enabled&gt;false&lt;/enabled&gt;
+  &lt;/entry&gt;
+&lt;/result&gt;
+' matches PCRE pattern &quot;/media_id/&quot;." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Failed asserting that '<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <entry position="1" id="1">
+    <gallery_id>1</gallery_id>
+    <updated_at>2015-02-13T14:49:25+0100</updated_at>
+    <created_at>2015-02-13T12:01:13+0100</created_at>
+    <enabled>false</enabled>
+  </entry>
+  <entry position="3" id="5">
+    <gallery_id>1</gallery_id>
+    <updated_at>2015-02-13T14:49:25+0100</updated_at>
+    <created_at>2015-02-13T12:01:13+0100</created_at>
+    <enabled>true</enabled>
+  </entry>
+  <entry position="4" id="93">
+    <gallery_id>1</gallery_id>
+    <updated_at>2015-02-13T14:49:25+0100</updated_at>
+    <created_at>2015-02-13T14:49:25+0100</created_at>
+    <enabled>false</enabled>
+  </entry>
+</result>
+' matches PCRE pattern "/media_id/".' in /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php:144
+Stack trace:
+#0 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php(91): PHPUnit_Framework_Constraint->fail('<?xml version="...', '')
+#1 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(2134): PHPUnit_Framework_Constraint->evaluate('<?xml version="...', '')
+#2 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(1348): PHPUnit_Framework_Assert::assertThat('<?xml version="...', Object(PHPUnit_Framework_Constraint_PCREMatch), '')
+#3 [internal function]: PHPUnit_Framework_Assert::assertRegExp('/media_id/', '<?xml version="...')
+#4 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert/Functions.php(1206): call_user_func_array('PHPUnit_Framewo...', Array)
+#5 /Users/ronan/Sites/sandbox/vendor/behat/common-contexts/Behat/CommonContexts/WebApiContext.php(165): assertRegExp('/media_id/', '<?xml version="...')
+#6 [internal function]: Behat\CommonContexts\WebApiContext->theResponseShouldContain('media_id')
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#9 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Then))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#14 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 1, Array)
+#15 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#16 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#18 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#20 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#26 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Unable to retrieve the galleryhasmedias of a specific unexisting gallery by a unique ID, Ex #1" time="0.636186" assertions="234">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Unable to retrieve the galleryhasmedias of a specific unexisting gallery by a unique ID, Ex #2" time="1.050902" assertions="239">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieves the medias of a specific gallery by a unique ID, Ex #1" time="0.548368" assertions="246">
+        <failure message="Failed asserting that '[]' matches PCRE pattern &quot;/IMG_3587\.jpg/&quot;." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Failed asserting that '[]' matches PCRE pattern "/IMG_3587\.jpg/".' in /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php:144
+Stack trace:
+#0 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php(91): PHPUnit_Framework_Constraint->fail('[]', '')
+#1 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(2134): PHPUnit_Framework_Constraint->evaluate('[]', '')
+#2 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(1348): PHPUnit_Framework_Assert::assertThat('[]', Object(PHPUnit_Framework_Constraint_PCREMatch), '')
+#3 [internal function]: PHPUnit_Framework_Assert::assertRegExp('/IMG_3587\\.jpg/', '[]')
+#4 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert/Functions.php(1206): call_user_func_array('PHPUnit_Framewo...', Array)
+#5 /Users/ronan/Sites/sandbox/vendor/behat/common-contexts/Behat/CommonContexts/WebApiContext.php(165): assertRegExp('/IMG_3587\\.jpg/', '[]')
+#6 [internal function]: Behat\CommonContexts\WebApiContext->theResponseShouldContain('IMG_3587.jpg')
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#9 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Then))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#14 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 0, Array)
+#15 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#16 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#18 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#20 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#26 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Retrieves the medias of a specific gallery by a unique ID, Ex #2" time="0.461075" assertions="253">
+        <failure message="Failed asserting that '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;result xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+  &lt;entry xsi:nil=&quot;true&quot;/&gt;
+  &lt;entry xsi:nil=&quot;true&quot;/&gt;
+  &lt;entry xsi:nil=&quot;true&quot;/&gt;
+&lt;/result&gt;
+' matches PCRE pattern &quot;/IMG_3587\.jpg/&quot;." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Failed asserting that '<?xml version="1.0" encoding="UTF-8"?>
+<result xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <entry xsi:nil="true"/>
+  <entry xsi:nil="true"/>
+  <entry xsi:nil="true"/>
+</result>
+' matches PCRE pattern "/IMG_3587\.jpg/".' in /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php:144
+Stack trace:
+#0 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php(91): PHPUnit_Framework_Constraint->fail('<?xml version="...', '')
+#1 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(2134): PHPUnit_Framework_Constraint->evaluate('<?xml version="...', '')
+#2 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(1348): PHPUnit_Framework_Assert::assertThat('<?xml version="...', Object(PHPUnit_Framework_Constraint_PCREMatch), '')
+#3 [internal function]: PHPUnit_Framework_Assert::assertRegExp('/IMG_3587\\.jpg/', '<?xml version="...')
+#4 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert/Functions.php(1206): call_user_func_array('PHPUnit_Framewo...', Array)
+#5 /Users/ronan/Sites/sandbox/vendor/behat/common-contexts/Behat/CommonContexts/WebApiContext.php(165): assertRegExp('/IMG_3587\\.jpg/', '<?xml version="...')
+#6 [internal function]: Behat\CommonContexts\WebApiContext->theResponseShouldContain('IMG_3587.jpg')
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#9 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Then))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#14 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 1, Array)
+#15 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#16 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#18 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#20 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#26 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Unable to retrieve the medias of a specific unexisting gallery by a unique ID, Ex #1" time="0.353462" assertions="258">
+    </testcase>
+    <testcase classname="Check the API for MediaBundle" name="Unable to retrieve the medias of a specific unexisting gallery by a unique ID, Ex #2" time="0.581556" assertions="263">
+    </testcase>
+</testsuite>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="12" skipped="0" name="Check the site admin module" tests="120" time="15.627036">
+    <testcase classname="Check the site admin module" name="Check site admin pages when not connected" time="0.425755" assertions="3">
+    </testcase>
+    <testcase classname="Check the site admin module" name="Check site admin pages when connected" time="0.734624" assertions="2">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Add a new site with some errors" time="0.671292" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Add a new site" time="1.042311" assertions="5">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Filter sites" time="0.649455" assertions="4">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Edit a site" time="0.675410" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="View revisions of a site" time="0.664375" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Create site snapshots" time="0.674785" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Show site" time="0.670917" assertions="6">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Export JSON data" time="0.684590" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Export CSV data" time="0.778509" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Export XML data" time="0.750498" assertions="3">
+        <failure message="Form field with id|name|label|value &quot;_username&quot; not found." type="failed"><![CDATA[
+Form field with id|name|label|value "_username" not found.
+
++--[ HTTP/1.1 500 | http://demo.sonata-project.org/login | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html>
+|      <head>
+|          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|                      <link rel="stylesheet" href="/bundles/sonataadmin/bootstrap/css/bootstrap.css" type="text/css" media="all" >
+|              <link rel="stylesheet" href="/bundles/sonatapage/default.css" type="text/css" media="all" >
+|          
+|          <title>Sonata Project - Internal Error</title>
+|      </head>
+|  
+|      <body class="sonata-bc">
+|          <div class="container">
+|              <div class="content">
+|                  <div class="page-header">
+|                      <h1>Sonata Project - Internal Error</h1>
+|                  </div>
+|  
+|                  <div class="row">
+|                          No page instance available for the url, run the sonata:page:update-core-routes and sonata:page:create-snapshots commands
+|                  </div>
+|              </div>
+|          </div>
+|     </body>
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Check the site admin module" name="Export XLS data" time="3.656872" assertions="3">
+    </testcase>
+    <testcase classname="Check the site admin module" name="Delete a site" time="3.536097" assertions="7">
+        <failure message="Link with id|title|alt|text &quot;toto&quot; not found." type="failed"><![CDATA[
+Link with id|title|alt|text "toto" not found.
+
++--[ HTTP/1.1 200 | http://demo.sonata-project.org/admin/sonata/page/site/list?filter%5Bname%5D%5Btype%5D=&filter%5Bname%5D%5Bvalue%5D=toto&filter%5B_page%5D=1&filter%5B_sort_by%5D=id&filter%5B_sort_order%5D=ASC&filter%5B_per_page%5D=25 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html class="no-js">
+|      <head>
+|                      <meta charset="UTF-8">
+|              <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+|          
+|          
+|                              <link rel="stylesheet" type="text/css"  href="/assetic/sonata_admin_css.css"  />
+|                              <link rel="stylesheet" type="text/css"  href="/assetic/sonata_formatter_css.css"  />
+|                              <link rel="stylesheet" type="text/css"  href="/assetic/sonata_jqueryui_css.css"  />
+|                              <link rel="stylesheet" type="text/css"  href="/bundles/sonatademo/css/demo.css"  />
+|              
+|          
+|                      <script>
+|                  window.SONATA_CONFIG = {
+|                      CONFIRM_EXIT: true,
+|                      USE_SELECT2: true,
+|                      USE_ICHECK: true                };
+|                  window.SONATA_TRANSLATIONS = {
+|                      CONFIRM_EXIT:  'You\x20have\x20un...
+|  
+]]></failure>
+    </testcase>
+</testsuite>

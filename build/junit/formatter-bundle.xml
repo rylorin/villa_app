@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Formatter Bundle Test Suite" tests="18" assertions="42" failures="0" errors="0" time="0.233395">
+    <testsuite name="Sonata\FormatterBundle\Tests\Form\EventListener\FormatterListenerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Form/EventListener/FormatterListenerTest.php" namespace="Sonata\FormatterBundle\Tests\Form\EventListener" fullPackage="Sonata.FormatterBundle.Tests.Form.EventListener" tests="2" assertions="3" failures="0" errors="0" time="0.035183">
+      <testcase name="testWithInvalidFormatter" class="Sonata\FormatterBundle\Tests\Form\EventListener\FormatterListenerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Form/EventListener/FormatterListenerTest.php" line="23" assertions="1" time="0.029576"/>
+      <testcase name="testWithValidFormatter" class="Sonata\FormatterBundle\Tests\Form\EventListener\FormatterListenerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Form/EventListener/FormatterListenerTest.php" line="40" assertions="2" time="0.005607"/>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Formatter\MarkdownFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/MarkdownFormatterTest.php" namespace="Sonata\FormatterBundle\Tests\Formatter" fullPackage="Sonata.FormatterBundle.Tests.Formatter" tests="1" assertions="2" failures="0" errors="0" time="0.001306">
+      <testcase name="testFormatter" class="Sonata\FormatterBundle\Tests\Formatter\MarkdownFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/MarkdownFormatterTest.php" line="17" assertions="2" time="0.001306"/>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Formatter\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/PoolTest.php" namespace="Sonata\FormatterBundle\Tests\Formatter" fullPackage="Sonata.FormatterBundle.Tests.Formatter" tests="5" assertions="11" failures="0" errors="0" time="0.038729">
+      <testcase name="testPool" class="Sonata\FormatterBundle\Tests\Formatter\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/PoolTest.php" line="18" assertions="4" time="0.013129"/>
+      <testcase name="testNonExistantFormatter" class="Sonata\FormatterBundle\Tests\Formatter\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/PoolTest.php" line="35" assertions="1" time="0.000897"/>
+      <testcase name="testSyntaxError" class="Sonata\FormatterBundle\Tests\Formatter\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/PoolTest.php" line="43" assertions="2" time="0.010874"/>
+      <testcase name="testTwig_Sandbox_SecurityError" class="Sonata\FormatterBundle\Tests\Formatter\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/PoolTest.php" line="56" assertions="2" time="0.012533"/>
+      <testcase name="testUnexpectedException" class="Sonata\FormatterBundle\Tests\Formatter\PoolTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/PoolTest.php" line="69" assertions="2" time="0.001296"/>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Formatter\RawFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/RawFormatterTest.php" namespace="Sonata\FormatterBundle\Tests\Formatter" fullPackage="Sonata.FormatterBundle.Tests.Formatter" tests="1" assertions="2" failures="0" errors="0" time="0.000428">
+      <testcase name="testFormatter" class="Sonata\FormatterBundle\Tests\Formatter\RawFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/RawFormatterTest.php" line="17" assertions="2" time="0.000428"/>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Formatter\TextFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/TextFormatterTest.php" namespace="Sonata\FormatterBundle\Tests\Formatter" fullPackage="Sonata.FormatterBundle.Tests.Formatter" tests="1" assertions="2" failures="0" errors="0" time="0.000677">
+      <testcase name="testFormatter" class="Sonata\FormatterBundle\Tests\Formatter\TextFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/TextFormatterTest.php" line="18" assertions="2" time="0.000677"/>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Formatter\TwigFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/TwigFormatterTest.php" namespace="Sonata\FormatterBundle\Tests\Formatter" fullPackage="Sonata.FormatterBundle.Tests.Formatter" tests="3" assertions="5" failures="0" errors="0" time="0.045546">
+      <testcase name="testFormatter" class="Sonata\FormatterBundle\Tests\Formatter\TwigFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/TwigFormatterTest.php" line="17" assertions="3" time="0.044721"/>
+      <testcase name="testAddFormatterExtension" class="Sonata\FormatterBundle\Tests\Formatter\TwigFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/TwigFormatterTest.php" line="35" assertions="1" time="0.000614"/>
+      <testcase name="testGetFormatterExtension" class="Sonata\FormatterBundle\Tests\Formatter\TwigFormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Formatter/TwigFormatterTest.php" line="45" assertions="1" time="0.000211"/>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Resources\XliffTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Resources/XliffTest.php" namespace="Sonata\FormatterBundle\Tests\Resources" fullPackage="Sonata.FormatterBundle.Tests.Resources" tests="1" assertions="8" failures="0" errors="0" time="0.092637">
+      <testsuite name="Sonata\FormatterBundle\Tests\Resources\XliffTest::testXliff" tests="1" assertions="8" failures="0" errors="0" time="0.092637">
+        <testcase name="testXliff with data set #0" assertions="8" time="0.092637"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Validator\Constraints\FormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Validator/Constraints/FormatterTest.php" namespace="Sonata\FormatterBundle\Tests\Validator\Constraints" fullPackage="Sonata.FormatterBundle.Tests.Validator.Constraints" tests="1" assertions="2" failures="0" errors="0" time="0.000725">
+      <testcase name="testConstraint" class="Sonata\FormatterBundle\Tests\Validator\Constraints\FormatterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Validator/Constraints/FormatterTest.php" line="19" assertions="2" time="0.000725"/>
+    </testsuite>
+    <testsuite name="Sonata\FormatterBundle\Tests\Validator\Constraints\FormatterValidatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Validator/Constraints/FormatterValidatorTest.php" namespace="Sonata\FormatterBundle\Tests\Validator\Constraints" fullPackage="Sonata.FormatterBundle.Tests.Validator.Constraints" tests="3" assertions="7" failures="0" errors="0" time="0.018163">
+      <testcase name="testValidator" class="Sonata\FormatterBundle\Tests\Validator\Constraints\FormatterValidatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Validator/Constraints/FormatterValidatorTest.php" line="16" assertions="1" time="0.008653"/>
+      <testcase name="testInvalidCase" class="Sonata\FormatterBundle\Tests\Validator\Constraints\FormatterValidatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Validator/Constraints/FormatterValidatorTest.php" line="24" assertions="3" time="0.008821"/>
+      <testcase name="testValidCase" class="Sonata\FormatterBundle\Tests\Validator\Constraints\FormatterValidatorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/formatter-bundle/Tests/Validator/Constraints/FormatterValidatorTest.php" line="48" assertions="3" time="0.000689"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+SetEnv PHP_VER 5_4
+
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+#    RewriteBase /~ronan/sandbox/web/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ app.php [QSA,L]
+</IfModule>

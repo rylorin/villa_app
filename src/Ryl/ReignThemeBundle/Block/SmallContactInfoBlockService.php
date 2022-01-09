@@ -40,7 +40,8 @@ class SmallContactInfoBlockService extends BaseBlockService
 	        'keys' => array(
 	            array('title', 'text', array('required' => true)),
                 array('home', 'text', array('required' => false)),
-                array('call', 'text', array('required' => false)),
+	            array('url', 'text', array('required' => false)),
+	            array('call', 'text', array('required' => false)),
                 array('email', 'text', array('required' => false)),
                 array('location', 'text', array('required' => false)),
 	        )
@@ -66,12 +67,13 @@ class SmallContactInfoBlockService extends BaseBlockService
     public function configureSettings(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-        	'title'	   			=> 'Contact Info',
-        	'home'				=> false,
-        	'call'				=> false,
-        	'email'				=> false,
-        	'location'			=> false,
-            'template' 			=> 'RylReignThemeBundle:Block:contact-sm.html.twig',
+           'title'	   		=> 'Contact Info',
+        	   'home'			=> false,
+           'url'	       		=> false,
+           'call'			=> false,
+        	   'email'			=> false,
+        	   'location'		=> false,
+           'template' 		=> 'RylReignThemeBundle:Block:contact-sm.html.twig',
         ));
     }
     

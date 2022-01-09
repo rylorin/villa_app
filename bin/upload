@@ -1,17 +1,75 @@
 #!/bin/sh
+# set -x
+which rsync
+exit 1
 
-./app/console server:stop
-# ssh ronan@ryl.androw.eu ./app/console server:stop
+if [ $# -ge 1 ]; then
+	dir=/root/VillaMilaWines/${1}
+else
+	dir=/root/VillaMilaWines/staging
+fi
+if [ $# -ge 2 ]; then
+	remote=root@${2}
+else
+	remote=root@vps312177.ovh.net
+fi
+app=.
 
-rsync -rv --exclude-from=.gitignore --update . ronan@ryl.androw.eu:.
-rsync -rv --update --exclude '.git' vendor ronan@ryl.androw.eu:vendor
-rsync -rv --update app/db ronan@ryl.androw.eu:app/db
-rsync -rv --update web/uploads/ ronan@ryl.androw.eu:web/uploads/
-ssh ronan@ryl.androw.eu rm -f ./app/logs/*
-ssh ronan@ryl.androw.eu ./app/console cache:clear --env=prod
-ssh ronan@ryl.androw.eu ./app/console cache:warmup --env=prod
+# update sometimes needed
+# ${app}/app/console sonata:page:update-core-routes --site=all
+# ${app}/app/console sonata:page:create-snapshots --site=all
+# ${app}/app/console assetic:dump
 
-# ssh -n -f ronan@ryl.androw.eu ./app/console --env=prod server:start
-./app/console server:start
+${app}/app/console server:stop
+
+# list sub-directories here, one per line
+rsync -rv --update --exclude-from=.gitignore ${app}/app ${remote}:${dir}/
+rsync -rv --update --exclude '.git' --exclude '.DS_Store' --delete-excluded ${app}/app/db ${remote}:${dir}/app/
+rsync -rv --update --exclude '.git' --exclude '.DS_Store' --delete-excluded ${app}/src ${remote}:${dir}/
+rsync -rv --update --exclude '.git' --exclude '.DS_Store' --delete-excluded ${app}/vendor ${remote}:${dir}/
+
+rsync -rv --update --exclude '.git' --exclude '.DS_Store' --delete-excluded ${app}/web ${remote}:${dir}/
+
+rsync -rv --update --exclude '.git' --exclude '.DS_Store' ${app}/docker ${remote}:${dir}/
+
+# scp ${app}/composer.json ${remote}:${dir}/
+# scp ${app}/composer.lock ${remote}:${dir}/
+
+#ssh ${remote} chmod a+rwx ${dir}/app/db
+#ssh ${remote} chmod a+rw ${dir}/app/db/*
+
+#ssh ${remote} mkdir -p ${dir}/app/cache/sessions
+#ssh ${remote} mkdir -p ${dir}/app/cache/prod/annotations
+#ssh ${remote} mkdir -p ${dir}/app/cache/prod/jms_serializer
+for ressource in app/cache/ app/logs/ web/uploads/ app/db/; do
+	echo "fixing permissions for ${ressource}"
+	ssh ${remote} mkdir -p ${dir}/${ressource}
+	ssh ${remote} find ${dir}/${ressource} -type d -exec chmod 'a+rwx' {} '\;'
+	ssh ${remote} find ${dir}/${ressource} -type f -exec chmod 'a+rw' {} '\;'
+done
+
+#ssh ${remote} mkdir -p ${dir}/app/logs/
+#ssh ${remote} touch ${dir}/app/logs/project_access.log
+#ssh ${remote} chmod a+w ${dir}/app/logs/project_access.log
+#ssh ${remote} touch ${dir}/app/logs/project_error.log
+#ssh ${remote} chmod a+w ${dir}/app/logs/project_error.log
+#ssh ${remote} touch ${dir}/app/logs/app_prod.log
+#ssh ${remote} chmod a+w ${dir}/app/logs/app_prod.log
+#ssh ${remote} touch ${dir}/app/logs/app_dev.log
+#ssh ${remote} chmod a+w ${dir}/app/logs/app_dev.log
+
+cat <<EOF
+# should execute the following lines on php-fpm dock on the remote host
+./vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/bin/build_bootstrap.php
+
+# but the following broke everything last time I tried it
+# composer run-script post-update-cmd
+./app/console cache:clear --env=prod
+./app/console cache:warmup --env=prod --no-debug; chmod -R a+rwx ./app/cache
+# This one is sometimes useful
+./app/console assets:install
+EOF
+
+#${app}/app/console server:start
 
 exit 0

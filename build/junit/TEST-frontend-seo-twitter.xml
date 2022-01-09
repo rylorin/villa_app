@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" skipped="0" name="Test the page frontend SEO" tests="166" time="0.204397">
+    <testcase classname="Test the page frontend SEO" name="Twitter block is displayed on homepage" time="0.203268" assertions="2">
+        <failure message="The text &quot;The documentation of @sonataproject's @MongoDB Admin is now available on the official website&quot; was not found anywhere in the text of the current page." type="failed"><![CDATA[
+The text "The documentation of @sonataproject's @MongoDB Admin is now available on the official website" was not found anywhere in the text of the current page.
+
++--[ HTTP/1.1 200 | http://demo.sonata-project.org/ | GoutteDriver ]
+|
+|  Sonata Project var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F'; (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');Note: this website is a demo of Sonata. Any orders placed on this site will not be processed.
+|  
+]]></failure>
+    </testcase>
+</testsuite>

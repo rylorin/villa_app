@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the default behavior of frontend pages" tests="165" time="5.783591">
+    <testcase classname="Check the default behavior of frontend pages" name="Test page redirect blog =&gt; blog/archive" time="1.478711" assertions="4">
+    </testcase>
+    <testcase classname="Check the default behavior of frontend pages" name="Intercept redirect if connected as admin" time="4.303404" assertions="5">
+    </testcase>
+</testsuite>

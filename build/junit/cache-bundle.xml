@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CacheBundle Test Suite" tests="10" assertions="33" failures="0" errors="0" time="0.084170">
+    <testsuite name="Sonata\CacheBundle\Tests\Adapter\ApcCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/ApcCacheTest.php" namespace="Sonata\CacheBundle\Tests\Adapter" fullPackage="Sonata.CacheBundle.Tests.Adapter" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="Sonata\CacheBundle\Tests\Adapter\Cache\SsiCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SsiCacheTest.php" namespace="Sonata\CacheBundle\Tests\Adapter\Cache" fullPackage="Sonata.CacheBundle.Tests.Adapter.Cache" tests="3" assertions="10" failures="0" errors="0" time="0.040337">
+      <testcase name="testInitCache" class="Sonata\CacheBundle\Tests\Adapter\Cache\SsiCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SsiCacheTest.php" line="22" assertions="7" time="0.013073"/>
+      <testcase name="testActionInvalidToken" class="Sonata\CacheBundle\Tests\Adapter\Cache\SsiCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SsiCacheTest.php" line="50" assertions="2" time="0.024374"/>
+      <testcase name="testValidToken" class="Sonata\CacheBundle\Tests\Adapter\Cache\SsiCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SsiCacheTest.php" line="65" assertions="1" time="0.002890"/>
+    </testsuite>
+    <testsuite name="Sonata\CacheBundle\Tests\Adapter\SymfonyCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SymfonyCacheTest.php" namespace="Sonata\CacheBundle\Tests\Adapter" fullPackage="Sonata.CacheBundle.Tests.Adapter" tests="4" assertions="13" failures="0" errors="0" time="0.039336">
+      <testcase name="testInitCache" class="Sonata\CacheBundle\Tests\Adapter\SymfonyCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SymfonyCacheTest.php" line="55" assertions="4" time="0.033491"/>
+      <testcase name="testCacheAction" class="Sonata\CacheBundle\Tests\Adapter\SymfonyCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SymfonyCacheTest.php" line="73" assertions="6" time="0.004372"/>
+      <testcase name="testCacheActionWithInvalidToken" class="Sonata\CacheBundle\Tests\Adapter\SymfonyCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SymfonyCacheTest.php" line="95" assertions="1" time="0.000734"/>
+      <testcase name="testCacheActionWithInvalidType" class="Sonata\CacheBundle\Tests\Adapter\SymfonyCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/SymfonyCacheTest.php" line="107" assertions="2" time="0.000739"/>
+    </testsuite>
+    <testsuite name="Sonata\CacheBundle\Tests\Adapter\Cache\VarnishCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/VarnishCacheTest.php" namespace="Sonata\CacheBundle\Tests\Adapter\Cache" fullPackage="Sonata.CacheBundle.Tests.Adapter.Cache" tests="3" assertions="10" failures="0" errors="0" time="0.004497">
+      <testcase name="testInitCache" class="Sonata\CacheBundle\Tests\Adapter\Cache\VarnishCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/VarnishCacheTest.php" line="21" assertions="7" time="0.001630"/>
+      <testcase name="testActionInvalidToken" class="Sonata\CacheBundle\Tests\Adapter\Cache\VarnishCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/VarnishCacheTest.php" line="49" assertions="2" time="0.000914"/>
+      <testcase name="testValidToken" class="Sonata\CacheBundle\Tests\Adapter\Cache\VarnishCacheTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/cache-bundle/Tests/Adapter/VarnishCacheTest.php" line="64" assertions="1" time="0.001953"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

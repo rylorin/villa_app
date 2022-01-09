@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="10" skipped="0" name="Products" tests="183" time="30.740054">
+    <testcase classname="Products" name="Check the update quantity AJAX call only allows XHR" time="0.372076" assertions="3">
+    </testcase>
+    <testcase classname="Products" name="Check the update quantity AJAX call, Ex #1" time="0.561336" assertions="10">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/502/info?quantity=1 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check the update quantity AJAX call, Ex #2" time="0.426842" assertions="17">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/502/info?quantity=3 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check the update quantity AJAX call, Ex #3" time="0.439844" assertions="24">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/502/info?quantity=10 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check the update quantity AJAX call, Ex #4" time="0.463413" assertions="31">
+        <failure message="The price was not 35.988, it was 307" type="failed"><![CDATA[
+exception 'Exception' with message 'The price was not 35.988, it was 307' in /Users/ronan/Sites/sandbox/features/bootstrap/FeatureContext.php:68
+Stack trace:
+#0 [internal function]: FeatureContext->thePriceIs('35.988')
+#1 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#2 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#3 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\ExampleStepNode), Object(Behat\Behat\Definition\Annotation\Given))
+#4 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\ExampleStepNode))
+#5 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\ExampleStepNode))
+#6 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(98): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\OutlineNode), Object(FeatureContext), Array, false)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/OutlineTester.php(56): Behat\Behat\Tester\OutlineTester->visitOutlineExample(Object(Behat\Gherkin\Node\OutlineNode), 3, Array)
+#9 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\OutlineTester->visit(Object(Behat\Gherkin\Node\OutlineNode))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\OutlineTester))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#14 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#20 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check the variation choice form redirection AJAX call, Ex #1" time="0.479771" assertions="37">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/travel-quebec-tour/513/variation?sonata_product_variation_choices%5Btravellers%5D=1&sonata_product_variation_choices%5BtravelDays%5D=0 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check the variation choice form redirection AJAX call, Ex #2" time="0.425341" assertions="43">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/travel-quebec-tour/513/variation?sonata_product_variation_choices%5Btravellers%5D=2&sonata_product_variation_choices%5BtravelDays%5D=0 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check the variation choice form redirection AJAX call error" time="0.378850" assertions="6">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/travel-quebec-tour/513/variation?sonata_product_variation_choices%5Btravellers%5D=1&sonata_product_variation_choices%5BtravelDays%5D=1 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check products &amp; catalog page status code" time="0.819885" assertions="4">
+    </testcase>
+    <testcase classname="Products" name="Browse products by categories in catalog, Ex #1" time="1.244887" assertions="9">
+    </testcase>
+    <testcase classname="Products" name="Browse products by categories in catalog, Ex #2" time="1.223607" assertions="14">
+    </testcase>
+    <testcase classname="Products" name="Browse products by categories in catalog, Ex #3" time="4.773951" assertions="19">
+    </testcase>
+    <testcase classname="Products" name="Browse products by categories in catalog, Ex #4" time="2.516549" assertions="24">
+    </testcase>
+    <testcase classname="Products" name="Select a product by browsing products, Ex #1" time="2.034920" assertions="30">
+    </testcase>
+    <testcase classname="Products" name="Select a product by browsing products, Ex #2" time="1.570923" assertions="36">
+    </testcase>
+    <testcase classname="Products" name="Select a product by browsing products, Ex #3" time="2.355673" assertions="42">
+    </testcase>
+    <testcase classname="Products" name="Select a product by browsing products, Ex #4" time="3.324958" assertions="48">
+    </testcase>
+    <testcase classname="Products" name="Select a product by browsing products, Ex #5" time="1.752558" assertions="54">
+    </testcase>
+    <testcase classname="Products" name="Select a product by browsing products, Ex #6" time="2.136573" assertions="60">
+    </testcase>
+    <testcase classname="Products" name="Browse an &quot;out of stock&quot; product" time="0.372119" assertions="4">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/php-t-shirt/505 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Browse a &quot;disabled&quot; product" time="0.437105" assertions="3">
+    </testcase>
+    <testcase classname="Products" name="Browse a product without a picture" time="0.376612" assertions="4">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/maximum-air-sonata-ultimate-edition/507 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check a non displayed product when the master product is disabled, Ex #1" time="0.378244" assertions="7">
+    </testcase>
+    <testcase classname="Products" name="Check a non displayed product when the master product is disabled, Ex #2" time="0.370065" assertions="10">
+    </testcase>
+    <testcase classname="Products" name="Check display of the master product when having an active child" time="0.372057" assertions="4">
+        <failure message="Current response status code is 404, but 200 expected." type="failed"><![CDATA[
+Current response status code is 404, but 200 expected.
+
++--[ HTTP/1.1 404 | http://demo.sonata-project.org/shop/product/travel-quebec-tour/513 | GoutteDriver ]
+|
+|  <!DOCTYPE html>
+|  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+|              <head >
+|  
+|              <title>Sonata Project</title>
+|              <meta name="keywords" content="foo bar" />
+|  <meta name="description" content="The description" />
+|  <meta name="robots" content="index, follow" />
+|  <meta property="og:site_name" content="Sonata Project Sandbox" />
+|  <meta property="og:description" content="A demo of the some rich bundles for your Symfony2 projects" />
+|  <meta property="og:type" content="article" />
+|  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+|  
+|  
+|                                                                           <link rel="stylesheet" href="/assetic/sonata_front_css.css" type="text/css" media="all"  />
+|                                                  
+|                  <script type="text/javascript">
+|          var basket_update_confirmation_message = 'You\x20didn\x27t\x20update\x20your\x20basket,\x20continue\x20to\x20next\x20step\x3F';
+|   ...
+|  
+]]></failure>
+    </testcase>
+    <testcase classname="Products" name="Check a non displayed product when having no active child, Ex #1" time="0.374083" assertions="7">
+    </testcase>
+    <testcase classname="Products" name="Check a non displayed product when having no active child, Ex #2" time="0.365177" assertions="10">
+    </testcase>
+    <testcase classname="Products" name="Check the non display of starting date and related label if value is not set" time="0.375133" assertions="4">
+    </testcase>
+</testsuite>

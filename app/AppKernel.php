@@ -66,7 +66,7 @@ class AppKernel extends Kernel
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
 
             // Disable this if you don't want the audit on entities
-            new SimpleThings\EntityAudit\SimpleThingsEntityAuditBundle(),
+            // new SimpleThings\EntityAudit\SimpleThingsEntityAuditBundle(),
 
             // API
             new FOS\RestBundle\FOSRestBundle(),
@@ -92,7 +92,7 @@ class AppKernel extends Kernel
             new FOS\CommentBundle\FOSCommentBundle(),
             new Sonata\CommentBundle\SonataCommentBundle(),
             new Application\Sonata\CommentBundle\ApplicationSonataCommentBundle(),
-        		
+
             // SONATA CORE & HELPER BUNDLES
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\CoreBundle\SonataCoreBundle(),
@@ -114,22 +114,23 @@ class AppKernel extends Kernel
             // CMF Integration
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
 
-            // DEMO and QA - Can be deleted
+            // DEMO - Can't be deleted as it contains my products services definitions
             new Sonata\Bundle\DemoBundle\SonataDemoBundle(),
-            new Sonata\Bundle\QABundle\SonataQABundle(),
 
             // Disable this if you don't want the timeline in the admin
             new Spy\TimelineBundle\SpyTimelineBundle(),
             new Sonata\TimelineBundle\SonataTimelineBundle(),
             new Application\Sonata\TimelineBundle\ApplicationSonataTimelineBundle(), // easy extends integration
 
+        	// RYL ?
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
 
         	// RYL
-            new Ens\JobeetBundle\EnsJobeetBundle(),
             new Ryl\RetirementBundle\RylRetirementBundle(),
             new Ryl\CharityBundle\RylCharityBundle(),
             new Ryl\ReignThemeBundle\RylReignThemeBundle(),
+
+			      new Hype\MailchimpBundle\HypeMailchimpBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

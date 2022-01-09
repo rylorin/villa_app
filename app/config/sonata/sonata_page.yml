@@ -11,7 +11,7 @@ cmf_routing:
             router.default: 100
 
 sonata_page:
-    multisite:             host # host_with_path
+    multisite:             host_with_path # host
     use_streamed_response: false # set the value to false in debug mode or if the reverse proxy does not handle streamed response
 
     ignore_uri_patterns:
@@ -123,19 +123,23 @@ sonata_page:
                      name: Top content
                  content:
                      name: Main content
-#                 content_bottom:
-#                     name: Bottom content
+                 content_bottom:
+                     name: Bottom content
+                 footer:
+                     name: Footer
             matrix:
                  layout: |
                      HHHHHHHH
                      TTTTTTTT
                      CCCCCCCC
-#                     BBBBBBBB
+                     BBBBBBBB
+                     FFFFFFFF
                  mapping:
                      H: header
                      T: content_top
                      C: content
-#                     B: content_bottom
+                     B: content_bottom
+                     F: footer
 
         reign_simple_full_width:
             path: 'RylReignThemeBundle::reign_simple_full_width.html.twig'

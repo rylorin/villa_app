@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CoreBundle Test Suite" tests="65" assertions="193" failures="0" errors="0" time="0.468745">
+    <testsuite name="Sonata\CoreBundle\Tests\Date\MomentFormatConverterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Date/MomentFormatConverterTest.php" namespace="Sonata\CoreBundle\Tests\Date" fullPackage="Sonata" package="Sonata" tests="2" assertions="5" failures="0" errors="0" time="0.003682">
+      <testcase name="testPhpToMoment" class="Sonata\CoreBundle\Tests\Date\MomentFormatConverterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Date/MomentFormatConverterTest.php" line="26" assertions="3" time="0.002324"/>
+      <testcase name="testPhpToMomentUnsupported" class="Sonata\CoreBundle\Tests\Date\MomentFormatConverterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Date/MomentFormatConverterTest.php" line="44" assertions="2" time="0.001358"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Exporter\ExporterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Exporter/ExporterTest.php" namespace="Sonata\CoreBundle\Tests\Exporter" fullPackage="Sonata.CoreBundle.Tests.Exporter" tests="5" assertions="13" failures="0" errors="0" time="0.007332">
+      <testcase name="testFilter" class="Sonata\CoreBundle\Tests\Exporter\ExporterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Exporter/ExporterTest.php" line="23" assertions="1" time="0.001999"/>
+      <testsuite name="Sonata\CoreBundle\Tests\Exporter\ExporterTest::testGetResponse" tests="4" assertions="12" failures="0" errors="0" time="0.005333">
+        <testcase name="testGetResponse with data set #0" assertions="3" time="0.003570"/>
+        <testcase name="testGetResponse with data set #1" assertions="3" time="0.000603"/>
+        <testcase name="testGetResponse with data set #2" assertions="3" time="0.000569"/>
+        <testcase name="testGetResponse with data set #3" assertions="3" time="0.000591"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" namespace="Sonata\CoreBundle\Tests\FlashMessage" fullPackage="Sonata.CoreBundle.Tests.FlashMessage" tests="7" assertions="21" failures="0" errors="0" time="0.007876">
+      <testcase name="testGetSession" class="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" line="65" assertions="1" time="0.002693"/>
+      <testcase name="testGetHandledTypes" class="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" line="74" assertions="1" time="0.000814"/>
+      <testcase name="testGetStatus" class="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" line="79" assertions="1" time="0.000222"/>
+      <testcase name="testGetTypes" class="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" line="87" assertions="2" time="0.001340"/>
+      <testcase name="testHandlingRegisteredTypes" class="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" line="113" assertions="9" time="0.001683"/>
+      <testcase name="testHandlingNonRegisteredTypes" class="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" line="153" assertions="3" time="0.000483"/>
+      <testcase name="testFlashMessageWithCustomDomain" class="Sonata\CoreBundle\Tests\FlashMessage\FlashManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/FlashMessage/FlashManagerTest.php" line="175" assertions="4" time="0.000641"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\DataTransformer\BooleanTypeToBooleanTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/DataTransformer/BooleanTypeToBooleanTransformerTest.php" namespace="Sonata\CoreBundle\Tests\Form\DataTransformer" fullPackage="Sonata.CoreBundle.Tests.Form.DataTransformer" tests="7" assertions="10" failures="0" errors="0" time="0.002074">
+      <testsuite name="Sonata\CoreBundle\Tests\Form\DataTransformer\BooleanTypeToBooleanTransformerTest::testReverseTransform" tests="6" assertions="6" failures="0" errors="0" time="0.001731">
+        <testcase name="testReverseTransform with data set #0" assertions="1" time="0.000901"/>
+        <testcase name="testReverseTransform with data set #1" assertions="1" time="0.000167"/>
+        <testcase name="testReverseTransform with data set #2" assertions="1" time="0.000166"/>
+        <testcase name="testReverseTransform with data set #3" assertions="1" time="0.000166"/>
+        <testcase name="testReverseTransform with data set #4" assertions="1" time="0.000165"/>
+        <testcase name="testReverseTransform with data set #5" assertions="1" time="0.000166"/>
+      </testsuite>
+      <testcase name="testTransform" class="Sonata\CoreBundle\Tests\Form\DataTransformer\BooleanTypeToBooleanTransformerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/DataTransformer/BooleanTypeToBooleanTransformerTest.php" line="29" assertions="4" time="0.000343"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\BasePickerTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/BasePickerTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata" package="Sonata" tests="1" assertions="3" failures="0" errors="0" time="0.007401">
+      <testcase name="testFinishView" class="Sonata\CoreBundle\Tests\Form\Type\BasePickerTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/BasePickerTypeTest.php" line="43" assertions="3" time="0.007401"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\BooleanTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/BooleanTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="3" assertions="4" failures="0" errors="0" time="0.021664">
+      <testcase name="testGetDefaultOptions" class="Sonata\CoreBundle\Tests\Form\Type\BooleanTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/BooleanTypeTest.php" line="20" assertions="2" time="0.008234"/>
+      <testcase name="testAddTransformerCall" class="Sonata\CoreBundle\Tests\Form\Type\BooleanTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/BooleanTypeTest.php" line="35" assertions="1" time="0.013049"/>
+      <testcase name="testDefaultBehavior" class="Sonata\CoreBundle\Tests\Form\Type\BooleanTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/BooleanTypeTest.php" line="53" assertions="1" time="0.000381"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\CollectionTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/CollectionTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="1" assertions="5" failures="0" errors="0" time="0.000682">
+      <testcase name="testGetDefaultOptions" class="Sonata\CoreBundle\Tests\Form\Type\CollectionTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/CollectionTypeTest.php" line="20" assertions="5" time="0.000682"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\DatePickerTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DatePickerTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata" package="Sonata" tests="1" assertions="1" failures="0" errors="0" time="0.000338">
+      <testcase name="testGetName" class="Sonata\CoreBundle\Tests\Form\Type\DatePickerTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DatePickerTypeTest.php" line="29" assertions="1" time="0.000338"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\DateRangeTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DateRangeTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="1" assertions="2" failures="0" errors="0" time="0.001079">
+      <testcase name="testGetDefaultOptions" class="Sonata\CoreBundle\Tests\Form\Type\DateRangeTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DateRangeTypeTest.php" line="21" assertions="2" time="0.001079"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\DateTimePickerTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DateTimePickerTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata" package="Sonata" tests="1" assertions="1" failures="0" errors="0" time="0.000350">
+      <testcase name="testGetName" class="Sonata\CoreBundle\Tests\Form\Type\DateTimePickerTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DateTimePickerTypeTest.php" line="29" assertions="1" time="0.000350"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\DoctrineORMSerializationTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DoctrineORMSerializationTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="3" assertions="20" failures="0" errors="0" time="0.130294">
+      <testcase name="testBuildForm" class="Sonata\CoreBundle\Tests\Form\Type\DoctrineORMSerializationTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DoctrineORMSerializationTypeTest.php" line="63" assertions="10" time="0.125813"/>
+      <testcase name="testBuildFormWithIdentifier" class="Sonata\CoreBundle\Tests\Form\Type\DoctrineORMSerializationTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DoctrineORMSerializationTypeTest.php" line="89" assertions="6" time="0.003028"/>
+      <testcase name="testBuildFormWithInvalidGroupName" class="Sonata\CoreBundle\Tests\Form\Type\DoctrineORMSerializationTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/DoctrineORMSerializationTypeTest.php" line="109" assertions="4" time="0.001453"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\EqualTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/EqualTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="1" assertions="3" failures="0" errors="0" time="0.001281">
+      <testcase name="testGetDefaultOptions" class="Sonata\CoreBundle\Tests\Form\Type\EqualTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/EqualTypeTest.php" line="21" assertions="3" time="0.001281"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\ImmutableArrayTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/ImmutableArrayTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="2" assertions="8" failures="0" errors="0" time="0.002552">
+      <testcase name="testGetDefaultOptions" class="Sonata\CoreBundle\Tests\Form\Type\ImmutableArrayTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/ImmutableArrayTypeTest.php" line="21" assertions="3" time="0.000995"/>
+      <testcase name="testCallback" class="Sonata\CoreBundle\Tests\Form\Type\ImmutableArrayTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/ImmutableArrayTypeTest.php" line="40" assertions="5" time="0.001557"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\StatusTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/StatusTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="1" assertions="4" failures="0" errors="0" time="0.000689">
+      <testcase name="testGetDefaultOptions" class="Sonata\CoreBundle\Tests\Form\Type\StatusTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/StatusTypeTest.php" line="31" assertions="4" time="0.000689"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Form\Type\TranslatableChoiceTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/TranslatableChoiceTypeTest.php" namespace="Sonata\CoreBundle\Tests\Form\Type" fullPackage="Sonata.CoreBundle.Tests.Form.Type" tests="1" assertions="2" failures="0" errors="0" time="0.000584">
+      <testcase name="testGetDefaultOptions" class="Sonata\CoreBundle\Tests\Form\Type\TranslatableChoiceTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Form/Type/TranslatableChoiceTypeTest.php" line="20" assertions="2" time="0.000584"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Model\Adapter\AdapterChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/AdapterChainTest.php" namespace="Sonata\CoreBundle\Tests\Model\Adapter" fullPackage="Sonata.CoreBundle.Tests.Model.Adapter" tests="3" assertions="8" failures="0" errors="0" time="0.002210">
+      <testcase name="testEmptyAdapter" class="Sonata\CoreBundle\Tests\Model\Adapter\AdapterChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/AdapterChainTest.php" line="18" assertions="2" time="0.000511"/>
+      <testcase name="testUrlSafeIdentifier" class="Sonata\CoreBundle\Tests\Model\Adapter\AdapterChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/AdapterChainTest.php" line="26" assertions="3" time="0.001122"/>
+      <testcase name="testNormalizedIdentifier" class="Sonata\CoreBundle\Tests\Model\Adapter\AdapterChainTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/AdapterChainTest.php" line="40" assertions="3" time="0.000577"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Model\Adapter\DoctrineORMAdapterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/DoctrineORMAdapterTest.php" namespace="Sonata\CoreBundle\Tests\Model\Adapter" fullPackage="Sonata.CoreBundle.Tests.Model.Adapter" tests="6" assertions="16" failures="0" errors="0" time="0.023603">
+      <testcase name="testNormalizedIdentifierWithScalar" class="Sonata\CoreBundle\Tests\Model\Adapter\DoctrineORMAdapterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/DoctrineORMAdapterTest.php" line="31" assertions="1" time="0.004065"/>
+      <testcase name="testNormalizedIdentifierWithNull" class="Sonata\CoreBundle\Tests\Model\Adapter\DoctrineORMAdapterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/DoctrineORMAdapterTest.php" line="39" assertions="1" time="0.000550"/>
+      <testcase name="testNormalizedIdentifierWithNoManager" class="Sonata\CoreBundle\Tests\Model\Adapter\DoctrineORMAdapterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/DoctrineORMAdapterTest.php" line="47" assertions="2" time="0.000335"/>
+      <testcase name="testNormalizedIdentifierWithNotManaged" class="Sonata\CoreBundle\Tests\Model\Adapter\DoctrineORMAdapterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/DoctrineORMAdapterTest.php" line="57" assertions="4" time="0.015233"/>
+      <testsuite name="Sonata\CoreBundle\Tests\Model\Adapter\DoctrineORMAdapterTest::testNormalizedIdentifierWithValidObject" tests="2" assertions="8" failures="0" errors="0" time="0.003420">
+        <testcase name="testNormalizedIdentifierWithValidObject with data set #0" assertions="4" time="0.001974"/>
+        <testcase name="testNormalizedIdentifierWithValidObject with data set #1" assertions="4" time="0.001446"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Model\Adapter\DoctrinePHPCRAdapterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/Adapter/DoctrinePHPCRAdapterTest.php" namespace="Sonata\CoreBundle\Tests\Model\Adapter" fullPackage="Sonata.CoreBundle.Tests.Model.Adapter" tests="0" assertions="0" failures="0" errors="0" time="0.000000">
+      <testsuite name="Sonata\CoreBundle\Tests\Model\Adapter\DoctrinePHPCRAdapterTest::testNormalizedIdentifierWithValidObject" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Entity\BaseDocumentManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseDocumentManagerTest.php" namespace="Sonata\CoreBundle\Tests\Entity" fullPackage="Sonata.CoreBundle.Tests.Entity" tests="1" assertions="1" failures="0" errors="0" time="0.000255">
+      <testcase name="test" class="Sonata\CoreBundle\Tests\Entity\BaseDocumentManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseDocumentManagerTest.php" line="31" assertions="1" time="0.000255"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Entity\BaseEntityManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseEntityManagerTest.php" namespace="Sonata\CoreBundle\Tests\Entity" fullPackage="Sonata.CoreBundle.Tests.Entity" tests="4" assertions="7" failures="0" errors="0" time="0.003456">
+      <testcase name="test" class="Sonata\CoreBundle\Tests\Entity\BaseEntityManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseEntityManagerTest.php" line="31" assertions="1" time="0.000243"/>
+      <testcase name="testException" class="Sonata\CoreBundle\Tests\Entity\BaseEntityManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseEntityManagerTest.php" line="40" assertions="2" time="0.000389"/>
+      <testcase name="testExceptionOnNonMappedEntity" class="Sonata\CoreBundle\Tests\Entity\BaseEntityManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseEntityManagerTest.php" line="49" assertions="3" time="0.000489"/>
+      <testcase name="testGetEntityManager" class="Sonata\CoreBundle\Tests\Entity\BaseEntityManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseEntityManagerTest.php" line="58" assertions="1" time="0.002335"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Model\BaseManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseManagerTest.php" namespace="Sonata\CoreBundle\Tests\Model" fullPackage="Sonata" package="Sonata" tests="1" assertions="2" failures="0" errors="0" time="0.000419">
+      <testcase name="testCheckObject" class="Sonata\CoreBundle\Tests\Model\BaseManagerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/BaseManagerTest.php" line="51" assertions="2" time="0.000419"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Model\MetadataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/MetadataTest.php" namespace="Sonata\CoreBundle\Tests\Model" fullPackage="Sonata" package="Sonata" tests="1" assertions="12" failures="0" errors="0" time="0.001842">
+      <testcase name="testGetters" class="Sonata\CoreBundle\Tests\Model\MetadataTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Model/MetadataTest.php" line="26" assertions="12" time="0.001842"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Resources\XliffTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Resources/XliffTest.php" namespace="Sonata\CoreBundle\Tests\Resources" fullPackage="Sonata.CoreBundle.Tests.Resources" tests="1" assertions="25" failures="0" errors="0" time="0.171756">
+      <testsuite name="Sonata\CoreBundle\Tests\Resources\XliffTest::testXliff" tests="1" assertions="25" failures="0" errors="0" time="0.171756">
+        <testcase name="testXliff with data set #0" assertions="25" time="0.171756"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Twig\Extension\StatusExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Extension/StatusExtensionTest.php" namespace="Sonata\CoreBundle\Tests\Twig\Extension" fullPackage="Sonata.CoreBundle.Tests.Twig.Extension" tests="3" assertions="5" failures="0" errors="0" time="0.002214">
+      <testcase name="testGetName" class="Sonata\CoreBundle\Tests\Twig\Extension\StatusExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Extension/StatusExtensionTest.php" line="18" assertions="1" time="0.000621"/>
+      <testcase name="testGetFilters" class="Sonata\CoreBundle\Tests\Twig\Extension\StatusExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Extension/StatusExtensionTest.php" line="24" assertions="2" time="0.000560"/>
+      <testcase name="testStatusClassDefaultValue" class="Sonata\CoreBundle\Tests\Twig\Extension\StatusExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Extension/StatusExtensionTest.php" line="33" assertions="2" time="0.001033"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Twig\Extension\TemplateExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Extension/TemplateExtensionTest.php" namespace="Sonata\CoreBundle\Tests\Twig\Extension" fullPackage="Sonata.CoreBundle.Tests.Twig.Extension" tests="2" assertions="9" failures="0" errors="0" time="0.028261">
+      <testcase name="testSlugify" class="Sonata\CoreBundle\Tests\Twig\Extension\TemplateExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Extension/TemplateExtensionTest.php" line="18" assertions="7" time="0.027133"/>
+      <testcase name="testSafeUrl" class="Sonata\CoreBundle\Tests\Twig\Extension\TemplateExtensionTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Extension/TemplateExtensionTest.php" line="35" assertions="2" time="0.001128"/>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Twig\TokenParser\TemplateBoxNodeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Node/TemplateBoxNodeTest.php" namespace="Sonata\CoreBundle\Tests\Twig\TokenParser" fullPackage="Sonata.CoreBundle.Tests.Twig.TokenParser" tests="3" assertions="3" failures="0" errors="0" time="0.008354">
+      <testcase name="testConstructor" class="Sonata\CoreBundle\Tests\Twig\TokenParser\TemplateBoxNodeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/Node/TemplateBoxNodeTest.php" line="21" assertions="1" time="0.000907"/>
+      <testsuite name="Sonata\CoreBundle\Tests\Twig\TokenParser\TemplateBoxNodeTest::testCompile" tests="2" assertions="2" failures="0" errors="0" time="0.007447">
+        <testcase name="testCompile with data set #0" assertions="1" time="0.007002"/>
+        <testcase name="testCompile with data set #1" assertions="1" time="0.000445"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\CoreBundle\Tests\Twig\TokenParser\TemplateBoxTokenParserTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/core-bundle/Tests/Twig/TokenParser/TemplateBoxTokenParserTest.php" namespace="Sonata\CoreBundle\Tests\Twig\TokenParser" fullPackage="Sonata.CoreBundle.Tests.Twig.TokenParser" tests="3" assertions="3" failures="0" errors="0" time="0.038497">
+      <testsuite name="Sonata\CoreBundle\Tests\Twig\TokenParser\TemplateBoxTokenParserTest::testCompile" tests="3" assertions="3" failures="0" errors="0" time="0.038497">
+        <testcase name="testCompile with data set #0" assertions="1" time="0.032873"/>
+        <testcase name="testCompile with data set #1" assertions="1" time="0.002887"/>
+        <testcase name="testCompile with data set #2" assertions="1" time="0.002737"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# should execute the following lines on php-fpm dock on the remote host
+./vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/bin/build_bootstrap.php
+
+# but the following broke everything last time I tried it
+# composer run-script post-update-cmd
+./app/console cache:clear --env=prod
+./app/console cache:warmup --env=prod --no-debug; chmod -R a+rwx ./app/cache
+# This one is sometimes useful
+./app/console assets:install

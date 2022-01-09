@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the Post controller calls for NewsBundle" tests="22" time="19.705174">
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Retrieves the list of posts (paginated) based on criteria, Ex #1" time="0.340173" assertions="119">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Retrieves the list of posts (paginated) based on criteria, Ex #2" time="0.586887" assertions="126">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Retrieves the list of posts (paginated) based on criteria, Ex #3" time="0.836641" assertions="133">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Retrieves a specific post, Ex #1" time="0.853321" assertions="141">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Retrieves a specific post, Ex #2" time="0.703787" assertions="149">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Retrieves a specific post, Ex #3" time="0.745534" assertions="157">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Adds a post, Ex #1" time="0.595212" assertions="165">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Adds a post, Ex #2" time="0.511889" assertions="173">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #1" time="0.475247" assertions="179">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #2" time="0.262537" assertions="185">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #3" time="0.273354" assertions="191">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #4" time="0.293277" assertions="197">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #5" time="0.357511" assertions="203">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #6" time="0.479557" assertions="209">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #7" time="0.303501" assertions="215">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't add a post with invalid values, Ex #8" time="0.371953" assertions="221">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Updates a post, Ex #1" time="0.864329" assertions="231">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Updates a post, Ex #2" time="1.157682" assertions="241">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #1" time="0.796126" assertions="248">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #2" time="0.822223" assertions="255">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #3" time="1.065933" assertions="262">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #4" time="0.953232" assertions="269">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #5" time="0.712328" assertions="276">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #6" time="0.977922" assertions="283">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #7" time="0.957444" assertions="290">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="I can't update a post with invalid values, Ex #8" time="0.732802" assertions="297">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Updates a post which does not exist returns not found" time="0.282798" assertions="4">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Deletes a post, Ex #1" time="0.693096" assertions="10">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Deletes a post, Ex #2" time="0.669949" assertions="16">
+    </testcase>
+    <testcase classname="Check the Post controller calls for NewsBundle" name="Deletes a post, Ex #3" time="1.013811" assertions="22">
+    </testcase>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the blog frontend" tests="148" time="6.610960">
+    <testcase classname="Check the blog frontend" name="Check blog post list status code" time="1.949612" assertions="4">
+    </testcase>
+    <testcase classname="Check the blog frontend" name="Add successfully a comment to a post" time="4.659055" assertions="9">
+    </testcase>
+</testsuite>

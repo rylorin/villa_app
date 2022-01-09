@@ -1,2 +1,2 @@
 parameters:
-    sonata_media.cdn.host: 'http://ryl.androw.eu/uploads/media'
+    sonata_media.cdn.host: 'https://www.villamilawines.com/uploads/media'

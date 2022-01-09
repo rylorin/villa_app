@@ -26,6 +26,8 @@
                {% media post.image, 'wide' with {'class': 'img-responsive'} %}
             </div>
             <h2 class=post-title><a href={{ path('sonata_news_view', { 'permalink': sonata_news_permalink(post) }) }}>{{ post.title }}</a></h2>
+            <!-- hack because invalid page title tag and can't understand why -->
+            <script>$("title").text("{{ post.title|raw }}"); $("#title").text("{{ post.title|raw }}");</script>
             <div class=post-meta><a href=#>{{ 'archive_author'|trans({'%author%': post.author }, 'SonataNewsBundle') }}</a>
               <span>|</span> {{ post.publicationDateStart | format_date }}
               <span>|</span> {{ 'comments_count'|trans({'%comments_count%': post.commentsCount }, 'SonataNewsBundle') }}
@@ -39,9 +41,6 @@
 	          {{ post.content|raw }}
             </div>
 
-            <div id=disqus_thread></div>
-            <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript rel=nofollow>comments powered by Disqus.</a></noscript>
-    
 	        <div id="comments">{% render(controller('SonataNewsBundle:Post:comments', {'postId': post.id})) %}</div>
 
 		    {% if post.iscommentable %}

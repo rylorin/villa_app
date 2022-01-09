@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Edit addresses from my profile" tests="153" time="10.924711">
+    <testcase classname="Edit addresses from my profile" name="Connect as customer to access my addresses" time="2.156218" assertions="8">
+    </testcase>
+    <testcase classname="Edit addresses from my profile" name="Add an address by type, Ex #1" time="2.786054" assertions="24">
+    </testcase>
+    <testcase classname="Edit addresses from my profile" name="Add an address by type, Ex #2" time="3.142244" assertions="40">
+    </testcase>
+    <testcase classname="Edit addresses from my profile" name="Add an address by type, Ex #3" time="2.838060" assertions="56">
+    </testcase>
+</testsuite>

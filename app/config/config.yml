@@ -49,6 +49,8 @@ framework:
     #esi:                   ~
     translator:
         fallback:           en
+        paths:
+            - '%kernel.root_dir%/Resources/translations'
     secret:                 %secret%
     router:
         resource:           "%kernel.root_dir%/config/routing.yml"
@@ -105,7 +107,7 @@ doctrine:
             currency: Sonata\Component\Currency\CurrencyDoctrineType
 
     orm:
-        auto_generate_proxy_classes: %kernel.debug%
+        auto_generate_proxy_classes: true # RYL %kernel.debug%
         default_entity_manager: default
 
         entity_managers:
@@ -116,7 +118,7 @@ doctrine:
 #        dql:
 #            string_functions:
 #                multi_concat: Spy\TimelineBundle\Driver\Doctrine\AST\Functions\MultiConcatFunction
-                
+
 # Swiftmailer Configuration
 swiftmailer:
     transport: %mailer_transport%
@@ -134,23 +136,6 @@ jms_serializer:
             - { path: %kernel.root_dir%/../vendor/sonata-project/ecommerce/src/BasketBundle/Resources/config/serializer/Component, namespace_prefix: 'Sonata\Component\Basket' }
             - { path: %kernel.root_dir%/../vendor/sonata-project/datagrid-bundle/Resources/config/serializer, namespace_prefix: 'Sonata\DatagridBundle' }
 
-# Assetic Configuration
-#assetic:
-#    debug:          %kernel.debug%
-#    use_controller: false
-#    filters:
-#        cssrewrite: ~
-#        # closure:
-#        #     jar: %kernel.root_dir%/java/compiler.jar
-#        # yui_css:
-#        #     jar: %kernel.root_dir%/java/yuicompressor-2.4.2.jar
-#
-#        # Comment out those lines if you wish to use the less version of bootstrap
-#        less:
-#            node: /usr/local/bin/node
-#            node_paths: [/usr/local/node/node-v0.10.22/lib/node_modules]
-#            apply_to: "\.less$"
-
 nelmio_api_doc: ~
 
 sensio_framework_extra:
@@ -158,4 +143,10 @@ sensio_framework_extra:
     router:  { annotations: true }
     request: { converters:  true }
 
-ryl_charity: ~
+#ryl_charity: ~
+
+# HypeMailChimpBundle
+hype_mailchimp:
+    api_key: cb25cb0b4255adc6be905667a8ccf7e4-us14
+    default_list: 4b285fed03
+    ssl: true #optional configuring curl connection

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Basket" tests="170" time="36.239041">
+    <testcase classname="Basket" name="Check default empty basket" time="0.949230" assertions="5">
+    </testcase>
+    <testcase classname="Basket" name="Adding simple product to basket by browsing (product page), Ex #1" time="4.495686" assertions="16">
+    </testcase>
+    <testcase classname="Basket" name="Adding simple product to basket by browsing (product page), Ex #2" time="3.535554" assertions="27">
+    </testcase>
+    <testcase classname="Basket" name="Adding simple product to basket by browsing (product page), Ex #3" time="2.783024" assertions="38">
+    </testcase>
+    <testcase classname="Basket" name="Adding a variation product to basket by browsing (product page)" time="3.014717" assertions="8">
+    </testcase>
+    <testcase classname="Basket" name="Changing product quantity from basket, Ex #1" time="3.076724" assertions="21">
+    </testcase>
+    <testcase classname="Basket" name="Changing product quantity from basket, Ex #2" time="3.950560" assertions="34">
+    </testcase>
+    <testcase classname="Basket" name="Changing product quantity from basket, Ex #3" time="3.107585" assertions="47">
+    </testcase>
+    <testcase classname="Basket" name="Remove a simple product from basket by browsing (product page)" time="4.283541" assertions="10">
+    </testcase>
+    <testcase classname="Basket" name="Remove several products from basket by browsing and editing quantity (product page)" time="7.034559" assertions="17">
+    </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the API for CustomerBundle" tests="14" time="7.019013">
+    <testcase classname="Check the API for CustomerBundle" name="Get all customers" time="0.406991" assertions="4">
+    </testcase>
+    <testcase classname="Check the API for CustomerBundle" name="Post new customer (with errors)" time="1.104881" assertions="6">
+    </testcase>
+    <testcase classname="Check the API for CustomerBundle" name="Tag full workflow" time="5.504350" assertions="77">
+    </testcase>
+</testsuite>

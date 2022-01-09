@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the GET API calls for OrderBundle" tests="22" time="2.689796">
+    <testcase classname="Check the GET API calls for OrderBundle" name="Retrieve the list of orders, Ex #1" time="0.707357" assertions="27">
+    </testcase>
+    <testcase classname="Check the GET API calls for OrderBundle" name="Retrieve the list of orders, Ex #2" time="0.829780" assertions="32">
+    </testcase>
+    <testcase classname="Check the GET API calls for OrderBundle" name="Retrieve an order by an unique ID, Ex #1" time="0.234697" assertions="37">
+    </testcase>
+    <testcase classname="Check the GET API calls for OrderBundle" name="Retrieve an order by an unique ID, Ex #2" time="0.257806" assertions="42">
+    </testcase>
+    <testcase classname="Check the GET API calls for OrderBundle" name="Retrieve all order elements of an unique order, Ex #1" time="0.319323" assertions="47">
+    </testcase>
+    <testcase classname="Check the GET API calls for OrderBundle" name="Retrieve all order elements of an unique order, Ex #2" time="0.336147" assertions="52">
+    </testcase>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the Group controller calls for UserBundle" tests="28" time="2.598521">
+    <testcase classname="Check the Group controller calls for UserBundle" name="Retrieve all available groups, Ex #1" time="0.625163" assertions="38">
+    </testcase>
+    <testcase classname="Check the Group controller calls for UserBundle" name="Retrieve all available groups, Ex #2" time="0.239545" assertions="42">
+    </testcase>
+    <testcase classname="Check the Group controller calls for UserBundle" name="Post new group with errors" time="0.245487" assertions="4">
+    </testcase>
+    <testcase classname="Check the Group controller calls for UserBundle" name="Post a new group" time="1.485468" assertions="25">
+    </testcase>
+</testsuite>

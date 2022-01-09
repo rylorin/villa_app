@@ -7,7 +7,6 @@
     <services>
 
         <!-- Goodies -->
-
         <service id="sonata.ecommerce_demo.product.goodie.manager" class="Sonata\ProductBundle\Entity\ProductManager">
             <argument>Application\Sonata\ProductBundle\Entity\Goodie</argument>
             <argument type="service" id="doctrine" />
@@ -18,7 +17,6 @@
         </service>
 
         <!-- Travel -->
-
         <service id="sonata.ecommerce_demo.product.travel.manager" class="Sonata\ProductBundle\Entity\ProductManager">
             <argument>Application\Sonata\ProductBundle\Entity\Travel</argument>
             <argument type="service" id="doctrine" />
@@ -28,13 +26,24 @@
             <argument type="service" id="serializer" />
         </service>
 
-        <!-- Donation -->
+        <!-- Donation
         <service id="ryl.ecommerce.product.donation.manager" class="Sonata\ProductBundle\Entity\ProductManager">
             <argument>Application\Sonata\ProductBundle\Entity\Donation</argument>
             <argument type="service" id="doctrine" />
         </service>
 
         <service id="ryl.ecommerce.product.donation.type" class="Application\Sonata\ProductBundle\Provider\DonationProductProvider">
+            <argument type="service" id="serializer" />
+        </service>
+ 		-->
+ 
+        <!-- Wine -->
+        <service id="ryl.villamila.wine.manager" class="Sonata\ProductBundle\Entity\ProductManager">
+            <argument>Application\Sonata\ProductBundle\Entity\Wine</argument>
+            <argument type="service" id="doctrine" />
+        </service>
+
+        <service id="ryl.villamila.wine.type" class="Application\Sonata\ProductBundle\Provider\WineProductProvider">
             <argument type="service" id="serializer" />
         </service>
 

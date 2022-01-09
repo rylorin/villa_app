@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the user admin module" tests="134" time="35.307569">
+    <testcase classname="Check the user admin module" name="Check group admin pages when not connected" time="0.322755" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Check group admin pages when connected" time="2.679123" assertions="2">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Add a new group with some errors" time="3.487745" assertions="3">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Add a new group" time="4.787630" assertions="4">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Filter groups" time="2.221658" assertions="4">
+    </testcase>
+    <testcase classname="Check the user admin module" name="View revisions of a group" time="5.048046" assertions="4">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Edit a group" time="9.050183" assertions="4">
+    </testcase>
+    <testcase classname="Check the user admin module" name="Delete a group" time="7.705488" assertions="7">
+    </testcase>
+</testsuite>

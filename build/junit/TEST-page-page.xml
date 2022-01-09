@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="2" skipped="0" name="Check the Page controller calls for PageBundle" tests="24" time="0.708337">
+    <testcase classname="Check the Page controller calls for PageBundle" name="Get all pages" time="0.299742" assertions="6">
+        <failure message="Failed asserting that '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;result&gt;
+  &lt;page&gt;1&lt;/page&gt;
+  &lt;per_page&gt;10&lt;/per_page&gt;
+  &lt;last_page&gt;11&lt;/last_page&gt;
+  &lt;total&gt;106&lt;/total&gt;
+  &lt;entries&gt;
+    &lt;entry id=&quot;659&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:26+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[page_slug]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[Homepage]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;661&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:26+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[sonata_demo_media]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[sonata_demo_media]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[media]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/media]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;663&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[sonata_demo_car]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[sonata_demo_car]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[car]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/car]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;665&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[sonata_demo_car_rescue]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[sonata_demo_car_rescue]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[car-rescue-engine]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/car-rescue-engine]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;667&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[sonata_demo_newsletter]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[sonata_demo_newsletter]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[newsletter]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/newsletter]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[POST]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;669&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[sonata_page_bundle_inner_controller]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[sonata_page_bundle_inner_controller]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[qa-page-controller-helper]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/qa/page/controller-helper]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;671&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[sonata_qa_serialize]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[sonata_qa_serialize]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[qa-serialize]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/qa/serialize]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;673&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[fos_user_security_login]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[fos_user_security_login]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[login]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/login]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;675&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[fos_user_security_check]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[fos_user_security_check]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[login-check]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/login_check]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[POST]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+    &lt;entry id=&quot;677&quot;&gt;
+      &lt;created_at&gt;&lt;![CDATA[2015-02-13T21:08:08+0100]]&gt;&lt;/created_at&gt;
+      &lt;updated_at&gt;&lt;![CDATA[2015-02-13T21:08:27+0100]]&gt;&lt;/updated_at&gt;
+      &lt;route_name&gt;&lt;![CDATA[fos_user_security_logout]]&gt;&lt;/route_name&gt;
+      &lt;name&gt;&lt;![CDATA[fos_user_security_logout]]&gt;&lt;/name&gt;
+      &lt;slug&gt;&lt;![CDATA[logout]]&gt;&lt;/slug&gt;
+      &lt;url&gt;&lt;![CDATA[/logout]]&gt;&lt;/url&gt;
+      &lt;request_method&gt;&lt;![CDATA[GET|POST|HEAD|DELETE|PUT]]&gt;&lt;/request_method&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;parent_id&gt;659&lt;/parent_id&gt;
+      &lt;template_code&gt;&lt;![CDATA[default]]&gt;&lt;/template_code&gt;
+      &lt;position&gt;1&lt;/position&gt;
+      &lt;decorate&gt;true&lt;/decorate&gt;
+      &lt;site_id&gt;7&lt;/site_id&gt;
+      &lt;edited&gt;false&lt;/edited&gt;
+    &lt;/entry&gt;
+  &lt;/entries&gt;
+&lt;/result&gt;
+' matches PCRE pattern &quot;/global/&quot;." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Failed asserting that '<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <page>1</page>
+  <per_page>10</per_page>
+  <last_page>11</last_page>
+  <total>106</total>
+  <entries>
+    <entry id="659">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:26+0100</updated_at>
+      <route_name>page_slug</route_name>
+      <name>Homepage</name>
+      <slug></slug>
+      <url>/</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="661">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:26+0100</updated_at>
+      <route_name>sonata_demo_media</route_name>
+      <name>sonata_demo_media</name>
+      <slug>media</slug>
+      <url>/media</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="663">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>sonata_demo_car</route_name>
+      <name>sonata_demo_car</name>
+      <slug>car</slug>
+      <url>/car</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="665">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>sonata_demo_car_rescue</route_name>
+      <name>sonata_demo_car_rescue</name>
+      <slug>car-rescue-engine</slug>
+      <url>/car-rescue-engine</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="667">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>sonata_demo_newsletter</route_name>
+      <name>sonata_demo_newsletter</name>
+      <slug>newsletter</slug>
+      <url>/newsletter</url>
+      <request_method>POST</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="669">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>sonata_page_bundle_inner_controller</route_name>
+      <name>sonata_page_bundle_inner_controller</name>
+      <slug>qa-page-controller-helper</slug>
+      <url>/qa/page/controller-helper</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="671">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>sonata_qa_serialize</route_name>
+      <name>sonata_qa_serialize</name>
+      <slug>qa-serialize</slug>
+      <url>/qa/serialize</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="673">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>fos_user_security_login</route_name>
+      <name>fos_user_security_login</name>
+      <slug>login</slug>
+      <url>/login</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="675">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>fos_user_security_check</route_name>
+      <name>fos_user_security_check</name>
+      <slug>login-check</slug>
+      <url>/login_check</url>
+      <request_method>POST</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+    <entry id="677">
+      <created_at>2015-02-13T21:08:08+0100</created_at>
+      <updated_at>2015-02-13T21:08:27+0100</updated_at>
+      <route_name>fos_user_security_logout</route_name>
+      <name>fos_user_security_logout</name>
+      <slug>logout</slug>
+      <url>/logout</url>
+      <request_method>GET|POST|HEAD|DELETE|PUT</request_method>
+      <enabled>true</enabled>
+      <parent_id>659</parent_id>
+      <template_code>default</template_code>
+      <position>1</position>
+      <decorate>true</decorate>
+      <site_id>7</site_id>
+      <edited>false</edited>
+    </entry>
+  </entries>
+</result>
+' matches PCRE pattern "/global/".' in /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php:144
+Stack trace:
+#0 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php(91): PHPUnit_Framework_Constraint->fail('<?xml version="...', '')
+#1 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(2134): PHPUnit_Framework_Constraint->evaluate('<?xml version="...', '')
+#2 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(1348): PHPUnit_Framework_Assert::assertThat('<?xml version="...', Object(PHPUnit_Framework_Constraint_PCREMatch), '')
+#3 [internal function]: PHPUnit_Framework_Assert::assertRegExp('/global/', '<?xml version="...')
+#4 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert/Functions.php(1206): call_user_func_array('PHPUnit_Framewo...', Array)
+#5 /Users/ronan/Sites/sandbox/vendor/behat/common-contexts/Behat/CommonContexts/WebApiContext.php(165): assertRegExp('/global/', '<?xml version="...')
+#6 [internal function]: Behat\CommonContexts\WebApiContext->theResponseShouldContain('global')
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#9 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Behat\Definition\Annotation\Then))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\StepNode))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\StepNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(87): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\ScenarioNode), Object(FeatureContext), Array, false)
+#14 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\ScenarioTester->visit(Object(Behat\Gherkin\Node\ScenarioNode))
+#15 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\ScenarioTester))
+#16 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#18 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#19 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#25 {main}
+]]></failure>
+    </testcase>
+    <testcase classname="Check the Page controller calls for PageBundle" name="Page full workflow" time="0.406898" assertions="57">
+        <failure message="Failed asserting that 400 is identical to 200." type="failed"><![CDATA[
+exception 'PHPUnit_Framework_ExpectationFailedException' with message 'Failed asserting that 400 is identical to 200.' in /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint.php:144
+Stack trace:
+#0 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Constraint/IsIdentical.php(132): PHPUnit_Framework_Constraint->fail(400, '', NULL)
+#1 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(2134): PHPUnit_Framework_Constraint_IsIdentical->evaluate(400, '')
+#2 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert.php(1095): PHPUnit_Framework_Assert::assertThat(400, Object(PHPUnit_Framework_Constraint_IsIdentical), '')
+#3 [internal function]: PHPUnit_Framework_Assert::assertSame(200, 400)
+#4 /Users/ronan/Sites/sandbox/vendor/phpunit/phpunit/PHPUnit/Framework/Assert/Functions.php(1223): call_user_func_array('PHPUnit_Framewo...', Array)
+#5 /Users/ronan/Sites/sandbox/vendor/behat/common-contexts/Behat/CommonContexts/WebApiContext.php(153): assertSame(200, 400)
+#6 [internal function]: Behat\CommonContexts\WebApiContext->theResponseCodeShouldBe('200')
+#7 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Definition/Annotation/Definition.php(155): call_user_func_array(Array, Array)
+#8 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(157): Behat\Behat\Definition\Annotation\Definition->run(Object(FeatureContext))
+#9 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(126): Behat\Behat\Tester\StepTester->executeStepDefinition(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Behat\Definition\Annotation\Then))
+#10 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/StepTester.php(95): Behat\Behat\Tester\StepTester->executeStep(Object(Behat\Gherkin\Node\StepNode))
+#11 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\StepTester->visit(Object(Behat\Gherkin\Node\StepNode))
+#12 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(148): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\StepTester))
+#13 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/ScenarioTester.php(87): Behat\Behat\Tester\ScenarioTester->visitStep(Object(Behat\Gherkin\Node\StepNode), Object(Behat\Gherkin\Node\ScenarioNode), Object(FeatureContext), Array, false)
+#14 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\ScenarioTester->visit(Object(Behat\Gherkin\Node\ScenarioNode))
+#15 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Tester/FeatureTester.php(88): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\ScenarioTester))
+#16 /Users/ronan/Sites/sandbox/vendor/behat/gherkin/src/Behat/Gherkin/Node/AbstractNode.php(42): Behat\Behat\Tester\FeatureTester->visit(Object(Behat\Gherkin\Node\FeatureNode))
+#17 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(150): Behat\Gherkin\Node\AbstractNode->accept(Object(Behat\Behat\Tester\FeatureTester))
+#18 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/Command/BehatCommand.php(128): Behat\Behat\Console\Command\BehatCommand->runFeatures(Object(Behat\Gherkin\Gherkin))
+#19 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Command/Command.php(244): Behat\Behat\Console\Command\BehatCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(891): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Behat\Behat\Console\Command\BehatCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/ronan/Sites/sandbox/vendor/behat/behat/src/Behat/Behat/Console/BehatApplication.php(68): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/ronan/Sites/sandbox/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(121): Behat\Behat\Console\BehatApplication->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/ronan/Sites/sandbox/vendor/behat/behat/bin/behat(32): Symfony\Component\Console\Application->run()
+#25 {main}
+]]></failure>
+    </testcase>
+</testsuite>

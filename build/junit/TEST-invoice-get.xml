@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the API for InvoiceBundle" tests="14" time="5.680788">
+    <testcase classname="Check the API for InvoiceBundle" name="Check invoice list, Ex #1" time="1.276122" assertions="82">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check invoice list, Ex #2" time="0.355377" assertions="87">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check unique invoice, Ex #1" time="0.252221" assertions="92">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check unique invoice, Ex #2" time="0.238387" assertions="97">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check unavailable unique invoice, Ex #1" time="0.240070" assertions="102">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check unavailable unique invoice, Ex #2" time="0.256919" assertions="107">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check invoice elements, Ex #1" time="0.285078" assertions="112">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check invoice elements, Ex #2" time="0.523958" assertions="117">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check unavailable invoice elements, Ex #1" time="0.684649" assertions="122">
+    </testcase>
+    <testcase classname="Check the API for InvoiceBundle" name="Check unavailable invoice elements, Ex #2" time="0.703869" assertions="127">
+    </testcase>
+</testsuite>

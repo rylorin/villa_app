@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Checkout process" tests="175" time="34.564370">
+    <testcase classname="Checkout process" name="No checkout for empty basket" time="1.536605" assertions="4">
+    </testcase>
+    <testcase classname="Checkout process" name="Checkout with one product in the basket when not logged in" time="4.113385" assertions="10">
+    </testcase>
+    <testcase classname="Checkout process" name="Checkout with one product in the basket when logging in" time="10.320452" assertions="40">
+    </testcase>
+    <testcase classname="Checkout process" name="Ensure to see order" time="8.908837" assertions="41">
+    </testcase>
+    <testcase classname="Checkout process" name="Ensure to see an invoice" time="9.681656" assertions="42">
+    </testcase>
+</testsuite>

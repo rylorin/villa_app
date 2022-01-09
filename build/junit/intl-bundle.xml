@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="IntlBundle Test Suite" tests="23" assertions="98" failures="2" errors="0" time="0.658214">
+    <testsuite name="Sonata\IntlBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/DependencyInjection/ConfigurationTest.php" namespace="Sonata\IntlBundle\Tests" fullPackage="Sonata.IntlBundle.Tests" tests="1" assertions="1" failures="0" errors="0" time="0.025897">
+      <testcase name="testOptions" class="Sonata\IntlBundle\Tests\ConfigurationTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/DependencyInjection/ConfigurationTest.php" line="19" assertions="1" time="0.025897"/>
+    </testsuite>
+    <testsuite name="Sonata\IntlBundle\Tests\Helper\DateTimeHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/DateTimeHelperTest.php" namespace="Sonata\IntlBundle\Tests\Helper" fullPackage="Sonata.IntlBundle.Tests.Helper" tests="2" assertions="24" failures="1" errors="0" time="0.146919">
+      <testcase name="testLocale" class="Sonata\IntlBundle\Tests\Helper\DateTimeHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/DateTimeHelperTest.php" line="30" assertions="13" time="0.121119">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Sonata\IntlBundle\Tests\Helper\DateTimeHelperTest::testLocale
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'02:00:00 UTC+01:00'
++'02:00:00 UTC+1'
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/DateTimeHelperTest.php:73
+</failure>
+      </testcase>
+      <testcase name="testLocaleTimezones" class="Sonata\IntlBundle\Tests\Helper\DateTimeHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/DateTimeHelperTest.php" line="83" assertions="11" time="0.025800"/>
+    </testsuite>
+    <testsuite name="Sonata\IntlBundle\Tests\Helper\LocaleHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/LocaleHelperTest.php" namespace="Sonata\IntlBundle\Tests\Helper" fullPackage="Sonata.IntlBundle.Tests.Helper" tests="3" assertions="11" failures="0" errors="0" time="0.324883">
+      <testcase name="testLanguage" class="Sonata\IntlBundle\Tests\Helper\LocaleHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/LocaleHelperTest.php" line="32" assertions="3" time="0.229664"/>
+      <testcase name="testCountry" class="Sonata\IntlBundle\Tests\Helper\LocaleHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/LocaleHelperTest.php" line="41" assertions="3" time="0.047164"/>
+      <testcase name="testLocale" class="Sonata\IntlBundle\Tests\Helper\LocaleHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/LocaleHelperTest.php" line="49" assertions="5" time="0.048055"/>
+    </testsuite>
+    <testsuite name="Sonata\IntlBundle\Tests\Helper\NumberHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/NumberHelperTest.php" namespace="Sonata\IntlBundle\Tests\Helper" fullPackage="Sonata.IntlBundle.Tests.Helper" tests="2" assertions="23" failures="1" errors="0" time="0.123735">
+      <testcase name="testLocale" class="Sonata\IntlBundle\Tests\Helper\NumberHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/NumberHelperTest.php" line="19" assertions="16" time="0.122100">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Sonata\IntlBundle\Tests\Helper\NumberHelperTest::testLocale
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'un million deux-cent-vingt-quatre-mille-cinq-cent-cinquante-sept virgule un deux cinq quatre'
++'un million deux cent vingt-quatre mille cinq cent cinquante-sept virgule un deux cinq quatre'
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/NumberHelperTest.php:55
+</failure>
+      </testcase>
+      <testcase name="testArguments" class="Sonata\IntlBundle\Tests\Helper\NumberHelperTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Helper/NumberHelperTest.php" line="76" assertions="7" time="0.001635"/>
+    </testsuite>
+    <testsuite name="Sonata\IntlBundle\Tests\Helper\SonataIntlBundleTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/SonataIntlBundleTest.php" namespace="Sonata\IntlBundle\Tests\Helper" fullPackage="Sonata.IntlBundle.Tests.Helper" tests="5" assertions="10" failures="0" errors="0" time="0.004034">
+      <testsuite name="Sonata\IntlBundle\Tests\Helper\SonataIntlBundleTest::testSymfonyVersion" tests="5" assertions="10" failures="0" errors="0" time="0.004034">
+        <testcase name="testSymfonyVersion with data set #0" assertions="2" time="0.002682"/>
+        <testcase name="testSymfonyVersion with data set #1" assertions="2" time="0.000225"/>
+        <testcase name="testSymfonyVersion with data set #2" assertions="2" time="0.000450"/>
+        <testcase name="testSymfonyVersion with data set #3" assertions="2" time="0.000226"/>
+        <testcase name="testSymfonyVersion with data set #4" assertions="2" time="0.000451"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\IntlBundle\Tests\Timezone\ChainTimezoneDetectorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Timezone/ChainTimezoneDetectorTest.php" namespace="Sonata\IntlBundle\Tests\Timezone" fullPackage="Sonata.IntlBundle.Tests.Timezone" tests="5" assertions="15" failures="0" errors="0" time="0.004421">
+      <testsuite name="Sonata\IntlBundle\Tests\Timezone\ChainTimezoneDetectorTest::testDetectsTimezoneForUser" tests="5" assertions="15" failures="0" errors="0" time="0.004421">
+        <testcase name="testDetectsTimezoneForUser with data set #0" assertions="3" time="0.001374"/>
+        <testcase name="testDetectsTimezoneForUser with data set #1" assertions="3" time="0.000582"/>
+        <testcase name="testDetectsTimezoneForUser with data set #2" assertions="3" time="0.000940"/>
+        <testcase name="testDetectsTimezoneForUser with data set #3" assertions="3" time="0.000602"/>
+        <testcase name="testDetectsTimezoneForUser with data set #4" assertions="3" time="0.000923"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Sonata\IntlBundle\Tests\Timezone\LocaleBasedTimezoneDetectorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Timezone/LocaleBasedTimezoneDetectorTest.php" namespace="Sonata\IntlBundle\Tests\Timezone" fullPackage="Sonata.IntlBundle.Tests.Timezone" tests="2" assertions="4" failures="0" errors="0" time="0.000949">
+      <testcase name="testDetectsTimezoneForLocale" class="Sonata\IntlBundle\Tests\Timezone\LocaleBasedTimezoneDetectorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Timezone/LocaleBasedTimezoneDetectorTest.php" line="24" assertions="2" time="0.000529"/>
+      <testcase name="testTimezoneNotDetected" class="Sonata\IntlBundle\Tests\Timezone\LocaleBasedTimezoneDetectorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Timezone/LocaleBasedTimezoneDetectorTest.php" line="37" assertions="2" time="0.000420"/>
+    </testsuite>
+    <testsuite name="Sonata\IntlBundle\Tests\Timezone\UserBasedTimezoneDetectorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Timezone/UserBasedTimezoneDetectorTest.php" namespace="Sonata\IntlBundle\Tests\Timezone" fullPackage="Sonata.IntlBundle.Tests.Timezone" tests="3" assertions="10" failures="0" errors="0" time="0.027376">
+      <testsuite name="Sonata\IntlBundle\Tests\Timezone\UserBasedTimezoneDetectorTest::testDetectsTimezoneForUser" tests="2" assertions="8" failures="0" errors="0" time="0.026928">
+        <testcase name="testDetectsTimezoneForUser with data set #0" assertions="4" time="0.026075"/>
+        <testcase name="testDetectsTimezoneForUser with data set #1" assertions="4" time="0.000853"/>
+      </testsuite>
+      <testcase name="testTimezoneNotDetected" class="Sonata\IntlBundle\Tests\Timezone\UserBasedTimezoneDetectorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/intl-bundle/Tests/Timezone/UserBasedTimezoneDetectorTest.php" line="62" assertions="2" time="0.000448"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

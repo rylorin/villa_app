@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Edit orders from my profile" tests="154" time="2.998268">
+    <testcase classname="Edit orders from my profile" name="Connect as customer to access my orders" time="2.997202" assertions="5">
+    </testcase>
+</testsuite>

@@ -5,7 +5,7 @@ imports:
 framework:
     validation:
 # no APC extension on OVH 90 Plan
-        cache:                         apc
+#        cache:                         apc
 
 doctrine:
     orm:

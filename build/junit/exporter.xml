@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Exporter Test Suite" tests="41" assertions="192" failures="1" errors="1" time="4.094228">
+    <testsuite name="Exporter\Test\HandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/HandlerTest.php" namespace="Exporter\Test" fullPackage="Exporter.Test" tests="1" assertions="1" failures="0" errors="0" time="0.010492">
+      <testcase name="testHandler" class="Exporter\Test\HandlerTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/HandlerTest.php" line="10" assertions="1" time="0.010492"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\ArraySourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/ArraySourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="1" assertions="8" failures="0" errors="0" time="0.001704">
+      <testcase name="testHandler" class="Exporter\Test\Source\ArraySourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/ArraySourceIteratorTest.php" line="10" assertions="8" time="0.001704"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\ChainSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/ChainSourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="1" assertions="0" failures="0" errors="0" time="0.002482">
+      <testcase name="testIterator" class="Exporter\Test\Source\ChainSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/ChainSourceIteratorTest.php" line="10" assertions="0" time="0.002482"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\CsvSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/CsvSourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="3" assertions="43" failures="0" errors="0" time="0.051684">
+      <testcase name="testHandler" class="Exporter\Test\Source\CsvSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/CsvSourceIteratorTest.php" line="28" assertions="16" time="0.046489"/>
+      <testcase name="testNoHeaders" class="Exporter\Test\Source\CsvSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/CsvSourceIteratorTest.php" line="46" assertions="13" time="0.002953"/>
+      <testcase name="testRewind" class="Exporter\Test\Source\CsvSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/CsvSourceIteratorTest.php" line="60" assertions="14" time="0.002242"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\IteratorSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/IteratorSourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="6" assertions="9" failures="0" errors="0" time="0.007665">
+      <testcase name="testGetIterator" class="Exporter\Test\Source\IteratorSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/IteratorSourceIteratorTest.php" line="24" assertions="1" time="0.002082"/>
+      <testcase name="testCurrent" class="Exporter\Test\Source\IteratorSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/IteratorSourceIteratorTest.php" line="29" assertions="2" time="0.001420"/>
+      <testcase name="testNext" class="Exporter\Test\Source\IteratorSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/IteratorSourceIteratorTest.php" line="39" assertions="1" time="0.001107"/>
+      <testcase name="testKey" class="Exporter\Test\Source\IteratorSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/IteratorSourceIteratorTest.php" line="48" assertions="2" time="0.001065"/>
+      <testcase name="testValid" class="Exporter\Test\Source\IteratorSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/IteratorSourceIteratorTest.php" line="58" assertions="2" time="0.001011"/>
+      <testcase name="testRewind" class="Exporter\Test\Source\IteratorSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/IteratorSourceIteratorTest.php" line="68" assertions="1" time="0.000980"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\PDOStatementSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/PDOStatementSourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="1" assertions="1" failures="0" errors="0" time="0.013870">
+      <testcase name="testHandler" class="Exporter\Test\Source\PDOStatementSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/PDOStatementSourceIteratorTest.php" line="56" assertions="1" time="0.013870"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\PropelCollectionSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/PropelCollectionSourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="Exporter\Test\Source\XmlExcelSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlExcelSourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="4" assertions="65" failures="0" errors="0" time="0.015602">
+      <testcase name="testHandler" class="Exporter\Test\Source\XmlExcelSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlExcelSourceIteratorTest.php" line="30" assertions="19" time="0.006204"/>
+      <testcase name="testHandlerSS" class="Exporter\Test\Source\XmlExcelSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlExcelSourceIteratorTest.php" line="49" assertions="19" time="0.003532"/>
+      <testcase name="testNoHeaders" class="Exporter\Test\Source\XmlExcelSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlExcelSourceIteratorTest.php" line="68" assertions="13" time="0.002431"/>
+      <testcase name="testRewind" class="Exporter\Test\Source\XmlExcelSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlExcelSourceIteratorTest.php" line="82" assertions="14" time="0.003435"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\XmlSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlSourceIteratorTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="2" assertions="33" failures="0" errors="0" time="0.006273">
+      <testcase name="testHandler" class="Exporter\Test\Source\XmlSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlSourceIteratorTest.php" line="23" assertions="19" time="0.003856"/>
+      <testcase name="testRewind" class="Exporter\Test\Source\XmlSourceIteratorTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Source/XmlSourceIteratorTest.php" line="42" assertions="14" time="0.002417"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\CsvWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/CsvWriterTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="4" assertions="4" failures="0" errors="0" time="0.007028">
+      <testcase name="testInvalidDataFormat" class="Exporter\Test\Source\CsvWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/CsvWriterTest.php" line="23" assertions="1" time="0.002282"/>
+      <testcase name="testEnclosureFormating" class="Exporter\Test\Source\CsvWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/CsvWriterTest.php" line="31" assertions="1" time="0.001783"/>
+      <testcase name="testEnclosureFormatingWithExcel" class="Exporter\Test\Source\CsvWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/CsvWriterTest.php" line="45" assertions="1" time="0.001513"/>
+      <testcase name="testWithHeaders" class="Exporter\Test\Source\CsvWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/CsvWriterTest.php" line="59" assertions="1" time="0.001450"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\GsaFeedWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/GsaFeedWriterTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="3" assertions="4" failures="1" errors="1" time="0.702509">
+      <testcase name="testNonExistentFolder" class="Exporter\Test\Source\GsaFeedWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/GsaFeedWriterTest.php" line="54" assertions="1" time="0.002207"/>
+      <testcase name="testSimpleWrite" class="Exporter\Test\Source\GsaFeedWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/GsaFeedWriterTest.php" line="63" assertions="2" time="0.003095">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Exporter\Test\Source\GsaFeedWriterTest::testSimpleWrite
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'/var/folders/ds/6tkfnjgd773526w9yqcxzrv40000gn/T/sonata_exporter_test/feed_00001.xml'
++'/private/var/folders/ds/6tkfnjgd773526w9yqcxzrv40000gn/T/sonata_exporter_test/feed_00001.xml'
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/GsaFeedWriterTest.php:82
+</failure>
+      </testcase>
+      <testcase name="testLimitSize" class="Exporter\Test\Source\GsaFeedWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/GsaFeedWriterTest.php" line="109" assertions="1" time="0.697207">
+        <error type="Exception">Exporter\Test\Source\GsaFeedWriterTest::testLimitSize
+Exception: String could not be parsed as XML
+
+/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/GsaFeedWriterTest.php:129
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\JsonWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/JsonWriterTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="1" assertions="2" failures="0" errors="0" time="0.003350">
+      <testcase name="testWrite" class="Exporter\Test\Source\JsonWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/JsonWriterTest.php" line="20" assertions="2" time="0.003350"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\SitemapWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/SitemapWriterTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="5" assertions="13" failures="0" errors="0" time="3.215420">
+      <testcase name="testNonExistentFolder" class="Exporter\Test\Source\SitemapWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/SitemapWriterTest.php" line="27" assertions="1" time="0.001887"/>
+      <testcase name="testSimpleWrite" class="Exporter\Test\Source\SitemapWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/SitemapWriterTest.php" line="33" assertions="2" time="0.002886"/>
+      <testcase name="testSimpleWriteAdvanced" class="Exporter\Test\Source\SitemapWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/SitemapWriterTest.php" line="61" assertions="4" time="0.003145"/>
+      <testcase name="testLimitSize" class="Exporter\Test\Source\SitemapWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/SitemapWriterTest.php" line="110" assertions="2" time="0.317607"/>
+      <testcase name="testLimitUrl" class="Exporter\Test\Source\SitemapWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/SitemapWriterTest.php" line="137" assertions="4" time="2.889895"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\XlsWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XlsWriterTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="2" assertions="2" failures="0" errors="0" time="0.004696">
+      <testcase name="testValidDataFormat" class="Exporter\Test\Source\XlsWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XlsWriterTest.php" line="20" assertions="1" time="0.001979"/>
+      <testcase name="testWithHeaders" class="Exporter\Test\Source\XlsWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XlsWriterTest.php" line="33" assertions="1" time="0.002717"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\XmlExcelWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlExcelWriterTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="5" assertions="5" failures="0" errors="0" time="0.045821">
+      <testcase name="testWriter" class="Exporter\Test\Source\XmlExcelWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlExcelWriterTest.php" line="20" assertions="1" time="0.036877"/>
+      <testcase name="testWithHeaders" class="Exporter\Test\Source\XmlExcelWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlExcelWriterTest.php" line="34" assertions="1" time="0.003224"/>
+      <testcase name="testForceTypes" class="Exporter\Test\Source\XmlExcelWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlExcelWriterTest.php" line="49" assertions="1" time="0.002380"/>
+      <testcase name="testForceTypesWithHeaders" class="Exporter\Test\Source\XmlExcelWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlExcelWriterTest.php" line="64" assertions="1" time="0.001613"/>
+      <testcase name="testSpecificTypes" class="Exporter\Test\Source\XmlExcelWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlExcelWriterTest.php" line="80" assertions="1" time="0.001727"/>
+    </testsuite>
+    <testsuite name="Exporter\Test\Source\XmlWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlWriterTest.php" namespace="Exporter\Test\Source" fullPackage="Exporter.Test.Source" tests="2" assertions="2" failures="0" errors="0" time="0.005632">
+      <testcase name="testArrayDataFormat" class="Exporter\Test\Source\XmlWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlWriterTest.php" line="23" assertions="1" time="0.002902"/>
+      <testcase name="testInvalidDataFormat" class="Exporter\Test\Source\XmlWriterTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/exporter/test/Exporter/Test/Writer/XmlWriterTest.php" line="32" assertions="1" time="0.002730"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

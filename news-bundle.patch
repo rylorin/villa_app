@@ -1,0 +1,517 @@
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Admin/PostAdmin.php vendor/sonata-project/news-bundle/Admin/PostAdmin.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/Admin/PostAdmin.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Admin/PostAdmin.php	2016-11-17 08:49:58.000000000 +0100
+@@ -89,6 +89,7 @@
+             ->add('author')
+             ->add('enabled')
+             ->add('title')
++            ->add('locale')
+             ->add('abstract')
+             ->add('content', null, array('safe' => true))
+             ->add('tags')
+@@ -106,6 +107,8 @@
+                 ))
+                 ->add('author', 'sonata_type_model_list')
+                 ->add('title')
++                ->add('locale', 'locale', array('required' => false))
++                ->add('site', 'sonata_type_model_list', array('required' => false))
+                 ->add('abstract', null, array('attr' => array('rows' => 5)))
+                 ->add('content', 'sonata_formatter_type', array(
+                     'event_dispatcher' => $formMapper->getFormBuilder()->getEventDispatcher(),
+@@ -149,6 +152,7 @@
+                     'required' => false,
+                 ))
+                 ->add('collection', 'sonata_type_model_list', array('required' => false))
++                ->add('category', 'sonata_type_model_list', array('required' => false))
+             ->end()
+         ;
+     }
+@@ -164,6 +168,7 @@
+                 'label' => 'Post',
+                 'sortable' => 'title',
+             ))
++            ->add('locale')
+             ->add('commentsEnabled', null, array('editable' => true))
+             ->add('publicationDateStart')
+         ;
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Block/Breadcrumb/NewsArchiveBreadcrumbBlockService.php vendor/sonata-project/news-bundle/Block/Breadcrumb/NewsArchiveBreadcrumbBlockService.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/Block/Breadcrumb/NewsArchiveBreadcrumbBlockService.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Block/Breadcrumb/NewsArchiveBreadcrumbBlockService.php	2016-11-17 08:49:58.000000000 +0100
+@@ -57,7 +57,7 @@
+                 ),
+             ));
+         }
+-
++        
+         if ($tag = $blockContext->getBlock()->getSetting('tag')) {
+             $menu->addChild($tag->getName(), array(
+                 'route' => 'sonata_news_tag',
+@@ -67,6 +67,15 @@
+             ));
+         }
+ 
++        if ($category = $blockContext->getBlock()->getSetting('category')) {
++             $menu->addChild($category->getName(), array(
++                'route'           => 'sonata_news_category',
++                'routeParameters' => array(
++                    'category' => $category->getSlug(),
++        	    ),
++        	));
++        }
++        
+         return $menu;
+     }
+ }
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Controller/PostController.php vendor/sonata-project/news-bundle/Controller/PostController.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/Controller/PostController.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Controller/PostController.php	2016-11-17 09:30:12.000000000 +0100
+@@ -57,11 +57,12 @@
+             'blog' => $this->getBlog(),
+             'tag' => false,
+             'collection' => false,
++        	'category' => false,
+             'route' => $request->get('_route'),
+             'route_parameters' => $request->get('_route_params'),
+         ), $parameters);
+ 
+-        $response = $this->render(sprintf('SonataNewsBundle:Post:archive.%s.twig', $request->getRequestFormat()), $parameters);
++        $response = $this->render(sprintf('RylReignThemeBundle:Post:archive.%s.twig', $request->getRequestFormat()), $parameters);
+ 
+         if ('rss' === $request->getRequestFormat()) {
+             $response->headers->set('Content-Type', 'application/rss+xml');
+@@ -129,6 +130,30 @@
+     }
+ 
+     /**
++     * @param $category
++     * @param Request $request
++     *
++     * @return Response
++     *
++     * @throws NotFoundHttpException
++     */
++    public function categoryAction($category, Request $request = null)
++    {
++    	$request = $this->resolveRequest($request);
++    
++    	$category = $this->get('sonata.classification.manager.category')->findOneBy(array(
++    			'slug'    => $category,
++    			'enabled' => true,
++    	));
++    
++    	if (!$category || !$category->getEnabled()) {
++    		throw new NotFoundHttpException('Unable to find the category');
++    	}
++    
++    	return $this->renderArchive(array('category' => $category), array('category' => $category), $request);
++    }
++
++    /**
+      * @param string  $year
+      * @param string  $month
+      * @param Request $request
+@@ -187,7 +212,7 @@
+             ;
+         }
+ 
+-        return $this->render('SonataNewsBundle:Post:view.html.twig', array(
++        return $this->render('RylReignThemeBundle:Post:view.html.twig', array(
+             'post' => $post,
+             'form' => false,
+             'blog' => $this->getBlog(),
+@@ -219,7 +244,7 @@
+                 'status' => CommentInterface::STATUS_VALID,
+             ), 1, 500); //no limit
+ 
+-        return $this->render('SonataNewsBundle:Post:comments.html.twig', array(
++        return $this->render('RylReignThemeBundle:Post:comments.html.twig', array(
+             'pager' => $pager,
+         ));
+     }
+@@ -240,7 +265,7 @@
+             $form = $this->getCommentForm($post);
+         }
+ 
+-        return $this->render('SonataNewsBundle:Post:comment_form.html.twig', array(
++        return $this->render('RylReignThemeBundle:Post:comment_form.html.twig', array(
+             'form' => $form->createView(),
+             'post_id' => $postId,
+         ));
+@@ -302,7 +327,7 @@
+             )));
+         }
+ 
+-        return $this->render('SonataNewsBundle:Post:view.html.twig', array(
++        return $this->render('RylReignThemeBundle:Post:view.html.twig', array(
+             'post' => $post,
+             'form' => $form,
+         ));
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/DependencyInjection/Configuration.php vendor/sonata-project/news-bundle/DependencyInjection/Configuration.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/DependencyInjection/Configuration.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/DependencyInjection/Configuration.php	2016-11-17 08:49:58.000000000 +0100
+@@ -53,10 +53,12 @@
+                     ->children()
+                         ->scalarNode('tag')->defaultValue('Application\\Sonata\\ClassificationBundle\\Entity\\Tag')->end()
+                         ->scalarNode('collection')->defaultValue('Application\\Sonata\\ClassificationBundle\\Entity\\Collection')->end()
++                        ->scalarNode('category')->defaultValue('Application\\Sonata\\ClassificationBundle\\Entity\\Category')->end()
+                         ->scalarNode('post')->defaultValue('Application\\Sonata\\NewsBundle\\Entity\\Post')->end()
+                         ->scalarNode('comment')->defaultValue('Application\\Sonata\\NewsBundle\\Entity\\Comment')->end()
+                         ->scalarNode('media')->defaultValue('Application\\Sonata\\MediaBundle\\Entity\\Media')->end()
+                         ->scalarNode('user')->defaultValue('Application\\Sonata\\UserBundle\\Entity\\User')->end()
++                        ->scalarNode('site')->defaultValue('Application\\Sonata\\PageBundle\\Entity\\Site')->end()
+                     ->end()
+                 ->end()
+ 
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/DependencyInjection/SonataNewsExtension.php vendor/sonata-project/news-bundle/DependencyInjection/SonataNewsExtension.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/DependencyInjection/SonataNewsExtension.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/DependencyInjection/SonataNewsExtension.php	2016-11-17 08:49:58.000000000 +0100
+@@ -228,6 +228,40 @@
+                 ),
+         ));
+ 
++        $collector->addAssociation($config['class']['post'], 'mapManyToOne', array(
++        		'fieldName'    => 'category',
++        		'targetEntity' => $config['class']['category'],
++        		'cascade'      => array(
++        				1 => 'persist',
++        		),
++        		'mappedBy'    => null,
++        		'inversedBy'  => null,
++        		'joinColumns' => array(
++        				array(
++        						'name'                 => 'category_id',
++        						'referencedColumnName' => 'id',
++        				),
++        		),
++        		'orphanRemoval' => false,
++        ));
++
++        $collector->addAssociation($config['class']['post'], 'mapManyToOne', array(
++        		'fieldName'     => 'site',
++        		'targetEntity'  => $config['class']['site'],
++        		'cascade'       => array(
++        				'persist',
++        		),
++        		'mappedBy'      => null,
++        		'inversedBy'    => null,
++        		'joinColumns'   => array(
++        				array(
++        						'name'                 => 'site_id',
++        						'referencedColumnName' => 'id',
++        				),
++        		),
++        		'orphanRemoval' => false,
++        ));
++
+         $collector->addAssociation($config['class']['comment'], 'mapManyToOne', array(
+             'fieldName' => 'post',
+             'targetEntity' => $config['class']['post'],
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Entity/CommentManager.php vendor/sonata-project/news-bundle/Entity/CommentManager.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/Entity/CommentManager.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Entity/CommentManager.php	2016-11-17 08:49:58.000000000 +0100
+@@ -64,7 +64,7 @@
+         $this->getConnection()->beginTransaction();
+         $this->getConnection()->query($this->getCommentsCountResetQuery($postTableName));
+ 
+-        $this->getConnection()->query($this->getCommentsCountQuery($postTableName, $commentTableName));
++// RYL        $this->getConnection()->query($this->getCommentsCountQuery($postTableName, $commentTableName));
+ 
+         $this->getConnection()->commit();
+     }
+@@ -127,6 +127,7 @@
+     {
+         switch ($this->getConnection()->getDriver()->getDatabasePlatform()->getName()) {
+             case 'postgresql':
++            case 'sqlite':
+                 return sprintf('UPDATE %s SET comments_count = 0', $postTableName);
+ 
+             default:
+@@ -149,6 +150,9 @@
+             FROM (SELECT c.post_id, count(*) AS total FROM %s AS c WHERE c.status = 1 GROUP BY c.post_id) count_comment
+             WHERE %s.id = count_comment.post_id', $postTableName, $commentTableName, $postTableName);
+ 
++            case 'sqlite': // RYL: TO BE IMPLEMENTED
++                return '';
++
+             default:
+                 return sprintf(
+             'UPDATE %s p, (SELECT c.post_id, count(*) as total FROM %s as c WHERE c.status = 1 GROUP BY c.post_id) as count_comment
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Entity/PostManager.php vendor/sonata-project/news-bundle/Entity/PostManager.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/Entity/PostManager.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Entity/PostManager.php	2016-11-17 08:49:58.000000000 +0100
+@@ -13,6 +13,7 @@
+ 
+ use Doctrine\ORM\Query\Expr\Join;
+ use Sonata\ClassificationBundle\Model\CollectionInterface;
++use Sonata\ClassificationBundle\Model\CategoryInterface;
+ use Sonata\CoreBundle\Model\BaseEntityManager;
+ use Sonata\DatagridBundle\Pager\Doctrine\Pager;
+ use Sonata\DatagridBundle\ProxyQuery\Doctrine\ProxyQuery;
+@@ -87,7 +88,8 @@
+      *    date - query
+      *    tag - string
+      *    author - 'NULL', 'NOT NULL', id, array of ids
+-     *    collections - CollectionInterface
++     *    collection - CollectionInterface
++     *    category - CategoryInterface
+      *    mode - string public|admin
+      */
+     public function getPager(array $criteria, $page, $limit = 10, array $sort = array())
+@@ -145,6 +147,11 @@
+             $parameters['collectionid'] = $criteria['collection']->getId();
+         }
+ 
++        if (isset($criteria['category']) && $criteria['category'] instanceof CategoryInterface) {
++           	$query->andWhere('p.category = :categoryid');
++           	$parameters['categoryid'] = $criteria['category']->getId();
++        }
++
+         $query->setParameters($parameters);
+ 
+         $pager = new Pager();
+@@ -192,4 +199,23 @@
+ 
+         return $pcqp;
+     }
++
++    /**
++     * @param string $category
++     *
++     * @return array
++     */
++    protected function getPublicationCategoryQueryParts($category)
++    {
++        $pcqp = array('query' => '', 'params' => array());
++
++        if (null === $category) {
++            $pcqp['query'] = 'p.category IS NULL';
++        } else {
++            $pcqp['query'] = 'c.slug = :category';
++            $pcqp['params'] = array('category' => $category);
++        }
++
++        return $pcqp;
++    }
+ }
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Model/Post.php vendor/sonata-project/news-bundle/Model/Post.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/Model/Post.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Model/Post.php	2016-11-17 08:49:58.000000000 +0100
+@@ -14,6 +14,8 @@
+ use Sonata\ClassificationBundle\Model\CollectionInterface;
+ use Sonata\ClassificationBundle\Model\Tag;
+ use Sonata\ClassificationBundle\Model\TagInterface;
++use Sonata\ClassificationBundle\Model\CategoryInterface;
++use Sonata\PageBundle\Model\SiteInterface;
+ 
+ abstract class Post implements PostInterface
+ {
+@@ -55,6 +57,12 @@
+ 
+     protected $collection;
+ 
++    protected $category;
++
++    protected $site;
++
++    protected $locale;
++
+     /**
+      * {@inheritdoc}
+      */
+@@ -468,4 +476,52 @@
+     {
+         return $this->rawContent;
+     }
++
++    /**
++     * {@inheritdoc}
++     */
++    public function setCategory(CategoryInterface $category = null)
++    {
++    	$this->category = $category;
++    }
++    
++    /**
++     * {@inheritdoc}
++     */
++    public function getCategory()
++    {
++    	return $this->category;
++    }
++    
++    /**
++     * {@inheritdoc}
++     */
++    public function setLocale($locale)
++    {
++        $this->locale = $locale;
++    }
++
++    /**
++     * {@inheritdoc}
++     */
++    public function getLocale()
++    {
++        return $this->locale;
++    }
++    
++    /**
++     * {@inheritdoc}
++     */
++    public function setSite(SiteInterface $site = null)
++    {
++    	$this->site = $site;
++    }
++    
++    /**
++     * {@inheritdoc}
++     */
++    public function getSite()
++    {
++    	return $this->site;
++    }
+ }
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Model/PostInterface.php vendor/sonata-project/news-bundle/Model/PostInterface.php
+--- /Volumes/Users/ronan/Desktop/news-bundle/Model/PostInterface.php	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Model/PostInterface.php	2016-11-17 09:28:35.000000000 +0100
+@@ -13,6 +13,7 @@
+ 
+ use Sonata\ClassificationBundle\Model\CollectionInterface;
+ use Sonata\ClassificationBundle\Model\TagInterface;
++use Sonata\ClassificationBundle\Model\CategoryInterface;
+ 
+ interface PostInterface
+ {
+@@ -307,4 +308,24 @@
+      * @return string
+      */
+     public function getRawContent();
++     /**
++     * @return \Sonata\ClassificationBundle\Model\CategoryInterface
++     */
++
++    public function getCategory();
++
++    /**
++     * @param CollectionInterface $collection
++     */
++    public function setCategory(CategoryInterface $category = null);
++
++    /**
++     * @return string
++     */
++    public function getLocale();
++
++    /**
++     * @param string $locale
++     */
++    public function setLocale($locale);
+ }
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/doctrine/BasePost.orm.xml vendor/sonata-project/news-bundle/Resources/config/doctrine/BasePost.orm.xml
+--- /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/doctrine/BasePost.orm.xml	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Resources/config/doctrine/BasePost.orm.xml	2016-11-17 09:28:35.000000000 +0100
+@@ -2,7 +2,7 @@
+ <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+     <mapped-superclass name="Sonata\NewsBundle\Entity\BasePost">
+ 
+-
++        <field name="locale"            	  type="string"    column="locale"             nullable="true"   length="6"/>
+         <field name="title"                   type="string"    column="title"      />
+         <field name="abstract"                type="text"      column="abstract"   />
+         <field name="content"                 type="text"      column="content"    />
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/doctrine/Post.mongodb.xml.skeleton vendor/sonata-project/news-bundle/Resources/config/doctrine/Post.mongodb.xml.skeleton
+--- /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/doctrine/Post.mongodb.xml.skeleton	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Resources/config/doctrine/Post.mongodb.xml.skeleton	2016-11-17 09:28:35.000000000 +0100
+@@ -21,7 +21,9 @@
+         <reference-one target-document="Application\Sonata\ClassificationBundle\Model\Collection" field="collection" />
+ 
+         <reference-many target-document="Application\Sonata\ClassificationBundle\Document\Tag" field="tags" inversed-by="posts" />
+-
++        
++        <reference-one target-document="Application\Sonata\ClassificationBundle\Model\Category" field="category" />
++        
+         <reference-many target-document="Application\Sonata\NewsBundle\Document\Comment" field="comments" mapped-by="post">
+             <cascade>
+                 <cascade-persist/>
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/routing/news.xml vendor/sonata-project/news-bundle/Resources/config/routing/news.xml
+--- /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/routing/news.xml	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Resources/config/routing/news.xml	2016-11-17 09:28:35.000000000 +0100
+@@ -28,6 +28,12 @@
+         <requirement key="_format">html|rss</requirement>
+     </route>
+ 
++    <route id="sonata_news_category" path="/category/{category}.{_format}">
++        <default key="_controller">SonataNewsBundle:Post:category</default>
++        <default key="_format">html</default>
++        <requirement key="_format">html|rss</requirement>
++    </route>
++
+     <route id="sonata_news_archive_yearly" path="/archive/{year}.{_format}">
+         <default key="_controller">SonataNewsBundle:Post:archiveYearly</default>
+         <default key="_format">html</default>
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/serializer/Model.Post.xml vendor/sonata-project/news-bundle/Resources/config/serializer/Model.Post.xml
+--- /Volumes/Users/ronan/Desktop/news-bundle/Resources/config/serializer/Model.Post.xml	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Resources/config/serializer/Model.Post.xml	2016-11-17 09:28:35.000000000 +0100
+@@ -27,6 +27,7 @@
+         <property name="author"     serialized-name="user_id"       type="sonata_user_user_id"                 expose="true" since-version="1.0" groups="sonata_api_read,sonata_api_write,sonata_search" />
+         <property name="image"      serialized-name="media_id"      type="sonata_media_media_id"               expose="true" since-version="1.0" groups="sonata_api_read,sonata_api_write,sonata_search" />
+         <property name="collection" serialized-name="collection_id" type="sonata_classification_collection_id" expose="true" since-version="1.0" groups="sonata_api_read,sonata_api_write,sonata_search" />
++        <property name="category"   serialized-name="category_id"   type="sonata_classification_category_id"   expose="true" since-version="1.0" groups="sonata_api_read,sonata_api_write,sonata_search" />
+ 
+     </class>
+ </serializer>
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Resources/translations/SonataNewsBundle.en.xliff vendor/sonata-project/news-bundle/Resources/translations/SonataNewsBundle.en.xliff
+--- /Volumes/Users/ronan/Desktop/news-bundle/Resources/translations/SonataNewsBundle.en.xliff	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Resources/translations/SonataNewsBundle.en.xliff	2016-11-17 09:28:35.000000000 +0100
+@@ -96,7 +96,7 @@
+             </trans-unit>
+             <trans-unit id="comments_count">
+                 <source>comments_count</source>
+-                <target>%comments_count% comments</target>
++                <target>%comments_count% comment(s)</target>
+             </trans-unit>
+             <trans-unit id="title_leave_comment">
+                 <source>title_leave_comment</source>
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Resources/translations/SonataNewsBundle.fr.xliff vendor/sonata-project/news-bundle/Resources/translations/SonataNewsBundle.fr.xliff
+--- /Volumes/Users/ronan/Desktop/news-bundle/Resources/translations/SonataNewsBundle.fr.xliff	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Resources/translations/SonataNewsBundle.fr.xliff	2016-11-17 09:28:35.000000000 +0100
+@@ -92,15 +92,15 @@
+             </trans-unit>
+             <trans-unit id="archive_author">
+                 <source>archive_author</source>
+-                <target>de %author%</target>
++                <target>par %author%</target>
+             </trans-unit>
+             <trans-unit id="comments_count">
+                 <source>comments_count</source>
+-                <target>%comments_count% commentaires</target>
++                <target>%comments_count% commentaire(s)</target>
+             </trans-unit>
+             <trans-unit id="title_leave_comment">
+                 <source>title_leave_comment</source>
+-                <target>Rajouter un commentaire</target>
++                <target>Ajouter un commentaire</target>
+             </trans-unit>
+             <trans-unit id="mail_title_comment_notification">
+                 <source>mail_title_comment_notification</source>
+@@ -121,7 +121,7 @@
+             </trans-unit>
+             <trans-unit id="no_comments_available">
+                 <source>no_comments_available</source>
+-                <target>Pas de commentaires</target>
++                <target>Pas de commentaire</target>
+             </trans-unit>
+             <trans-unit id="sonata_blog">
+                 <source>sonata_blog</source>
+diff -urN /Volumes/Users/ronan/Desktop/news-bundle/Resources/views/Post/archive.html.twig vendor/sonata-project/news-bundle/Resources/views/Post/archive.html.twig
+--- /Volumes/Users/ronan/Desktop/news-bundle/Resources/views/Post/archive.html.twig	2016-05-28 00:38:21.000000000 +0200
++++ vendor/sonata-project/news-bundle/Resources/views/Post/archive.html.twig	2016-11-17 09:28:35.000000000 +0100
+@@ -15,7 +15,7 @@
+ 
+ {% block sonata_page_breadcrumb %}
+     <div class="row-fluid clearfix">
+-        {{ sonata_block_render_event('breadcrumb', { 'context': 'news_archive', 'collection': collection, 'tag': tag, 'current_uri': app.request.requestUri }) }}
++        {{ sonata_block_render_event('breadcrumb', { 'context': 'news_archive', 'collection': collection, 'tag': tag, 'category': category, 'current_uri': app.request.requestUri }) }}
+     </div>
+ {% endblock %}
+ 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="SeoBundle Test Suite" tests="24" assertions="56" failures="0" errors="0" time="0.041509">
+    <testsuite name="Sonata\SeoBundle\Tests\Block\Breadcrumb\BreadcrumbTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Breadcrumb/BreadcrumbTest.php" namespace="Sonata\SeoBundle\Tests\Block\Breadcrumb" fullPackage="Sonata.SeoBundle.Tests.Block.Breadcrumb" tests="1" assertions="1" failures="0" errors="0" time="0.006002">
+      <testcase name="testBlockService" class="Sonata\SeoBundle\Tests\Block\Breadcrumb\BreadcrumbTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Breadcrumb/BreadcrumbTest.php" line="26" assertions="1" time="0.006002"/>
+    </testsuite>
+    <testsuite name="Sonata\SeoBundle\Tests\Block\Social\FacebookLikeBoxBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookLikeBoxBlockServiceTest.php" namespace="Sonata\SeoBundle\Tests\Block\Social" fullPackage="Sonata.SeoBundle.Tests.Block.Social" tests="1" assertions="9" failures="0" errors="0" time="0.014176">
+      <testcase name="testService" class="Sonata\SeoBundle\Tests\Block\Social\FacebookLikeBoxBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookLikeBoxBlockServiceTest.php" line="23" assertions="9" time="0.014176"/>
+    </testsuite>
+    <testsuite name="Sonata\SeoBundle\Tests\Block\Social\FacebookLikeButtonBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookLikeButtonBlockServiceTest.php" namespace="Sonata\SeoBundle\Tests\Block\Social" fullPackage="Sonata.SeoBundle.Tests.Block.Social" tests="1" assertions="8" failures="0" errors="0" time="0.002089">
+      <testcase name="testService" class="Sonata\SeoBundle\Tests\Block\Social\FacebookLikeButtonBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookLikeButtonBlockServiceTest.php" line="23" assertions="8" time="0.002089"/>
+    </testsuite>
+    <testsuite name="Sonata\SeoBundle\Tests\Block\Social\FacebookSendButtonBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookSendButtonBlockServiceTest.php" namespace="Sonata\SeoBundle\Tests\Block\Social" fullPackage="Sonata.SeoBundle.Tests.Block.Social" tests="1" assertions="5" failures="0" errors="0" time="0.002259">
+      <testcase name="testService" class="Sonata\SeoBundle\Tests\Block\Social\FacebookSendButtonBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookSendButtonBlockServiceTest.php" line="23" assertions="5" time="0.002259"/>
+    </testsuite>
+    <testsuite name="Sonata\SeoBundle\Tests\Block\Social\FacebookShareButtonBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookShareButtonBlockServiceTest.php" namespace="Sonata\SeoBundle\Tests\Block\Social" fullPackage="Sonata.SeoBundle.Tests.Block.Social" tests="1" assertions="4" failures="0" errors="0" time="0.001106">
+      <testcase name="testService" class="Sonata\SeoBundle\Tests\Block\Social\FacebookShareButtonBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/FacebookShareButtonBlockServiceTest.php" line="23" assertions="4" time="0.001106"/>
+    </testsuite>
+    <testsuite name="Sonata\SeoBundle\Tests\Block\Social\TwitterEmbedTweetBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/TwitterEmbedTweetBlockServiceTest.php" namespace="Sonata\SeoBundle\Tests\Block\Social" fullPackage="Sonata" package="Sonata" tests="1" assertions="2" failures="0" errors="0" time="0.000428">
+      <testcase name="testBuildUri" class="Sonata\SeoBundle\Tests\Block\Social\TwitterEmbedTweetBlockServiceTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Block/Social/TwitterEmbedTweetBlockServiceTest.php" line="34" assertions="2" time="0.000428"/>
+    </testsuite>
+    <testsuite name="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" namespace="Sonata\SeoBundle\Tests\Seo" fullPackage="Sonata.SeoBundle.Tests.Seo" tests="10" assertions="11" failures="0" errors="0" time="0.005543">
+      <testcase name="testAddMeta" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="17" assertions="1" time="0.001630"/>
+      <testcase name="testOverrideMetas" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="33" assertions="1" time="0.001016"/>
+      <testcase name="testInvalidMetas" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="48" assertions="1" time="0.001054"/>
+      <testcase name="testHtmlAttributes" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="56" assertions="1" time="0.000361"/>
+      <testcase name="testHeadAttributes" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="70" assertions="1" time="0.000375"/>
+      <testcase name="testSetTitle" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="84" assertions="1" time="0.000173"/>
+      <testcase name="testAddTitle" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="92" assertions="1" time="0.000170"/>
+      <testcase name="testLinkCanonical" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="102" assertions="1" time="0.000163"/>
+      <testcase name="testLangAlternates" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="110" assertions="1" time="0.000340"/>
+      <testcase name="testHasMeta" class="Sonata\SeoBundle\Tests\Seo\SeoPageTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Seo/SeoPageTest.php" line="127" assertions="2" time="0.000261"/>
+    </testsuite>
+    <testsuite name="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" namespace="Sonata\SeoBundle\Tests\Request" fullPackage="Sonata.SeoBundle.Tests.Request" tests="8" assertions="16" failures="0" errors="0" time="0.009906">
+      <testcase name="testHtmlAttributes" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="17" assertions="2" time="0.005371"/>
+      <testcase name="testHeadAttributes" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="30" assertions="2" time="0.000391"/>
+      <testcase name="testTitle" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="40" assertions="2" time="0.000363"/>
+      <testcase name="testEncoding" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="50" assertions="3" time="0.001792"/>
+      <testcase name="testMetadatas" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="69" assertions="2" time="0.000713"/>
+      <testcase name="testName" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="85" assertions="1" time="0.000302"/>
+      <testcase name="testLinkCanonical" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="93" assertions="2" time="0.000572"/>
+      <testcase name="testLangAlternates" class="Sonata\SeoBundle\Tests\Request\BlockTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/seo-bundle/Tests/Twig/Extension/SeoExtensionTest.php" line="103" assertions="2" time="0.000402"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

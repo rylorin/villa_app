@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Sonata Doctrine Extensions ~ Test Suite" tests="2" assertions="2" failures="0" errors="0" time="0.003220">
+    <testsuite name="Sonata\Doctrine\Types\Tests\JsonTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/doctrine-extensions/tests/Types/JsonTypeTest.php" namespace="Sonata\Doctrine\Types\Tests" fullPackage="Sonata.Doctrine.Types.Tests" tests="2" assertions="2" failures="0" errors="0" time="0.003220">
+      <testcase name="testConvertToDatabaseValue" class="Sonata\Doctrine\Types\Tests\JsonTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/doctrine-extensions/tests/Types/JsonTypeTest.php" line="29" assertions="1" time="0.002637"/>
+      <testcase name="testConvertToPHPValue" class="Sonata\Doctrine\Types\Tests\JsonTypeTest" file="/Users/ronan/Sites/sandbox/vendor/sonata-project/doctrine-extensions/tests/Types/JsonTypeTest.php" line="39" assertions="1" time="0.000583"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

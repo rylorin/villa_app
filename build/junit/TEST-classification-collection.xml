@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" skipped="0" name="Check the API for ClassificationBundle" tests="8" time="4.627014">
+    <testcase classname="Check the API for ClassificationBundle" name="Get all collections" time="0.315015" assertions="6">
+    </testcase>
+    <testcase classname="Check the API for ClassificationBundle" name="Post new collection (with errors)" time="0.325145" assertions="6">
+    </testcase>
+    <testcase classname="Check the API for ClassificationBundle" name="Collection full workflow" time="3.983802" assertions="31">
+    </testcase>
+</testsuite>
