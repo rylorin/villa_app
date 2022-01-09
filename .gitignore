@@ -1,11 +1,5 @@
-behat.yml
 app/cache/*
 app/logs/*
+app/db/*.db
 app/*.cache
-web/bundles
-web/uploads
-web/sitemap*.xml
-app/config/parameters*.yml
 vendor
-build
-composer.lock
